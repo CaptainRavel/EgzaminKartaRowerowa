@@ -1,11 +1,4 @@
-[gd_scene load_steps=3 format=2]
-
-[ext_resource path="res://fonts/cmu-typewriter/Typewriter/cmuntt.ttf" type="DynamicFontData" id=1]
-
-[sub_resource type="DynamicFont" id=1]
-size = 20
-use_filter = true
-font_data = ExtResource( 1 )
+[gd_scene format=2]
 
 [node name="Control" type="Control"]
 margin_left = -0.0830078
@@ -25,11 +18,10 @@ margin_bottom = 159.0
 rect_scale = Vector2( 1.74234, 3.51873 )
 
 [node name="LabelStartButton" type="Label" parent="ButtonStart"]
-margin_left = 1.0
-margin_top = -1.0
-margin_right = 224.0
-margin_bottom = 26.0
-custom_fonts/font = SubResource( 1 )
+margin_left = -0.278656
+margin_top = 4.49069
+margin_right = 222.721
+margin_bottom = 31.4907
 text = "_START"
 align = 1
 __meta__ = {
@@ -44,10 +36,9 @@ margin_bottom = 378.298
 rect_scale = Vector2( 1.70171, 3.17768 )
 
 [node name="LabelQuitButton" type="Label" parent="ButtonQuit"]
-margin_left = 2.0
-margin_top = -1.0
-margin_right = 225.0
-margin_bottom = 22.0
-custom_fonts/font = SubResource( 1 )
+margin_left = 0.690796
+margin_top = 5.41776
+margin_right = 223.691
+margin_bottom = 28.4178
 text = "_QUIT"
 align = 1
