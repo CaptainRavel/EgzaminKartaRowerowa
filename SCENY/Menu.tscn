@@ -1,4 +1,9 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://CZCIONKI/cmu-typewriter/Typewriter/cmuntt.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 1 )
 
 [node name="Control" type="Control"]
 margin_left = -0.0830078
@@ -6,6 +11,14 @@ margin_top = 2.32666
 margin_right = 1919.92
 margin_bottom = 1082.33
 rect_scale = Vector2( 0.533785, 0.553971 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1919.0
+margin_bottom = 1077.0
+color = Color( 0.360784, 0.0627451, 0.0627451, 0.709804 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -21,17 +34,18 @@ __meta__ = {
 }
 
 [node name="LabelStartButton" type="Label" parent="ButtonStart"]
-margin_left = -0.278656
-margin_top = 4.49069
-margin_right = 222.721
-margin_bottom = 31.4907
+margin_left = -1.48553
+margin_top = 2.76319
+margin_right = 221.514
+margin_bottom = 29.7632
+custom_fonts/font = SubResource( 1 )
 text = "_START"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ButtonStart2" type="Button" parent="."]
+[node name="ButtonOpcje" type="Button" parent="."]
 margin_left = 725.861
 margin_top = 560.015
 margin_right = 945.861
@@ -41,11 +55,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="LabelStartButton" type="Label" parent="ButtonStart2"]
-margin_left = -7.0
-margin_top = 6.0
-margin_right = 216.0
-margin_bottom = 20.0
+[node name="LabelOpcjeButton" type="Label" parent="ButtonOpcje"]
+margin_left = -8.20688
+margin_top = 4.2725
+margin_right = 214.793
+margin_bottom = 25.2725
+custom_fonts/font = SubResource( 1 )
 text = "_OPTIONS"
 align = 1
 __meta__ = {
@@ -61,8 +76,9 @@ rect_scale = Vector2( 1.70171, 3.17768 )
 
 [node name="LabelQuitButton" type="Label" parent="ButtonQuit"]
 margin_left = 0.690796
-margin_top = 5.41776
+margin_top = 2.86722
 margin_right = 223.691
-margin_bottom = 28.4178
+margin_bottom = 25.8673
+custom_fonts/font = SubResource( 1 )
 text = "_QUIT"
 align = 1
