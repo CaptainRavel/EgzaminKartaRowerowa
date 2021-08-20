@@ -16,6 +16,9 @@ margin_top = 134.0
 margin_right = 929.0
 margin_bottom = 159.0
 rect_scale = Vector2( 1.74234, 3.51873 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="LabelStartButton" type="Label" parent="ButtonStart"]
 margin_left = -0.278656
@@ -23,6 +26,27 @@ margin_top = 4.49069
 margin_right = 222.721
 margin_bottom = 31.4907
 text = "_START"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonStart2" type="Button" parent="."]
+margin_left = 725.861
+margin_top = 560.015
+margin_right = 945.861
+margin_bottom = 585.015
+rect_scale = Vector2( 1.74234, 3.51873 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelStartButton" type="Label" parent="ButtonStart2"]
+margin_left = -7.0
+margin_top = 6.0
+margin_right = 216.0
+margin_bottom = 20.0
+text = "_OPTIONS"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
