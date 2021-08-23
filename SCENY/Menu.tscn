@@ -1,84 +1,35 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://CZCIONKI/cmu-typewriter/Typewriter/cmuntt.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://SCENY/MenuButton.tscn" type="PackedScene" id=1]
 
-[sub_resource type="DynamicFont" id=1]
-font_data = ExtResource( 1 )
-
-[node name="Control" type="Control"]
-margin_left = -0.0830078
-margin_top = 2.32666
-margin_right = 1919.92
-margin_bottom = 1082.33
-rect_scale = Vector2( 0.533785, 0.553971 )
+[node name="TitleScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 1919.0
-margin_bottom = 1077.0
-color = Color( 0.360784, 0.0627451, 0.0627451, 0.709804 )
+[node name="Menu" type="VBoxContainer" parent="."]
+margin_left = 120.0
+margin_top = 80.0
+margin_right = 1800.0
+margin_bottom = 960.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ButtonStart" type="Button" parent="."]
-margin_left = 709.0
-margin_top = 134.0
-margin_right = 929.0
-margin_bottom = 159.0
-rect_scale = Vector2( 1.74234, 3.51873 )
+[node name="CenterRow" type="HBoxContainer" parent="Menu"]
+margin_right = 1680.0
+margin_bottom = 880.0
+size_flags_vertical = 3
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="LabelStartButton" type="Label" parent="ButtonStart"]
-margin_left = -1.48553
-margin_top = 2.76319
-margin_right = 221.514
-margin_bottom = 29.7632
-custom_fonts/font = SubResource( 1 )
-text = "_START"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
+[node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow"]
+margin_right = 1680.0
+margin_bottom = 880.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
-[node name="ButtonOpcje" type="Button" parent="."]
-margin_left = 725.861
-margin_top = 560.015
-margin_right = 945.861
-margin_bottom = 585.015
-rect_scale = Vector2( 1.74234, 3.51873 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="LabelOpcjeButton" type="Label" parent="ButtonOpcje"]
-margin_left = -8.20688
-margin_top = 4.2725
-margin_right = 214.793
-margin_bottom = 25.2725
-custom_fonts/font = SubResource( 1 )
-text = "_OPTIONS"
-align = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ButtonQuit" type="Button" parent="."]
-margin_left = 712.06
-margin_top = 354.298
-margin_right = 936.06
-margin_bottom = 378.298
-rect_scale = Vector2( 1.70171, 3.17768 )
-
-[node name="LabelQuitButton" type="Label" parent="ButtonQuit"]
-margin_left = 0.690796
-margin_top = 2.86722
-margin_right = 223.691
-margin_bottom = 25.8673
-custom_fonts/font = SubResource( 1 )
-text = "_QUIT"
-align = 1
+[node name="NewTest" parent="Menu/CenterRow/Buttons" instance=ExtResource( 1 )]
