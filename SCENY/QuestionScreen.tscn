@@ -1,15 +1,16 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://CZCIONKI/droid-sans/DroidSans-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://CZCIONKI/droid-sans/DroidSans.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://SCENY/AnswerButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GRAFIKA/png-clipart-computer-icons-bicycle-bicycle-text-sport.png" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
-size = 50
+size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 50
+size = 36
 font_data = ExtResource( 2 )
 
 [node name="QuestionScreen" type="Control"]
@@ -18,8 +19,8 @@ __meta__ = {
 }
 
 [node name="MarginContainer1" type="MarginContainer" parent="."]
-margin_left = 120.0
-margin_top = 80.0
+margin_left = 80.0
+margin_top = 50.0
 margin_right = 1920.0
 margin_bottom = 550.0
 __meta__ = {
@@ -27,12 +28,12 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer1"]
-margin_right = 1800.0
-margin_bottom = 470.0
+margin_right = 1840.0
+margin_bottom = 500.0
 
 [node name="Label" type="Label" parent="MarginContainer1/VBoxContainer"]
-margin_right = 1800.0
-margin_bottom = 59.0
+margin_right = 1840.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 1 )
@@ -40,9 +41,9 @@ text = "Pytanie nr ..."
 align = 1
 
 [node name="Label2" type="Label" parent="MarginContainer1/VBoxContainer"]
-margin_top = 63.0
-margin_right = 1800.0
-margin_bottom = 470.0
+margin_top = 52.0
+margin_right = 1840.0
+margin_bottom = 246.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 2 )
@@ -50,9 +51,18 @@ text = "Godot – silnik na licencji MIT do tworzenia gier dwuwymiarowych i tró
 autowrap = true
 clip_text = true
 
+[node name="TextureRect" type="TextureRect" parent="MarginContainer1/VBoxContainer"]
+margin_top = 250.0
+margin_right = 1840.0
+margin_bottom = 500.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 4 )
+stretch_mode = 6
+
 [node name="MarginContainer2" type="MarginContainer" parent="."]
-margin_left = 120.0
-margin_top = 700.0
+margin_left = 80.0
+margin_top = 650.0
 margin_right = 1800.0
 margin_bottom = 960.0
 __meta__ = {
@@ -60,12 +70,75 @@ __meta__ = {
 }
 
 [node name="GridContainer" type="GridContainer" parent="MarginContainer2"]
-margin_right = 1680.0
-margin_bottom = 260.0
+margin_right = 1720.0
+margin_bottom = 350.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/vseparation = 100
-custom_constants/hseparation = 100
+custom_constants/vseparation = 50
+custom_constants/hseparation = 50
 columns = 2
 
 [node name="AnswerButton" parent="MarginContainer2/GridContainer" instance=ExtResource( 3 )]
+margin_right = 835.0
+margin_bottom = 150.0
+
+[node name="Label" parent="MarginContainer2/GridContainer/AnswerButton/HBoxContainer" index="0"]
+margin_right = 91.0
+margin_bottom = 150.0
+text = "A)"
+
+[node name="Label2" parent="MarginContainer2/GridContainer/AnswerButton/HBoxContainer" index="1"]
+margin_left = 141.0
+margin_right = 815.0
+margin_bottom = 150.0
+
+[node name="AnswerButton2" parent="MarginContainer2/GridContainer" instance=ExtResource( 3 )]
+margin_left = 885.0
+margin_right = 1720.0
+margin_bottom = 150.0
+
+[node name="Label" parent="MarginContainer2/GridContainer/AnswerButton2/HBoxContainer" index="0"]
+margin_right = 92.0
+margin_bottom = 150.0
+text = "B)"
+
+[node name="Label2" parent="MarginContainer2/GridContainer/AnswerButton2/HBoxContainer" index="1"]
+margin_left = 142.0
+margin_right = 815.0
+margin_bottom = 150.0
+
+[node name="AnswerButton3" parent="MarginContainer2/GridContainer" instance=ExtResource( 3 )]
+margin_top = 200.0
+margin_right = 835.0
+margin_bottom = 350.0
+
+[node name="Label" parent="MarginContainer2/GridContainer/AnswerButton3/HBoxContainer" index="0"]
+margin_right = 90.0
+margin_bottom = 150.0
+text = "C)"
+
+[node name="Label2" parent="MarginContainer2/GridContainer/AnswerButton3/HBoxContainer" index="1"]
+margin_left = 140.0
+margin_right = 815.0
+margin_bottom = 150.0
+
+[node name="AnswerButton4" parent="MarginContainer2/GridContainer" instance=ExtResource( 3 )]
+margin_left = 885.0
+margin_top = 200.0
+margin_right = 1720.0
+margin_bottom = 350.0
+
+[node name="Label" parent="MarginContainer2/GridContainer/AnswerButton4/HBoxContainer" index="0"]
+margin_right = 98.0
+margin_bottom = 150.0
+text = "D)"
+
+[node name="Label2" parent="MarginContainer2/GridContainer/AnswerButton4/HBoxContainer" index="1"]
+margin_left = 148.0
+margin_right = 815.0
+margin_bottom = 150.0
+
+[editable path="MarginContainer2/GridContainer/AnswerButton"]
+[editable path="MarginContainer2/GridContainer/AnswerButton2"]
+[editable path="MarginContainer2/GridContainer/AnswerButton3"]
+[editable path="MarginContainer2/GridContainer/AnswerButton4"]
