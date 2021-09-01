@@ -3,3 +3,76 @@ _START;Rozpocznij test
 _QUIT;Wyjście
 _OPTIONS;Opcje
 _LOAD;Wczytaj
+
+PZ1;Dojeżdżając do skrzyżowania oznaczonego tym znakiem trzeba ustąpić pierwszeństwa pojazdowi: 
+	PZ1O1;większemu
+	PZ1O2;nadjeżdżającemu z lewej strony
+	PZ1O3;nadjeżdżającemu z prawej strony
+PZ2;Dojeżdżając do skrzyżowania, przed którym stoi ten znak musimy ustąpić pierwszeństwa:
+	PZ2O1;tylko nadjeżdżającym z prawej strony
+	PZ2O2;wszystkim jadącym drogą poprzeczną
+	PZ2O3;tylko jadącym prosto
+PZ3;Widząc ten znak rowerzysta:
+	PZ3O1;nie może wjechać na drogę za tym znakiem
+	PZ3O2;może jechać dalej bez żadnych ograniczeń
+	PZ3O3;musi zmniejszyć prędkość
+PZ4;Sygnał zielony na sygnalizatorze świetlnym oznacza:
+	PZ4O1;zakaz wejścia oraz jazdy
+	PZ4O2;zezwolenie na wjazd za sygnalizator
+	PZ4O3;zezwolenie na wjazd jadącym tylko prosto przez  skrzyżowanie
+PZ5;Widząc ten znak rowerzysta:
+	PZ5O1;musi ustąpić pierwszeństwa nadjeżdżającym z prawej strony
+	PZ5O2;ma pierwszeństwo przed pojazdem z prawej strony
+	PZ5O3;może skręcić w prawo
+PZ6;Znak ten oznacza, że:
+	PZ6O1;na skrzyżowaniu ruch odbywa się dookoła wyspy lub placu w kierunku wskazanym na znaku
+	PZ6O2;kierujący znajdujący się na skrzyżowaniu ma pierwszeństwo przed kierującym wjeżdżającym na to skrzyżowanie
+	PZ6O3;obowiązuje zakaz ruchu wszelkich rowerów na jezdni i na poboczu
+PZ7;W jakim miejscu należy zatrzymać rower, jeżeli przed skrzyżowaniem  umieszczony jest ten znak?
+	PZ7O1;w dowolnym
+	PZ7O2;przed znakiem
+	PZ7O3;przed linią ciągłą poprzeczną
+PZ8;Gdzie ustawia się ten znak?
+	PZ8O1;przed miejscami, którymi przechodzą dzieci
+	PZ8O2;tylko w pobliżu szkół
+	PZ8O3;w miejscach szczególnie uczęszczanych przez dzieci lub w bliskości tych miejsc
+PZ9;Za tym znakiem  pierwszeństwo mają pojazdy:
+	PZ9O1;które znajdują się na rondzie
+	PZ9O2;wjeżdżające na rondo
+	PZ9O3;mające lewą stronę wolną
+PZ10;Znak ten  oznacza:
+	PZ10O1;obowiązek jazdy na wprost przez skrzyżowanie
+	PZ10O2;drogę jednokierunkową
+	PZ10O3;niebezpieczny podjazd
+PZ11;Znak ten  oznacza:
+	PZ11O1;drogę dla dzieci
+	PZ11O2;drogę dla dorosłych
+	PZ11O3;przejście dla pieszych
+PZ12;Znak ten oznacza, że:
+	PZ12O1;droga podporządkowana krzyżuje się lub łączy z drogą z pierwszeństwem
+	PZ12O2;droga z pierwszeństwem krzyżuje się drogą podporządkowaną 
+	PZ12O3;poruszasz się drogą z pierwszeństwem
+PZ13;Znak ten oznacza:
+	PZ13O1;próg zwalniający
+	PZ13O2;nierówną drogę
+	PZ13O3;koleiny
+PZ14;Ten znak oznacza:
+	PZ14O1;pierwszeństwo dla nadjeżdżających z  przeciwka
+	PZ14O2;pierwszeństwo na zwężonym odcinku drogi
+	PZ14O3;odcinek drogi o ruchu dwukierunkowym
+PZ15;Znak ten oznacza:
+	PZ15O1;zakaz wjazdu
+	PZ15O2;zakaz ruchu w obu kierunkach
+	PZ15O3;zakaz wjazdu pojazdów silnikowych
+PZ16;Znak ten oznacza:
+	PZ16O1;zakaz jazdy z prawej strony znaku
+	PZ16O2;nakaz jazdy z prawej strony znaku
+	PZ16O3;nakaz jazdy z lewej strony znaku
+PZ17;Znak ten oznacza:
+	PZ17O1;koniec drogi z pierwszeństwem
+	PZ17O2;ustąp pierwszeństwa przejazdu
+	PZ17O3;droga z pierwszeństwem
+PZ18;Znak ten oznacza:
+	PZ18O1;zakaz wjazdu na skrzyżowanie bez postoju, celem ustąpienia pierwszeństwa jadącym drogą z pierwszeństwem
+	PZ18O2;możliwość wjazdu na skrzyżowanie bez zatrzymania się pod warunkiem ustąpienia pierwszeństwa pojazdom jadącym drogą z pierwszeństwem
+	PZ18O3;zakaz wjazdu na skrzyżowanie bez zatrzymania się przed drogą z pierwszeństwem i obowiązek udzielenia pierwszeństwa pojazdom jadącym tą drogą
