@@ -75,3 +75,227 @@ PZ18;Znak ten oznacza:
 PZ18O1;zakaz wjazdu na skrzyżowanie bez postoju, celem ustąpienia pierwszeństwa jadącym drogą z pierwszeństwem
 PZ18O2;możliwość wjazdu na skrzyżowanie bez zatrzymania się pod warunkiem ustąpienia pierwszeństwa pojazdom jadącym drogą z pierwszeństwem
 PZ18O3;zakaz wjazdu na skrzyżowanie bez zatrzymania się przed drogą z pierwszeństwem i obowiązek udzielenia pierwszeństwa pojazdom jadącym tą drogą
+PZ19;Odległość tego znaku od przejścia dla pieszych na drogach o dopuszczalnej prędkości powyżej 50 km/h wynosi:
+PZ19O1;do 100 m
+PZ19O2;od 150 m do 300 m
+PZ19O3;ponad  300 m
+PZ20;Znak ten oznacza:
+PZ20O1;zwężenie jezdni - obustronne
+PZ20O2;zwężenie jezdni - lewostronne
+PZ20O3;zwężenie jezdni - prawostronne
+PZ21;Znak ten oznacza:
+PZ21O1;zakaz wjazdu pojazdów silnikowych
+PZ21O2;zakaz wjazdu tylko samochodów osobowych
+PZ21O3;zakaz wjazdu pojazdów silnikowych z wyjątkiem motocykli jednośladowych
+PZ22;Znak ten oznacza:
+PZ22O1;odcinek jezdni o ruchu dwukierunkowym
+PZ22O2;pierwszeństwo dla nadjeżdżających z przeciwka
+PZ22O3;pierwszeństwo na zwężonym odcinku drogi
+PZ23;Znak ten oznacza:
+PZ23O1;drogę ekspresową
+PZ23O2;śliską jezdnię
+PZ23O3;zakaz wjazdu pojazdów silnikowych z wyjątkiem motocykli jednośladowych
+PZ24;Znak  ten  oznacza:
+PZ24O1;miejsce przejścia dla pieszych
+PZ24O2;drogę dla pieszych
+PZ24O3;przejście dla pieszych
+PZ25;Ten znak oznacza:
+PZ25O1;zakaz wjazdu
+PZ25O2;zakaz ruchu
+PZ25O3;zakaz ruchu w obu kierunkach
+PZ26;Znak ten oznacza:
+PZ26O1;drogę dla rowerów
+PZ26O2;zakaz wjazdu rowerów
+PZ26O3;rowerzyści
+PZ27;Znak ten oznacza:
+PZ27O1;drogę z pierwszeństwem
+PZ27O2;koniec drogi z pierwszeństwem
+PZ27O3;ustąp pierwszeństwa przejazdu
+PZ28;Znak ten oznacza:
+PZ28O1;obszar  zabudowany
+PZ28O2;obiekt zabytkowy
+PZ28O3;początek strefy zamieszkania
+PZ29;Znak ten oznacza skrzyżowanie:
+PZ29O1;z drogą podporządkowaną występującą po obu stronach
+PZ29O2;z drogami jednokierunkowymi
+PZ29O3;dróg  równorzędnych
+PZ30;Znak ten oznacza zakaz wjazdu:
+PZ30O1;rowerów i motorowerów
+PZ30O2;rowerów
+PZ30O3;motorowerów
+PZ31;Znak ten oznacza:
+PZ31O1;zakaz wjazdu na wprost
+PZ31O2;nakaz jazdy prosto przez  skrzyżowanie
+PZ31O3;drogę jednokierunkową
+PZ32;Znak ten oznacza:
+PZ32O1;autostradę
+PZ32O2;drogę ekspresową
+PZ32O3;koniec autostrady
+PZ33;Znak ten oznacza:
+PZ33O1;nakaz jazdy prosto lub w lewo
+PZ33O2;zakaz jazdy prosto lub w lewo
+PZ33O3;wskazuje dozwolone kierunki na pasie ruchu zgodnie ze strzałkami umieszczonymi na znaku
+PZ34;Ten znak oznacza:
+PZ34O1;dwa niebezpieczne zakręty (pierwszy w lewo)
+PZ34O2;dwa niebezpieczne zakręty (pierwszy w prawo)
+PZ34O3;niebezpieczny zakręt w prawo
+PZ35;Ten znak oznacza:
+PZ35O1;zakaz wjazdu motocykli
+PZ35O2;zakaz wjazdu motocykli jednośladowych
+PZ35O3;drogę dla motocykli
+PZ36;Po drodze oznaczonej tym znakiem można jechać:
+PZ36O1;rowerem jednośladowym
+PZ36O2;wózkiem rowerowym
+PZ36O3;motorowerem
+PZ37;Ten znak oznacza:
+PZ37O1;zakaz jazdy prosto lub w prawo
+PZ37O2;nakaz jazdy prosto lub w prawo
+PZ37O3;wskazuje dozwolone kierunki na pasie ruchu zgodnie ze strzałkami umieszczonymi na znaku
+PZ38;Ten znak oznacza:
+PZ38O1;odcinek jezdni o ruchu dwukierunkowym
+PZ38O2;pierwszeństwo dla nadjeżdżających z przeciwka
+PZ38O3;pierwszeństwo na zwężonym odcinku drogi
+PZ39;Znak ten oznacza:
+PZ39O1;niebezpieczny zakręt w lewo
+PZ39O2;dwa niebezpieczne zakręty (pierwszy w lewo)
+PZ39O3;kilka niebezpiecznych zakrętów (pierwszy w lewo)
+PZ40;Znak ten oznacza zakaz jazdy rowerem:
+PZ40O1;tylko po jezdni
+PZ40O2;tylko po poboczu
+PZ40O3;po jezdni i po poboczu
+PZ41;Znak ten oznacza:
+PZ41O1;zakaz skrętu w prawo
+PZ41O2;nakaz jazdy w prawo (skręcanie za znakiem)
+PZ41O3;nakaz jazdy w prawo (skręcanie przed znakiem)
+PZ42;Znak ten oznacza nakaz jazdy rowerem:
+PZ42O1;wielośladowym
+PZ42O2;jednośladowym
+PZ42O3;obie odpowiedz są prawidłowe
+PZ43;Znak ten oznacza:
+PZ43O1;obszar zabudowany
+PZ43O2;strefę zamieszkania
+PZ43O3;koniec obszaru zabudowanego
+PZ44;Znak ten oznacza:
+PZ44O1;drogę dla rowerów
+PZ44O2;ostrzeżenie przed możliwością napotkania rowerzystów wjeżdżających na jezdnię
+PZ44O3;przejazd dla rowerów
+PZ45;Znak ten oznacza:
+PZ45O1;zakaz wjazdu na skrzyżowanie bez zatrzymania
+PZ45O2;obowiązek zatrzymania się przed znakiem
+PZ45O3;obowiązkowe zatrzymanie się przez kierujących tylko pojazdami wielośladowymi
+PZ46;Znak ten oznacza:
+PZ46O1;zakaz wjazdu motorowerów
+PZ46O2;że za tym znakiem nie mogą jechać rowerzyści
+PZ46O3;drogę dla motorowerów
+PZ47;Znak ten oznacza:
+PZ47O1;nakaz jazdy zgodnie z kierunkiem strzałek
+PZ47O2;pierwszeństwo dla pojazdów jadących po rondzie
+PZ47O3;zakaz jazdy w prawo
+PZ48;Znak ten oznacza:
+PZ48O1;obszar zabudowany
+PZ48O2;koniec obszaru zabudowanego
+PZ48O3;koniec strefy zamieszkania
+PZ49;Znak ten oznacza:
+PZ49O1;skrzyżowanie z drogą podporządkowaną występującą  po prawej stronie
+PZ49O2;wlot drogi jednokierunkowej z prawej strony
+PZ49O3;skrzyżowanie dróg równorzędnych
+PZ50;Znak ten oznacza:
+PZ50O1;pierwszeństwo na zwężonym odcinku drogi
+PZ50O2;odcinek drogi o ruchu dwukierunkowym
+PZ50O3;pierwszeństwo dla nadjeżdżających z przeciwka
+PZ51;Znak ten oznacza:
+PZ51O1;zakaz skrętu w lewo
+PZ51O2;nakaz jazdy w lewo (skręcanie przed znakiem)
+PZ51O3;nakaz jazdy w prawo (skręcanie przed znakiem)
+PZ52;Znak ten oznacza:
+PZ52O1;koniec drogi ekspresowej
+PZ52O2;autostrada
+PZ52O3;koniec autostrady
+PZ53;Za tym znakiem:
+PZ53O1;jest skrzyżowanie dróg róworzędnych
+PZ53O2;rowerzysta ma pierwszeństwo przed rowerzystą wyjeżdżającym z drogi po lewej stronie
+PZ53O3;jest skrzyżowanie z drogą podporządkowaną występującą po prawej stronie
+PZ54;Po drodze za tym znakiem rowerzysta:
+PZ54O1;może dojechać na lekcję zaczynającą się o 8:00
+PZ54O2;może wrócić po lekcji kończącej się o 16:15
+PZ54O3;nie może jechać przez całą dobę
+PZ55;Po drodze oznaczonej tym znakiem można jechać rowerem:
+PZ55O1;dowolnym
+PZ55O2;tylko jednośladowym
+PZ55O3;tylko wielośladowym
+PZ56;Po drodze oznaczonej tym znakiem można jechać rowerem:
+PZ56O1;po dowolnej stronie pod warunkiem ustępowania pieszym
+PZ56O2;po prawej stronie bez konieczności ustępowania pieszym
+PZ56O3;tylko po lewej stronie
+PZ57;Za tym znakiem rowerzysta może:
+PZ57O1;skręcić w lewo
+PZ57O2;zawrócić
+PZ57O3;skręcić w prawo
+PZ58;Znak ten oznacza:
+PZ58O1;ruch okrężny
+PZ58O2;skrzyżowanie o ruchu okrężnym
+PZ58O3;zakaz skrętu w lewo
+PZ59;Znak ten oznacza:
+PZ59O1;drogę dla rowerów
+PZ59O2;rowerzyści
+PZ59O3;zakaz wjazdu rowerów
+PZ60;Znak ten oznacza:
+PZ60O1;nakaz jazdy prosto lub w prawo
+PZ60O2;zakaz jazdy prosto lub w prawo
+PZ60O3;kierunki na pasie  ruchu
+PZ61;Znak ten oznacza:
+PZ61O1;most 
+PZ61O2;wiadukt
+PZ61O3;tunel
+PZ62;Za tym znakiem rowerzysta na przejeździe niestrzeżonym:
+PZ62O1;może przejechać przez tory po przejechaniu pociągu
+PZ62O2;musi się upewnić czy po przejechaniu pociągu nie nadjeżdża inny pociąg z przeciwnego kierunku
+PZ62O3;może przejechać przez tory po oddaleniu się pociągu co najmniej na jeden kilometr
+PZ63;Znak ten ostrzega o miejscu, w którym rowerzyści:
+PZ63O1;wjeżdżają z drogi dla rowerów na jezdnię lub przez nią przejeżdżają
+PZ63O2;mają pierwszeństwo przed innymi uczestnikami ruchu 
+PZ63O3;mogą korzystać z całej szerokości jezdni
+PZ64;Znak ten oznacza:
+PZ64O1;drogę przeznaczoną do ruchu wózków rowerowych
+PZ64O2;drogę lub jej część przeznaczoną do ruchu rowerów jednośladowych
+PZ64O3;turystyczny szlak rowerowy
+PZ65;Za tym znakiem rowerzysta na najbliższym skrzyżowaniu: 
+PZ65O1;musi ustąpić rowerzyście wjeżdżającemu z lewej strony
+PZ65O2;może skręcić w lewo
+PZ65O3;ma pierwszeństwo przed rowerzystą wjeżdżającym z lewej strony
+PZ66;Za tym znakiem nie mogą jechać:
+PZ66O1;wózki ręczne
+PZ66O2;pojazdy z przyczepami
+PZ66O3;wózki rowerowe
+PZ67;Znak ten oznacza:
+PZ67O1;zakaz jazdy w lewo lub w prawo
+PZ67O2;nakaz jazdy w prawo lub w lewo -  skręcanie przed znakiem
+PZ67O3;nakaz jazdy w prawo lub w lewo
+PZ68;Za tym znakiem rowerzysta:
+PZ68O1;nie może skręcić w lewo
+PZ68O2;po skręceniu w lewo wjedzie na drogę bez przejazdu
+PZ68O3;na tym skrzyżowaniu ma pierwszeństwo przed wszystkimi pojazdami
+PZ69;Po drodze oznaczonej tym znakiem rowerzysta:
+PZ69O1;może jechać, jeżeli nie ma wyznaczonej drogi dla rowerów
+PZ69O2;może jechać, jeżeli nie ma pobocza
+PZ69O3;nie może jechać
+PZ70;Za tym znakiem rowerzysta:
+PZ70O1;napotka przejazd kolejowy z zaporami
+PZ70O2;napotka przejazd kolejowy bez zapór
+PZ70O3;może przejechać przez tory po całkowitym podniesieniu zapór
+PZ71;Za tym znakiem rowerzysta:
+PZ71O1;może jechać dowolną stroną drogi, ustępując pierwszeństwa pieszym
+PZ71O2;może jechać tylko po prawej stronie tej drogi
+PZ71O3;może jechać dowolną stroną drogi i ma pierwszeństwo przed pieszymi
+PZ72;Za tym znakiem rowerzysta:
+PZ72O1;ma zakaz jazdy w lewo 
+PZ72O2;ma nakaz jazdy w lewo (skręcanie przed znakiem)
+PZ72O3;musi jechać z lewej strony znaku
+PZ73;Za tym znakiem rowerzysta:
+PZ73O1;musi włączyć światła pozycyjne
+PZ73O2;może wyłączyć światła pozycyjne w dzień
+PZ73O3;nie może wyłączyć świateł pozycyjnych nawet w warunkach dobrej przejrzystości powietrza w okresie od świtu do zmierzchu
+PZ74;Za tym znakiem rowerzysta:
+PZ74O1;nie może przekroczyć prędkości 30 km/h tylko do najbliższego skrzyżowania
+PZ74O2;nie może przekroczyć prędkości 30 km/h do znaku odwołującego to ograniczenie
+PZ74O3;może przekroczyć prędkość 30 km/h
