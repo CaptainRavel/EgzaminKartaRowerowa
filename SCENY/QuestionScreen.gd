@@ -6,9 +6,11 @@ var pkQuestionIndex = -1
 var pzList = []
 var poList = []
 var pkList = []
+var qCat = ""
+var answer = ""
 
 func _ready():
-	
+	$MarginContainer2/GridContainer/NextButton.disabled = true
 	randomize()
 	
 	for i in range(1, 11):
@@ -39,9 +41,63 @@ func _ready():
 	$MarginContainer2/GridContainer/AnswerButton2/HBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O2")
 	$MarginContainer2/GridContainer/AnswerButton3/HBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O3")
 	
-	
+func _process(delta):
+	pass
+
 func _on_NextButton_pressed():
-	
+	if ($MarginContainer2/GridContainer/AnswerButton.disabled == true):
+		if (questionsCount <= 10):
+			qCat = "PZ"+str(pzList[pzQuestionIndex])
+			var answerKey = "A"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			print(answer)
+		elif (questionsCount <= 20):
+			qCat = "PO"+str(poList[poQuestionIndex])
+			var answerKey = "A"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			print(answer)
+		elif (questionsCount <= 20):
+			qCat = "PK"+str(pkList[pkQuestionIndex])
+			var answerKey = "A"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			print(answer)
+	elif ($MarginContainer2/GridContainer/AnswerButton2.disabled == true):
+		if (questionsCount <= 10):
+			qCat = "PZ"+str(pzList[pzQuestionIndex])
+			var answerKey = "B"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			print(answer)
+		elif (questionsCount <= 20):
+			qCat = "PO"+str(poList[poQuestionIndex])
+			var answerKey = "B"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			print(answer)
+		elif (questionsCount <= 20):
+			qCat = "PK"+str(pkList[pkQuestionIndex])
+			var answerKey = "B"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			print(answer)
+	elif ($MarginContainer2/GridContainer/AnswerButton3.disabled == true):
+		if (questionsCount <= 10):
+			qCat = "PZ"+str(pzList[pzQuestionIndex])
+			var answerKey = "C"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			print(answer)
+		elif (questionsCount <= 20):
+			qCat = "PO"+str(poList[poQuestionIndex])
+			var answerKey = "C"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			print(answer)
+		elif (questionsCount <= 20):
+			qCat = "PK"+str(pkList[pkQuestionIndex])
+			var answerKey = "C"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			print(answer)
+		
+	$MarginContainer2/GridContainer/NextButton.disabled = true
+	$MarginContainer2/GridContainer/AnswerButton.disabled = false
+	$MarginContainer2/GridContainer/AnswerButton2.disabled = false
+	$MarginContainer2/GridContainer/AnswerButton3.disabled = false
 	questionsCount = questionsCount + 1
 	
 	if (questionsCount <= 10):	
@@ -81,3 +137,25 @@ func get_random_numbers(from, to):
 		arr.append(i)
 	arr.shuffle()
 	return arr
+
+
+func _on_AnswerButton_pressed():
+	$MarginContainer2/GridContainer/AnswerButton.disabled = true
+	$MarginContainer2/GridContainer/AnswerButton2.disabled = false
+	$MarginContainer2/GridContainer/AnswerButton3.disabled = false
+	$MarginContainer2/GridContainer/NextButton.disabled = false
+
+
+func _on_AnswerButton2_pressed():
+	$MarginContainer2/GridContainer/AnswerButton2.disabled = true
+	$MarginContainer2/GridContainer/AnswerButton.disabled = false
+	$MarginContainer2/GridContainer/AnswerButton3.disabled = false
+	$MarginContainer2/GridContainer/NextButton.disabled = false
+
+func _on_AnswerButton3_pressed():
+	$MarginContainer2/GridContainer/AnswerButton3.disabled = true
+	$MarginContainer2/GridContainer/AnswerButton.disabled = false
+	$MarginContainer2/GridContainer/AnswerButton2.disabled = false
+	$MarginContainer2/GridContainer/NextButton.disabled = false
+
+
