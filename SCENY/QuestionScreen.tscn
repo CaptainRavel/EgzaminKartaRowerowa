@@ -61,6 +61,7 @@ clip_text = true
 margin_top = 150.0
 margin_right = 1760.0
 margin_bottom = 400.0
+rect_min_size = Vector2( 250, 250 )
 size_flags_horizontal = 3
 texture = ExtResource( 4 )
 
