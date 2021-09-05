@@ -1,0 +1,145 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://CZCIONKI/droid-sans/DroidSans-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://CZCIONKI/droid-sans/DroidSans.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://SCENY/VeryficationScreen.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 75
+font_data = ExtResource( 1 )
+
+[node name="VeryficationScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 100.0
+margin_top = 100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_right = 1820.0
+margin_bottom = 980.0
+custom_constants/separation = 100
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+margin_right = 1820.0
+margin_bottom = 250.0
+alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+margin_left = 535.0
+margin_right = 1285.0
+margin_bottom = 250.0
+custom_constants/vseparation = 50
+custom_constants/hseparation = 50
+columns = 2
+
+[node name="LabelImie" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+margin_right = 200.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 200, 50 )
+custom_fonts/font = SubResource( 1 )
+text = "Imię:"
+align = 2
+valign = 1
+
+[node name="LineEditImie" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+margin_left = 250.0
+margin_right = 750.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 500, 50 )
+custom_fonts/font = SubResource( 2 )
+
+[node name="LabelNazwisko" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+margin_top = 100.0
+margin_right = 200.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 200, 50 )
+custom_fonts/font = SubResource( 3 )
+text = "Nazwisko:"
+align = 2
+
+[node name="LineEditNazwisko" type="LineEdit" parent="MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+margin_left = 250.0
+margin_top = 100.0
+margin_right = 750.0
+margin_bottom = 150.0
+rect_min_size = Vector2( 500, 50 )
+custom_fonts/font = SubResource( 4 )
+
+[node name="LabelKlasa" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+margin_top = 200.0
+margin_right = 200.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 200, 50 )
+custom_fonts/font = SubResource( 5 )
+text = "Klasa:"
+align = 2
+
+[node name="OptionButton" type="OptionButton" parent="MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
+margin_left = 250.0
+margin_top = 200.0
+margin_right = 750.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 500, 50 )
+custom_fonts/font = SubResource( 6 )
+text = "Wybierz swoją klasę"
+
+[node name="DalejButton" type="Button" parent="MarginContainer/VBoxContainer"]
+margin_left = 410.0
+margin_top = 350.0
+margin_right = 1410.0
+margin_bottom = 450.0
+rect_min_size = Vector2( 1000, 100 )
+size_flags_horizontal = 4
+size_flags_vertical = 4
+custom_constants/hseparation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer/DalejButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 7 )
+text = "Rozpocznij test"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/GridContainer/LineEditImie" to="." method="_on_LineEditImie_text_changed"]
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/HBoxContainer/GridContainer/LineEditNazwisko" to="." method="_on_LineEditNazwisko_text_changed"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/HBoxContainer/GridContainer/OptionButton" to="." method="_on_OptionButton_item_selected"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/DalejButton" to="." method="_on_DalejButton_pressed"]
