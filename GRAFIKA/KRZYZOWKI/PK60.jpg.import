@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/png-clipart-computer-icons-bicycle-bicycle-text-sport.png-a4fc81e34ec72f640b64e351d834904d.stex"
+path="res://.import/PK60.jpg-5362b087b06b84d3bc97b58ccb00d280.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://GRAFIKA/png-clipart-computer-icons-bicycle-bicycle-text-sport.png"
-dest_files=[ "res://.import/png-clipart-computer-icons-bicycle-bicycle-text-sport.png-a4fc81e34ec72f640b64e351d834904d.stex" ]
+source_file="res://GRAFIKA/KRZYZOWKI/PK60.jpg"
+dest_files=[ "res://.import/PK60.jpg-5362b087b06b84d3bc97b58ccb00d280.stex" ]
 
 [params]
 

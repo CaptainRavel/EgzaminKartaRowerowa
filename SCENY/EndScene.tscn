@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://CZCIONKI/droid-sans/DroidSans-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://SCENY/EndScene.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 100.0
+margin_top = 100.0
+margin_right = -100.0
+margin_bottom = -100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_right = 1720.0
+margin_bottom = 880.0
+custom_constants/separation = 50
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_right = 1720.0
+margin_bottom = 117.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Test zaliczony/niezaliczony"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 167.0
+margin_right = 1720.0
+margin_bottom = 284.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Twój wynik to:"
+align = 1
+valign = 1
+
+[node name="Label3" type="Label" parent="MarginContainer/VBoxContainer"]
+margin_top = 334.0
+margin_right = 1720.0
+margin_bottom = 451.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "X/XX"
+align = 1
+valign = 1

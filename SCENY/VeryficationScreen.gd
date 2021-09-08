@@ -20,6 +20,7 @@ func _ready():
 		GV.currentDate = str(day)+"."+str(month)+"."+str(year)
 	print(GV.currentDate)
 	
+	
 	$MarginContainer/VBoxContainer/HBoxContainer/GridContainer/OptionButton.theme = Theme.new()
 	$MarginContainer/VBoxContainer/HBoxContainer/GridContainer/OptionButton.theme.default_font = DynamicFont.new()
 	$MarginContainer/VBoxContainer/HBoxContainer/GridContainer/OptionButton.theme.default_font.font_data = load("res://CZCIONKI/droid-sans/DroidSans.ttf")
@@ -39,13 +40,19 @@ func _process(delta):
 
 
 func _on_LineEditImie_text_changed(newImieText):
-	imie = true
-	GV.imieText = newImieText
+	if ($MarginContainer/VBoxContainer/HBoxContainer/GridContainer/LineEditImie.text.length() >=3):
+		imie = true
+		GV.imieText = newImieText
+	else:
+		imie = false
 	
 
 func _on_LineEditNazwisko_text_changed(newNazwiskoText):
-	nazwisko = true
-	GV.nazwiskoText = newNazwiskoText
+	if ($MarginContainer/VBoxContainer/HBoxContainer/GridContainer/LineEditNazwisko.text.length() >=3):
+		nazwisko = true
+		GV.nazwiskoText = newNazwiskoText
+	else:
+		nazwisko = false
 
 func _on_OptionButton_item_selected(index):
 	klasa = true

@@ -1,28 +1,30 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://CZCIONKI/droid-sans/DroidSans-Bold.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://CZCIONKI/droid-sans/DroidSans.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://SCENY/AnswerButton.tscn" type="PackedScene" id=3]
 [ext_resource path="res://GRAFIKA/ZNAKI/PZ1.jpg" type="Texture" id=4]
+[ext_resource path="res://Main.theme" type="Theme" id=5]
 [ext_resource path="res://SCENY/QuestionScreen.gd" type="Script" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=4]
 size = 30
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=1]
-size = 40
-font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 36
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=3]
-size = 30
-font_data = ExtResource( 2 )
-
 [node name="QuestionScreen" type="Control"]
+theme = ExtResource( 5 )
 script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -39,16 +41,18 @@ __meta__ = {
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer1"]
 margin_right = 1760.0
-margin_bottom = 460.0
+margin_bottom = 537.0
+custom_constants/separation = 10
 
 [node name="Label3" type="Label" parent="MarginContainer1/VBoxContainer"]
 margin_left = 1660.0
 margin_right = 1760.0
-margin_bottom = 50.0
+margin_bottom = 59.0
 rect_min_size = Vector2( 100, 50 )
 size_flags_horizontal = 8
 size_flags_vertical = 8
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 align = 1
 valign = 1
 __meta__ = {
@@ -56,34 +60,37 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="MarginContainer1/VBoxContainer"]
-margin_top = 54.0
+margin_top = 69.0
 margin_right = 1760.0
-margin_bottom = 102.0
+margin_bottom = 117.0
 size_flags_horizontal = 3
 size_flags_vertical = 1
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Pytanie nr ..."
 align = 1
 
 [node name="Label2" type="Label" parent="MarginContainer1/VBoxContainer"]
-margin_top = 106.0
+margin_top = 127.0
 margin_right = 1760.0
-margin_bottom = 206.0
+margin_bottom = 227.0
 rect_min_size = Vector2( 0, 100 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = ".................................................................................."
 autowrap = true
 clip_text = true
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer1/VBoxContainer"]
-margin_top = 210.0
+margin_top = 237.0
 margin_right = 1760.0
-margin_bottom = 460.0
-rect_min_size = Vector2( 250, 250 )
+margin_bottom = 537.0
+rect_min_size = Vector2( 300, 300 )
 size_flags_horizontal = 3
 texture = ExtResource( 4 )
+stretch_mode = 4
 
 [node name="Timer" type="Timer" parent="MarginContainer1/VBoxContainer"]
 
@@ -155,7 +162,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 4.75684
 margin_right = 4.75684
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "DALEJ"
 align = 1
 valign = 1
