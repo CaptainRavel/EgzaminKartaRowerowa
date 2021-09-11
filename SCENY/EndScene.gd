@@ -8,3 +8,7 @@ func _ready():
 		$MarginContainer/VBoxContainer/Label.text = "Test NIEZALICZONY"
 	
 	$MarginContainer/VBoxContainer/Label3.text = str(GV.wynik)+"/20"
+
+
+func _on_Button_pressed():
+	get_tree().quit()

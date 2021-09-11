@@ -1032,7 +1032,7 @@ PK98DO;A
 PK99;Który pojazd opuści to skrzyżowanie jako drugi?
 PK99O1;pojazd uprzywilejowany z napisem STRAŻ POŻARNA
 PK99O2;rower
-PK9903;tramwaj
+PK99O3;tramwaj
 PK99DO;B
 PK100;Który pojazd opuści to skrzyżowanie jako ostatni?
 PK100O1;rower
