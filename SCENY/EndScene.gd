@@ -7,7 +7,7 @@ func _ready():
 	elif (GV.czyZaliczone == "NIE"):
 		$MarginContainer/VBoxContainer/Label.text = "Test NIEZALICZONY"
 	
-	$MarginContainer/VBoxContainer/Label3.text = str(GV.wynik)+"/20"
+	$MarginContainer/VBoxContainer/Label3.text = str(GV.wynik)+"/25"
 
 
 func _on_Button_pressed():

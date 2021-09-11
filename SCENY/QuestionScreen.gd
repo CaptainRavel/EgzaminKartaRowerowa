@@ -31,8 +31,8 @@ func _ready():
 	print(GV.uczenID)
 	$MarginContainer2/GridContainer/NextButton.disabled = true
 	
-	_randomizePZquestions()
 	_randomizePOquestions()
+	_randomizePZquestions()
 	_randomizePKquestions()
 
 	$MarginContainer1/VBoxContainer/Label.text = "Pytanie nr " + str(questionsCount)
@@ -90,14 +90,6 @@ func _on_NextButton_pressed():
 	
 	if ($MarginContainer2/GridContainer/AnswerButton.disabled == true):
 		if (questionsCount <= 10):
-			qCat = "PZ"+str(pzList[pzQuestionIndex])
-			var answerKey = "A"
-			answer = str(questionsCount)+" "+qCat+" "+answerKey
-			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
-			pzAnswers.append(answerKey)
-			print(answer)
-		elif (questionsCount <= 15):
 			qCat = "PO"+str(poList[poQuestionIndex])
 			var answerKey = "A"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
@@ -105,7 +97,15 @@ func _on_NextButton_pressed():
 				GV.wynik = GV.wynik + 1
 			poAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= 20):
+		elif (questionsCount <= 20 and questionsCount > 10):
+			qCat = "PZ"+str(pzList[pzQuestionIndex])
+			var answerKey = "A"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			if (answerKey == tr(qCat+"DO")):
+				GV.wynik = GV.wynik + 1
+			pzAnswers.append(answerKey)
+			print(answer)
+		elif (questionsCount <= 25 and questionsCount > 20):
 			qCat = "PK"+str(pkList[pkQuestionIndex])
 			var answerKey = "A"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
@@ -115,14 +115,6 @@ func _on_NextButton_pressed():
 			print(answer)
 	elif ($MarginContainer2/GridContainer/AnswerButton2.disabled == true):
 		if (questionsCount <= 10):
-			qCat = "PZ"+str(pzList[pzQuestionIndex])
-			var answerKey = "B"
-			answer = str(questionsCount)+" "+qCat+" "+answerKey
-			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
-			pzAnswers.append(answerKey)
-			print(answer)
-		elif (questionsCount <= 15):
 			qCat = "PO"+str(poList[poQuestionIndex])
 			var answerKey = "B"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
@@ -130,7 +122,15 @@ func _on_NextButton_pressed():
 				GV.wynik = GV.wynik + 1
 			poAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= 20):
+		elif (questionsCount <= 20 and questionsCount > 10):
+			qCat = "PZ"+str(pzList[pzQuestionIndex])
+			var answerKey = "B"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			if (answerKey == tr(qCat+"DO")):
+				GV.wynik = GV.wynik + 1
+			pzAnswers.append(answerKey)
+			print(answer)
+		elif (questionsCount <= 25 and questionsCount > 20):
 			qCat = "PK"+str(pkList[pkQuestionIndex])
 			var answerKey = "B"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
@@ -140,14 +140,6 @@ func _on_NextButton_pressed():
 			print(answer)
 	elif ($MarginContainer2/GridContainer/AnswerButton3.disabled == true):
 		if (questionsCount <= 10):
-			qCat = "PZ"+str(pzList[pzQuestionIndex])
-			var answerKey = "C"
-			answer = str(questionsCount)+" "+qCat+" "+answerKey
-			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
-			pzAnswers.append(answerKey)
-			print(answer)
-		elif (questionsCount <= 15):
 			qCat = "PO"+str(poList[poQuestionIndex])
 			var answerKey = "C"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
@@ -155,7 +147,15 @@ func _on_NextButton_pressed():
 				GV.wynik = GV.wynik + 1
 			poAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= 20):
+		elif (questionsCount <= 20 and questionsCount > 10):
+			qCat = "PZ"+str(pzList[pzQuestionIndex])
+			var answerKey = "C"
+			answer = str(questionsCount)+" "+qCat+" "+answerKey
+			if (answerKey == tr(qCat+"DO")):
+				GV.wynik = GV.wynik + 1
+			pzAnswers.append(answerKey)
+			print(answer)
+		elif (questionsCount <= 25 and questionsCount > 20):
 			qCat = "PK"+str(pkList[pkQuestionIndex])
 			var answerKey = "C"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
@@ -165,18 +165,18 @@ func _on_NextButton_pressed():
 			print(answer)
 	elif ($MarginContainer2/GridContainer/AnswerButton.disabled == false and $MarginContainer2/GridContainer/AnswerButton2.disabled == false and $MarginContainer2/GridContainer/AnswerButton3.disabled == false):
 		if (questionsCount <= 10):
-			qCat = "PZ"+str(pzList[pzQuestionIndex])
+			qCat = "PO"+str(poList[poQuestionIndex])
 			var answerKey = "BRAK"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			pzAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= 15):
-			qCat = "PO"+str(poList[poQuestionIndex])
+		elif (questionsCount <= 20 and questionsCount > 10):
+			qCat = "PZ"+str(pzList[pzQuestionIndex])
 			var answerKey = "BRAK"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			poAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= 20):
+		elif (questionsCount <= 25 and questionsCount > 20):
 			qCat = "PK"+str(pkList[pkQuestionIndex])
 			var answerKey = "BRAK"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
@@ -259,9 +259,10 @@ func _on_AnswerButton3_pressed():
 func _commitUczenInfo():
 	db.open_db()
 	var tableName = "uczenInfo"
+	var aktualnyWynik = str(GV.wynik) + "/25"
 	db.query("INSERT INTO " + tableName + " (ID, imie, nazwisko, klasa, rok_szkolny, data, godzina, wynik, czy_zaliczone) VALUES ('" + str(GV.uczenID) + "','" + str(GV.imieText)
 	+ "','" + str(GV.nazwiskoText) + "','" + str(GV.klasaText) + "','" + str(GV.rok_szkolny) + "','" + str(GV.currentDate) + "','" + str(GV.godzina) + "','" 
-	+ str(GV.wynik) + "','" + str(GV.czyZaliczone) + "')")
+	+ str(aktualnyWynik) + "','" + str(GV.czyZaliczone) + "')")
 	
 func _commitUczenPytania():
 	db.open_db()
@@ -270,8 +271,5 @@ func _commitUczenPytania():
 
 
 func _on_Timer_timeout():
-	$MarginContainer2/GridContainer/AnswerButton.pressed = false
-	$MarginContainer2/GridContainer/AnswerButton2.pressed = false
-	$MarginContainer2/GridContainer/AnswerButton3.pressed = false
 	_on_NextButton_pressed()
 	

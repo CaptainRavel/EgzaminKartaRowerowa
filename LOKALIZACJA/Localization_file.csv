@@ -387,7 +387,7 @@ PZ77DO;A
 PZ78;Który znak nie obowiązuje rowerzysty jadącego rowerem wielośladowym?
 PZ78O1;A i B
 PZ78O2;B i C
-PZ7803;tylko C
+PZ78O3;tylko C
 PZ78DO;C
 PZ79;Który znak zobowiązuje kierującego rowerem do zatrzymania pojazdu?
 PZ79O1;A  i  B
@@ -492,7 +492,7 @@ PZ98DO;C
 PZ99;Za tym znakiem rowerzysta ma zakaz:
 PZ99O1;postoju
 PZ99O2;zatrzymywania się
-PZ9903;postoju w dni parzyste
+PZ99O3;postoju w dni parzyste
 PZ99DO;B
 PZ100;Za tym znakiem rowerzysta:
 PZ100O1;musi zawrócić
@@ -1569,7 +1569,7 @@ PO3O1;zezwala rowerzyście na wjazd na skrzyżowanie
 PO3O2;zakazuje rowerzyście wjazdu na skrzyżowanie
 PO3O3;jest odpowiednikiem sygnału żółtego na sygnalizatorze
 PO3DO;A
-PO4;W  Polsce zgodnie z "Prawem o ruchu drogowym" obowiązuje  ruch:
+PO4;W Polsce zgodnie z "Prawem o ruchu drogowym" obowiązuje  ruch:
 PO4O1;prawostronny
 PO4O2;lewostronny
 PO4O3;po dowolnej stronie
