@@ -6,6 +6,18 @@ var klasa = false
  
 func _ready():
 	
+	var currTime = OS.get_time()
+	var hour =  currTime["hour"]
+	var minutes = currTime["minute"]
+	if	(hour < 10 and minutes <10):
+		GV.godzina = "0"+str(hour)+":0"+str(minutes)
+	elif (hour < 10 and minutes >= 10):
+		GV.godzina = "0"+str(hour)+":"+str(minutes)
+	elif (hour >= 10 and minutes < 10):
+		GV.godzina = str(hour)+":0"+str(minutes)
+	else:
+		GV.godzina = str(hour)+":"+str(minutes)
+	print(GV.godzina)
 	var date= OS.get_datetime()
 	var day = date["day"]
 	var month= date["month"]
@@ -20,7 +32,12 @@ func _ready():
 		GV.currentDate = str(day)+"."+str(month)+"."+str(year)
 	print(GV.currentDate)
 	
+	if (month >= 1 and month < 9):
+		GV.rok_szkolny = str(year - 1)+"/"+str(year)
+	else:
+		GV.rok_szkolny = str(year)+"/"+str(year + 1)
 	
+	print(GV.rok_szkolny)
 	$MarginContainer/VBoxContainer/HBoxContainer/GridContainer/OptionButton.theme = Theme.new()
 	$MarginContainer/VBoxContainer/HBoxContainer/GridContainer/OptionButton.theme.default_font = DynamicFont.new()
 	$MarginContainer/VBoxContainer/HBoxContainer/GridContainer/OptionButton.theme.default_font.font_data = load("res://CZCIONKI/droid-sans/DroidSans.ttf")

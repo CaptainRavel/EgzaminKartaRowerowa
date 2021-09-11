@@ -5,35 +5,35 @@
 [ext_resource path="res://SCENY/VeryficationScreen.gd" type="Script" id=3]
 [ext_resource path="res://Main.theme" type="Theme" id=4]
 
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="DynamicFont" id=1]
 size = 50
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 size = 40
 font_data = ExtResource( 1 )
-
-[sub_resource type="DynamicFont" id=2]
-size = 30
-font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=3]
-size = 40
-font_data = ExtResource( 1 )
+size = 30
+font_data = ExtResource( 2 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 30
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=5]
 size = 40
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFont" id=6]
+[sub_resource type="DynamicFont" id=5]
 size = 30
 font_data = ExtResource( 2 )
 
+[sub_resource type="DynamicFont" id=6]
+size = 40
+font_data = ExtResource( 1 )
+
 [sub_resource type="DynamicFont" id=7]
+size = 30
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=8]
 size = 75
 font_data = ExtResource( 1 )
 
@@ -65,7 +65,7 @@ custom_constants/separation = 100
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
 margin_right = 1720.0
 margin_bottom = 59.0
-custom_fonts/font = SubResource( 8 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Uzupełnij dane by przystąpić do testu:"
 align = 1
@@ -89,7 +89,7 @@ columns = 2
 margin_right = 200.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 200, 50 )
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Imię:"
 align = 2
@@ -100,7 +100,7 @@ margin_left = 250.0
 margin_right = 750.0
 margin_bottom = 50.0
 rect_min_size = Vector2( 500, 50 )
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 3 )
 custom_constants/minimum_spaces = 3
 
 [node name="LabelNazwisko" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
@@ -108,7 +108,7 @@ margin_top = 100.0
 margin_right = 200.0
 margin_bottom = 150.0
 rect_min_size = Vector2( 200, 50 )
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Nazwisko:"
 align = 2
@@ -119,7 +119,7 @@ margin_top = 100.0
 margin_right = 750.0
 margin_bottom = 150.0
 rect_min_size = Vector2( 500, 50 )
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 custom_constants/minimum_spaces = 3
 
 [node name="LabelKlasa" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer/GridContainer"]
@@ -127,7 +127,7 @@ margin_top = 200.0
 margin_right = 200.0
 margin_bottom = 250.0
 rect_min_size = Vector2( 200, 50 )
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Klasa:"
 align = 2
@@ -138,7 +138,7 @@ margin_top = 200.0
 margin_right = 750.0
 margin_bottom = 250.0
 rect_min_size = Vector2( 500, 50 )
-custom_fonts/font = SubResource( 6 )
+custom_fonts/font = SubResource( 7 )
 text = "Wybierz swoją klasę"
 
 [node name="DalejButton" type="Button" parent="MarginContainer/VBoxContainer"]
@@ -154,7 +154,7 @@ custom_constants/hseparation = 50
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer/DalejButton"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-custom_fonts/font = SubResource( 7 )
+custom_fonts/font = SubResource( 8 )
 text = "Rozpocznij test"
 align = 1
 valign = 1

@@ -3,8 +3,8 @@ extends Control
 const SQLite = preload("res://ADDONS/godot-sqlite/bin/gdsqlite.gdns")
 
 var questionsCount = 1
-var pzQuestionIndex = 0
-var poQuestionIndex = -1
+var pzQuestionIndex = -1
+var poQuestionIndex = 0
 var pkQuestionIndex = -1
 var pzList = []
 var poList = []
@@ -36,11 +36,19 @@ func _ready():
 	_randomizePKquestions()
 
 	$MarginContainer1/VBoxContainer/Label.text = "Pytanie nr " + str(questionsCount)
-	$MarginContainer1/VBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex]))
-	$MarginContainer1/VBoxContainer/TextureRect.texture = load("res://GRAFIKA/ZNAKI/PZ"+str(pzList[pzQuestionIndex])+".jpg")
-	$MarginContainer2/GridContainer/AnswerButton/HBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O1")
-	$MarginContainer2/GridContainer/AnswerButton2/HBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O2")
-	$MarginContainer2/GridContainer/AnswerButton3/HBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O3")
+	$MarginContainer1/VBoxContainer/Label2.text = tr("PO"+str(poList[poQuestionIndex]))
+	var file2Check = File.new()
+	var doFileExists = file2Check.file_exists("res://GRAFIKA/OGOLNE/PO"+str(poList[poQuestionIndex])+".jpg")
+	if (doFileExists == true):
+		$MarginContainer1/VBoxContainer/TextureRect.texture = load("res://GRAFIKA/OGOLNE/PO"+str(poList[poQuestionIndex])+".jpg")
+		$MarginContainer2/GridContainer/AnswerButton/HBoxContainer/Label2.text = tr("PO"+str(poList[poQuestionIndex])+"O1")
+		$MarginContainer2/GridContainer/AnswerButton2/HBoxContainer/Label2.text = tr("PO"+str(poList[poQuestionIndex])+"O2")
+		$MarginContainer2/GridContainer/AnswerButton3/HBoxContainer/Label2.text = tr("PO"+str(poList[poQuestionIndex])+"O3")
+	else:
+		$MarginContainer1/VBoxContainer/TextureRect.texture = null
+		$MarginContainer2/GridContainer/AnswerButton/HBoxContainer/Label2.text = tr("PO"+str(poList[poQuestionIndex])+"O1")
+		$MarginContainer2/GridContainer/AnswerButton2/HBoxContainer/Label2.text = tr("PO"+str(poList[poQuestionIndex])+"O2")
+		$MarginContainer2/GridContainer/AnswerButton3/HBoxContainer/Label2.text = tr("PO"+str(poList[poQuestionIndex])+"O3")
 	
 	$MarginContainer1/VBoxContainer/Timer.set_wait_time(30)
 	$MarginContainer1/VBoxContainer/Timer.start()
@@ -60,10 +68,10 @@ func _randomizePZquestions():
 
 
 func _randomizePOquestions():
-	for i in range(1, 6):
-		var num = randi() % 10 + 1
+	for i in range(1, 11):
+		var num = randi() % 22 + 1
 		while (num in poList):
-			num = randi() % 10 + 1
+			num = randi() % 22 + 1
 		poList.append(num)
 		poList.sort()
 	print(poList)
@@ -79,6 +87,7 @@ func _randomizePKquestions():
 	print(pkList)
 	
 func _on_NextButton_pressed():
+	
 	if ($MarginContainer2/GridContainer/AnswerButton.disabled == true):
 		if (questionsCount <= 10):
 			qCat = "PZ"+str(pzList[pzQuestionIndex])
@@ -180,19 +189,9 @@ func _on_NextButton_pressed():
 	$MarginContainer2/GridContainer/AnswerButton3.disabled = false
 	questionsCount = questionsCount + 1
 	
-	$MarginContainer1/VBoxContainer/Timer.set_wait_time(30)
-	$MarginContainer1/VBoxContainer/Timer.start()
-	
-	if (questionsCount <= 10):	
-		pzQuestionIndex = pzQuestionIndex + 1
-		$MarginContainer1/VBoxContainer/Label.text = "Pytanie nr " + str(questionsCount)
-		$MarginContainer1/VBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex]))
-		$MarginContainer1/VBoxContainer/TextureRect.texture = load("res://GRAFIKA/ZNAKI/PZ"+str(pzList[pzQuestionIndex])+".jpg")
-		$MarginContainer2/GridContainer/AnswerButton/HBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O1")
-		$MarginContainer2/GridContainer/AnswerButton2/HBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O2")
-		$MarginContainer2/GridContainer/AnswerButton3/HBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O3")
-		return
-	elif (questionsCount <= 15):
+	if (questionsCount <= 10):
+		$MarginContainer1/VBoxContainer/Timer.set_wait_time(30)
+		$MarginContainer1/VBoxContainer/Timer.start()
 		poQuestionIndex = poQuestionIndex + 1
 		$MarginContainer1/VBoxContainer/Label.text = "Pytanie nr " + str(questionsCount)
 		$MarginContainer1/VBoxContainer/Label2.text = tr("PO"+str(poList[poQuestionIndex]))
@@ -209,7 +208,20 @@ func _on_NextButton_pressed():
 			$MarginContainer2/GridContainer/AnswerButton2/HBoxContainer/Label2.text = tr("PO"+str(poList[poQuestionIndex])+"O2")
 			$MarginContainer2/GridContainer/AnswerButton3/HBoxContainer/Label2.text = tr("PO"+str(poList[poQuestionIndex])+"O3")
 		return
-	elif (questionsCount <= 20):
+	elif (questionsCount <= 20):	
+		$MarginContainer1/VBoxContainer/Timer.set_wait_time(30)
+		$MarginContainer1/VBoxContainer/Timer.start()
+		pzQuestionIndex = pzQuestionIndex + 1
+		$MarginContainer1/VBoxContainer/Label.text = "Pytanie nr " + str(questionsCount)
+		$MarginContainer1/VBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex]))
+		$MarginContainer1/VBoxContainer/TextureRect.texture = load("res://GRAFIKA/ZNAKI/PZ"+str(pzList[pzQuestionIndex])+".jpg")
+		$MarginContainer2/GridContainer/AnswerButton/HBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O1")
+		$MarginContainer2/GridContainer/AnswerButton2/HBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O2")
+		$MarginContainer2/GridContainer/AnswerButton3/HBoxContainer/Label2.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O3")
+		return
+	elif (questionsCount <= 25):
+		$MarginContainer1/VBoxContainer/Timer.set_wait_time(60)
+		$MarginContainer1/VBoxContainer/Timer.start()
 		pkQuestionIndex = pkQuestionIndex + 1
 		$MarginContainer1/VBoxContainer/Label.text = "Pytanie nr " + str(questionsCount)
 		$MarginContainer1/VBoxContainer/Label2.text = tr("PK"+str(pkList[pkQuestionIndex]))
@@ -219,7 +231,7 @@ func _on_NextButton_pressed():
 		$MarginContainer2/GridContainer/AnswerButton3/HBoxContainer/Label2.text = tr("PK"+str(pkList[pkQuestionIndex])+"O3")
 		return
 	else:
-		if (GV.wynik >= 15):
+		if (GV.wynik >= 19):
 			GV.czyZaliczone = "TAK"
 		_commitUczenInfo()
 		_commitUczenPytania()
@@ -247,8 +259,9 @@ func _on_AnswerButton3_pressed():
 func _commitUczenInfo():
 	db.open_db()
 	var tableName = "uczenInfo"
-	db.query("INSERT INTO " + tableName + " (ID, imie, nazwisko, klasa, data, wynik, zaliczone) VALUES ('" + str(GV.uczenID) + "','" + str(GV.imieText) + "','" + str(GV.nazwiskoText) + "','" + str(GV.klasaText) + "','" + str(GV.currentDate) + "','" 
-	 + str(GV.wynik) + "','" + str(GV.czyZaliczone) + "')")
+	db.query("INSERT INTO " + tableName + " (ID, imie, nazwisko, klasa, rok_szkolny, data, godzina, wynik, czy_zaliczone) VALUES ('" + str(GV.uczenID) + "','" + str(GV.imieText)
+	+ "','" + str(GV.nazwiskoText) + "','" + str(GV.klasaText) + "','" + str(GV.rok_szkolny) + "','" + str(GV.currentDate) + "','" + str(GV.godzina) + "','" 
+	+ str(GV.wynik) + "','" + str(GV.czyZaliczone) + "')")
 	
 func _commitUczenPytania():
 	db.open_db()
@@ -257,4 +270,8 @@ func _commitUczenPytania():
 
 
 func _on_Timer_timeout():
+	$MarginContainer2/GridContainer/AnswerButton.pressed = false
+	$MarginContainer2/GridContainer/AnswerButton2.pressed = false
+	$MarginContainer2/GridContainer/AnswerButton3.pressed = false
 	_on_NextButton_pressed()
+	
