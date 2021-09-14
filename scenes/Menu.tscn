@@ -1,0 +1,135 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://fonts/droid-sans/DroidSans-Bold.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://scripts/Menu.gd" type="Script" id=2]
+[ext_resource path="res://Main.theme" type="Theme" id=4]
+[ext_resource path="res://fonts/droid-sans/DroidSans.ttf" type="DynamicFontData" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 38
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 70
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 70
+font_data = ExtResource( 5 )
+
+[node name="TitleScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 4 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="."]
+margin_left = 120.0
+margin_top = 80.0
+margin_right = 1800.0
+margin_bottom = 960.0
+size_flags_horizontal = 7
+size_flags_vertical = 7
+custom_constants/separation = 100
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterRow" type="HBoxContainer" parent="Menu"]
+margin_right = 1680.0
+margin_bottom = 202.0
+size_flags_horizontal = 3
+size_flags_vertical = 0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="VBoxContainer" parent="Menu/CenterRow"]
+margin_left = 58.0
+margin_right = 1621.0
+margin_bottom = 202.0
+size_flags_vertical = 0
+custom_constants/separation = 40
+
+[node name="TitleLabel" type="Label" parent="Menu/CenterRow/Title"]
+margin_right = 1563.0
+margin_bottom = 117.0
+rect_min_size = Vector2( 0, 100 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "EGZAMIN NA KARTĘ ROWEROWĄ"
+align = 1
+valign = 1
+
+[node name="TitleLabel2" type="Label" parent="Menu/CenterRow/Title"]
+margin_top = 157.0
+margin_right = 1563.0
+margin_bottom = 202.0
+rect_min_size = Vector2( 0, 20 )
+size_flags_vertical = 0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "________________________________________________________________________________________________________"
+align = 1
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Buttons" type="VBoxContainer" parent="Menu"]
+margin_top = 302.0
+margin_right = 1680.0
+margin_bottom = 880.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 50
+
+[node name="NewTestButton" type="Button" parent="Menu/Buttons"]
+margin_right = 1680.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 500, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Menu/Buttons/NewTestButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 3 )
+text = "Rozpocznij test"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="QuitTestButton" type="Button" parent="Menu/Buttons"]
+margin_top = 150.0
+margin_right = 1680.0
+margin_bottom = 250.0
+rect_min_size = Vector2( 500, 100 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Menu/Buttons/QuitTestButton"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_fonts/font = SubResource( 4 )
+text = "Wyjdź"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="Menu/Buttons/NewTestButton" to="." method="_on_NewTest_pressed"]
+[connection signal="pressed" from="Menu/Buttons/QuitTestButton" to="." method="_on_QuitTest_pressed"]

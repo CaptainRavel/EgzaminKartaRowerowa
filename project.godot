@@ -11,12 +11,12 @@ config_version=4
 [application]
 
 config/name="EgzaminKartaRowerowa"
-run/main_scene="res://SCENY/Menu.tscn"
+run/main_scene="res://scenes/Menu.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
-GV="*res://SCENY/GlobalVariables.gd"
+GV="*res://scripts/GlobalVariables.gd"
 
 [display]
 
@@ -29,7 +29,7 @@ enabled=PoolStringArray( "res://addons/godot-sqlite/plugin.cfg" )
 
 [locale]
 
-translations=PoolStringArray( "res://LOKALIZACJA/Localization_file.pl.translation" )
+translations=PoolStringArray( "res://localization/Localization_file.pl.translation" )
 
 [physics]
 
