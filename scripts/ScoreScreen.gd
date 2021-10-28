@@ -101,9 +101,9 @@ func _on_NextButton_pressed():
 	odpBButton.color = Color.webgray
 	odpCButton.color = Color.webgray
 		
-	if (questionsCount > 0 and questionsCount <= 25):
+	if (questionsCount > 0 and questionsCount <= GV.pytaniaIlosc):
 		questionsCount = questionsCount + 1	
-		if (questionsCount > 0 and questionsCount <= 10):
+		if (questionsCount > 0 and questionsCount <= GV.ogolneIlosc):
 			poQuestionIndex = poQuestionIndex + 1
 			print(poQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
@@ -154,7 +154,7 @@ func _on_NextButton_pressed():
 			if(tr(qCat+"DO") == "C"):
 				odpCButton.color = Color.darkgreen
 			return
-		elif (questionsCount == 11 ):	
+		elif (questionsCount == (GV.ogolneIlosc+1)):	
 			pzQuestionIndex = 0
 			print(pzQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
@@ -196,7 +196,7 @@ func _on_NextButton_pressed():
 			if(tr(qCat+"DO") == "C"):
 				odpCButton.color = Color.darkgreen
 			return
-		elif (questionsCount > 11 and questionsCount <= 20):	
+		elif (questionsCount > (GV.ogolneIlosc+1) and questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc)):	
 			pzQuestionIndex = pzQuestionIndex + 1
 			print(pzQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
@@ -238,7 +238,7 @@ func _on_NextButton_pressed():
 			if(tr(qCat+"DO") == "C"):
 				odpCButton.color = Color.darkgreen
 			return
-		elif (questionsCount == 21):
+		elif (questionsCount == (GV.ogolneIlosc + GV.znakiIlosc +1)):
 			pkQuestionIndex = 0
 			print(pkQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
@@ -280,7 +280,7 @@ func _on_NextButton_pressed():
 			if(tr(qCat+"DO") == "C"):
 				odpCButton.color = Color.darkgreen
 			return
-		elif (questionsCount > 21 and questionsCount <= 25):
+		elif (questionsCount > (GV.ogolneIlosc + GV.znakiIlosc +1) and questionsCount <= GV.pytaniaIlosc):
 			pkQuestionIndex = pkQuestionIndex + 1
 			print(pkQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
@@ -321,7 +321,7 @@ func _on_NextButton_pressed():
 				odpBButton.color = Color.darkgreen
 			if(tr(qCat+"DO") == "C"):
 				odpCButton.color = Color.darkgreen
-			if (questionsCount == 25):
+			if (questionsCount == GV.pytaniaIlosc):
 				nextButton.disabled = true
 			return
 		else:
@@ -336,9 +336,9 @@ func _on_PrevButton_pressed():
 	odpCButton.color = Color.webgray
 	nextButton.disabled = false
 	
-	if (questionsCount >= 1 and questionsCount <= 25):
+	if (questionsCount >= 1 and questionsCount <= GV.pytaniaIlosc):
 		questionsCount = questionsCount - 1	
-		if (questionsCount > 0 and questionsCount < 10):
+		if (questionsCount > 0 and questionsCount < GV.ogolneIlosc):
 			poQuestionIndex = poQuestionIndex - 1
 			print(poQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
@@ -391,7 +391,7 @@ func _on_PrevButton_pressed():
 			if (questionsCount == 1):
 				prevButton.disabled = true
 			return
-		if (questionsCount == 10):
+		if (questionsCount == GV.ogolneIlosc):
 			print(poQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
 			pytanieTresc.text = tr("PO"+str(GV.poList[poQuestionIndex]))
@@ -439,7 +439,7 @@ func _on_PrevButton_pressed():
 				odpCButton.color = Color.darkgreen
 			return
 			
-		elif (questionsCount > 10 and questionsCount < 20):	
+		elif (questionsCount > GV.ogolneIlosc and questionsCount < (GV.ogolneIlosc + GV.znakiIlosc)):	
 			pzQuestionIndex = pzQuestionIndex - 1
 			print(pzQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
@@ -482,7 +482,7 @@ func _on_PrevButton_pressed():
 				odpCButton.color = Color.darkgreen
 			return
 			
-		elif (questionsCount == 20):	
+		elif (questionsCount == (GV.ogolneIlosc + GV.znakiIlosc)):	
 			print(pzQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
 			pytanieTresc.text = tr("PZ"+str(GV.pzList[pzQuestionIndex]))
@@ -521,7 +521,7 @@ func _on_PrevButton_pressed():
 			if(tr(qCat+"DO") == "C"):
 				odpCButton.color = Color.darkgreen
 			return
-		elif (questionsCount > 20 and questionsCount < 25):
+		elif (questionsCount > (GV.ogolneIlosc + GV.znakiIlosc) and questionsCount < GV.pytaniaIlosc):
 			pkQuestionIndex = pkQuestionIndex - 1
 			print(pkQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
@@ -562,7 +562,7 @@ func _on_PrevButton_pressed():
 			if(tr(qCat+"DO") == "C"):
 				odpCButton.color = Color.darkgreen			
 			return
-		elif (questionsCount == 25):
+		elif (questionsCount == GV.pytaniaIlosc):
 			print(pkQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
 			pytanieTresc.text = tr("PK"+str(GV.pkList[pkQuestionIndex]))

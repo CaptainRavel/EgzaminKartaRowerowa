@@ -10,3 +10,4 @@ func _on_NewTest_pressed():
 
 func _on_QuitTest_pressed():
 	get_tree().quit()
+

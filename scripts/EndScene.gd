@@ -7,7 +7,7 @@ func _ready():
 	elif (GV.czyZaliczone == "NIE"):
 		$MarginContainer/VBoxContainer/Label.text = "Niestety nie udało się, \n spróbuj jeszcze raz za jakiś czas"
 	
-	$MarginContainer/VBoxContainer/Label3.text = str(GV.wynik)+"/25"
+	$MarginContainer/VBoxContainer/Label3.text = str(GV.wynik)+"/"+ str(GV.iloscPkt)
 
 
 func _on_Button_pressed():

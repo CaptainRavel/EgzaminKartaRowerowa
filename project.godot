@@ -12,7 +12,7 @@ config_version=4
 
 config/name="EgzaminKartaRowerowa"
 run/main_scene="res://scenes/Menu.tscn"
-config/icon="res://icon.png"
+config/icon="res://graphics/rower.png"
 
 [autoload]
 
@@ -20,8 +20,13 @@ GV="*res://scripts/GlobalVariables.gd"
 
 [display]
 
-window/size/width=1920
-window/size/height=1080
+window/size/width=1280
+window/size/height=720
+window/size/resizable=false
+window/size/fullscreen=true
+window/size/always_on_top=true
+window/stretch/mode="2d"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 

@@ -47,23 +47,25 @@ __meta__ = {
 }
 
 [node name="Margin" type="MarginContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 100.0
-margin_top = 100.0
-margin_right = -100.0
-margin_bottom = -100.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -540.0
+margin_top = -304.5
+margin_right = 540.0
+margin_bottom = 304.5
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Margin"]
-margin_right = 1720.0
-margin_bottom = 880.0
-custom_constants/separation = 100
+margin_right = 1080.0
+margin_bottom = 609.0
+custom_constants/separation = 50
 
 [node name="TitleLabel" type="Label" parent="Margin/VBoxContainer"]
-margin_right = 1720.0
+margin_right = 1080.0
 margin_bottom = 59.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -72,14 +74,14 @@ align = 1
 valign = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Margin/VBoxContainer"]
-margin_top = 159.0
-margin_right = 1720.0
-margin_bottom = 409.0
+margin_top = 109.0
+margin_right = 1080.0
+margin_bottom = 359.0
 alignment = 1
 
 [node name="GridContainer" type="GridContainer" parent="Margin/VBoxContainer/HBoxContainer"]
-margin_left = 485.0
-margin_right = 1235.0
+margin_left = 165.0
+margin_right = 915.0
 margin_bottom = 250.0
 custom_constants/vseparation = 50
 custom_constants/hseparation = 50
@@ -142,10 +144,10 @@ custom_fonts/font = SubResource( 7 )
 text = "Wybierz swoją klasę"
 
 [node name="DalejButton" type="Button" parent="Margin/VBoxContainer"]
-margin_left = 360.0
-margin_top = 509.0
-margin_right = 1360.0
-margin_bottom = 609.0
+margin_left = 40.0
+margin_top = 409.0
+margin_right = 1040.0
+margin_bottom = 509.0
 rect_min_size = Vector2( 1000, 100 )
 size_flags_horizontal = 4
 size_flags_vertical = 4

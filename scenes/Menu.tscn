@@ -6,7 +6,7 @@
 [ext_resource path="res://fonts/droid-sans/DroidSans.ttf" type="DynamicFontData" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 100
+size = 70
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
@@ -31,10 +31,12 @@ __meta__ = {
 }
 
 [node name="Menu" type="VBoxContainer" parent="."]
-margin_left = 120.0
-margin_top = 80.0
-margin_right = 1800.0
-margin_bottom = 960.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 100.0
+margin_top = 50.0
+margin_right = -100.0
+margin_bottom = -50.0
 size_flags_horizontal = 7
 size_flags_vertical = 7
 custom_constants/separation = 100
@@ -43,8 +45,8 @@ __meta__ = {
 }
 
 [node name="CenterRow" type="HBoxContainer" parent="Menu"]
-margin_right = 1680.0
-margin_bottom = 202.0
+margin_right = 1095.0
+margin_bottom = 155.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 alignment = 1
@@ -53,15 +55,14 @@ __meta__ = {
 }
 
 [node name="Title" type="VBoxContainer" parent="Menu/CenterRow"]
-margin_left = 58.0
-margin_right = 1621.0
-margin_bottom = 202.0
+margin_right = 1095.0
+margin_bottom = 155.0
 size_flags_vertical = 0
-custom_constants/separation = 40
+custom_constants/separation = 10
 
 [node name="TitleLabel" type="Label" parent="Menu/CenterRow/Title"]
-margin_right = 1563.0
-margin_bottom = 117.0
+margin_right = 1095.0
+margin_bottom = 100.0
 rect_min_size = Vector2( 0, 100 )
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -70,9 +71,9 @@ align = 1
 valign = 1
 
 [node name="TitleLabel2" type="Label" parent="Menu/CenterRow/Title"]
-margin_top = 157.0
-margin_right = 1563.0
-margin_bottom = 202.0
+margin_top = 110.0
+margin_right = 1095.0
+margin_bottom = 155.0
 rect_min_size = Vector2( 0, 20 )
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
@@ -85,15 +86,15 @@ __meta__ = {
 }
 
 [node name="Buttons" type="VBoxContainer" parent="Menu"]
-margin_top = 302.0
-margin_right = 1680.0
-margin_bottom = 880.0
+margin_top = 255.0
+margin_right = 1095.0
+margin_bottom = 620.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 50
+custom_constants/separation = 20
 
 [node name="NewTestButton" type="Button" parent="Menu/Buttons"]
-margin_right = 1680.0
+margin_right = 1095.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 500, 100 )
 __meta__ = {
@@ -103,6 +104,8 @@ __meta__ = {
 [node name="Label" type="Label" parent="Menu/Buttons/NewTestButton"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 81.1731
+margin_right = 81.1731
 custom_fonts/font = SubResource( 3 )
 text = "Rozpocznij test"
 align = 1
@@ -112,9 +115,9 @@ __meta__ = {
 }
 
 [node name="QuitTestButton" type="Button" parent="Menu/Buttons"]
-margin_top = 150.0
-margin_right = 1680.0
-margin_bottom = 250.0
+margin_top = 120.0
+margin_right = 1095.0
+margin_bottom = 220.0
 rect_min_size = Vector2( 500, 100 )
 __meta__ = {
 "_edit_use_anchors_": false

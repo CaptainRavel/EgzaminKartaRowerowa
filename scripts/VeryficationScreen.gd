@@ -43,8 +43,12 @@ func _ready():
 	
 	if (month >= 1 and month < 9):
 		GV.rok_szkolny = str(year - 1)+"/"+str(year)
+		if GV.rok_szkolny_List.has(GV.rok_szkolny) == false:
+			GV.rok_szkolny_List.append(GV.rok_szkolny)
 	else:
 		GV.rok_szkolny = str(year)+"/"+str(year + 1)
+		if GV.rok_szkolny_List.has(GV.rok_szkolny) == false:
+			GV.rok_szkolny_List.append(GV.rok_szkolny)
 	
 	print(GV.rok_szkolny)
 	klasaButton.theme = Theme.new()

@@ -1569,7 +1569,7 @@ PO3O1;zezwala rowerzyście na wjazd na skrzyżowanie
 PO3O2;zakazuje rowerzyście wjazdu na skrzyżowanie
 PO3O3;jest odpowiednikiem sygnału żółtego na sygnalizatorze
 PO3DO;A
-PO4;W Polsce zgodnie z 'Prawem o ruchu drogowym' obowiązuje  ruch:
+PO4;W  Polsce zgodnie z "Prawem o ruchu drogowym" obowiązuje  ruch:
 PO4O1;prawostronny
 PO4O2;lewostronny
 PO4O3;po dowolnej stronie
@@ -1589,7 +1589,7 @@ PO7O1;7 lat
 PO7O2;10 lat
 PO7O3;13 lat
 PO7DO;B
-PO8;Część jezdni na wlocie skrzyżowania na całej szerokości jezdni lub wybranego pasa ruchu przeznaczona do zatrzymania rowerów w celu zmiany kierunku jazdy lub ustąpienia pierwszeństwa, oznaczona odpowiednimi znakami drogowymi to:
+PO8;10. Część jezdni na wlocie skrzyżowania na całej szerokości jezdni lub wybranego pasa ruchu przeznaczona do zatrzymania rowerów w celu zmiany kierunku jazdy lub ustąpienia pierwszeństwa, oznaczona odpowiednimi znakami drogowymi to:
 PO8O1;droga dla rowerów
 PO8O2;pas ruchu dla rowerów
 PO8O3;śluza dla rowerów
@@ -1664,4 +1664,1838 @@ PO22O1;przebiegania przez jezdnię
 PO22O2;przechodzenia przez tory, gdy dopiero rozpoczęto podnoszenie zapór
 PO22O3;wyprzedzania pieszego z jego prawej strony
 PO22DO;A
-
+PO23;Kiedy rowerzysta nie może jechać po jezdni?
+PO23O1;w strefie zamieszkania
+PO23O2;gdy obok jezdni jest droga dla rowerów
+PO23O3;gdy jezdnia jest na drodze jednokierunkowej
+PO23DO;A
+PO24;Kto może otrzymać kartę rowerową?
+PO24O1;każdy po ukończeniu 10 lat
+PO24O2;osoba, która ukończyła 10 lat i zdała odpowiedni egzamin
+PO24O3;każdy uczeń, który ukończył trzecią klasę szkoły podstawowej
+PO24DO;B
+PO25;Jak powinien zachować się rowerzysta, kiedy na skrzyżowaniu świeci się zielone światło, a policjant zabrania jazdy?
+PO25O1;jechać dalej, ponieważ mamy zielone światło
+PO25O2;zatrzymać się, ponieważ polecenie policjanta jest ważniejsze od sygnałów świetnych i znaków drogowych
+PO25O3;zachowywać się tak jak na skrzyżowaniu równorzędnym
+PO25DO;B
+PO26;Czy na rowerze jednoosobowym, jednośladowym można przewozić inną osobę?
+PO26O1;nie można
+PO26O2;osoba, która ukończyła 17 lat może przewozić dziecko do lat 7 pod warunkiem, że jest ono umieszczone na dodatkowym siodełku, zapewniającym bezpieczną jazdę
+PO26O3;można  zawsze bez dodatkowych warunków
+PO26DO;B
+PO27;Kierującemu rowerem zabrania się:
+PO27O1;jazdy po drodze dla pieszych w słoneczny, bezwietrzny, letni dzień
+PO27O2;jazdy, gdy kierujący trzyma kierownicę tylko jedną ręką
+PO27O3;jazdy obok innego rowerzysty na drodze dla rowerów
+PO27DO;A
+PO28;Kierujący rowerem powinien w pierwszej kolejności jechać:
+PO28O1;po prawej części jezdni
+PO28O2;jak najbliżej prawej krawędzi jezdni
+PO28O3;po poboczu, jeżeli nie utrudni poruszania się pieszym
+PO28DO;C
+PO29;Do obowiązkowego wyposażenia roweru należy:
+PO29O1;lusterko z lewej strony kierownicy
+PO29O2;co najmniej jedno tylne światło odblaskowe o kształcie innym niż trójkąt
+PO29O3;światło mijania barwy białej
+PO29DO;B
+PO30;Dziecko poniżej 10 lat powinno jechać rowerem pod opieką osoby dorosłej:
+PO30O1;po lewej stronie jezdni
+PO30O2;tylko po chodniku
+PO30O3;tylko po prawej stronie jezdni
+PO30DO;A
+PO31;Ilu rowerzystów może jechać w zorganizowanej kolumnie rowerów jednośladowych?
+PO31O1;dowolna ilość, pod warunkiem, że długość kolumny nie przekracza 50 m
+PO31O2;nie więcej niż 15
+PO31O3;20
+PO31DO;B
+PO32;Rozpiętość kierownicy roweru może mieć:
+PO32O1;1 m
+PO32O2;90 cm
+PO32O3;95 cm
+PO32DO;B
+PO33;Przechodzenie przez drogę o dwóch jezdniach jest:
+PO33O1;dozwolone na obszarze zabudowanym tylko na przejściach dla pieszych
+PO33O2;dopuszczalne poza obszarem zabudowanym, jeżeli odległość od najbliższego przejścia przekracza 50 m i pod warunkiem ustąpienia pierwszeństwa pojazdom
+PO33O3;dozwolone zawsze, jeżeli odległość od wyznaczonego przejścia przekracza 100 m
+PO33DO;A
+PO34;Podczas wymijania kierujący rowerem jest obowiązany:
+PO34O1;zachować bezpieczny odstęp od wymijanego uczestnika ruchu, jednak nie mniejszy niż 1 metr, jeżeli jest to pojazd jednośladowy albo kolumna pieszych
+PO34O2;w razie potrzeby zmniejszyć prędkość
+PO34O3;zachować szczególną ostrożność
+PO34DO;B
+PO35;Pieszemu zabrania się wchodzenia na tory na przejeździe kolejowym, jeżeli:
+PO35O1;podnoszenie zapór lub półzapór nie zostało zakończone
+PO35O2;za przejazdem po lewej stronie stoją pojazdy
+PO35O3;opuszczenie zapór lub półzapór zostało rozpoczęte
+PO35DO;C
+PO36;Szczególną ostrożność należy zachować przy:
+PO36O1;omijaniu
+PO36O2;cofaniu
+PO36O3;wymijaniu
+PO36DO;B
+PO37;Który pieszy nie ustępuje pierwszeństwa rowerowi na drodze dla rowerów?
+PO37O1;niepełnosprawny
+PO37O2;idący lewą stroną drogi
+PO37O3;idący prawą stroną drogi
+PO37DO;A
+PO38;Dziecko do lat 7 może korzystać z drogi tylko pod opieką osoby, która ukończyła wiek co najmniej 10 lat z wyjątkiem gdy dziecko:
+PO38O1;idzie do przedszkola
+PO38O2;porusza się w strefie zamieszkania
+PO38O3;wraca z zajęć w oddziale przedszkolnym
+PO38DO;B
+PO39;Kiedy dozwolone jest korzystanie przez pieszych z drogi dla rowerów?
+PO39O1;tylko w razie braku chodnika lub pobocza albo niemożliwości korzystania z nich
+PO39O2;nigdy
+PO39O3;tylko przy małym ruchu rowerów
+PO39DO;A
+PO40;Ile osób może iść obok siebie w kolumnie (nie wojskowej)?
+PO40O1;liczba pieszych idących jezdnią obok siebie nie może przekraczać czterech
+PO40O2;tyle, aby nie zajmować więcej niż połowa szerokości jezdni
+PO40O3;w kolumnach trzeba zawsze iść parami
+PO40DO;A
+PO41;Jeżeli przemarsz kolumny pieszych odbywa się w warunkach niedostatecznej widoczności, pierwszy i ostatni z idących z lewej strony są obowiązani nieść latarki:
+PO41O1;pierwszy - ze światłem białym skierowanym do przodu
+PO41O2;ostatni - ze światłem białym skierowanym do tyłu
+PO41O3;pierwszy - ze światłem czerwonym skierowanym do przodu
+PO41DO;A
+PO42;Co to jest jezdnia?
+PO42O1;część drogi przeznaczona do ruchu pojazdów
+PO42O2;utwardzona część drogi
+PO42O3;część drogi przeznaczona dla pieszych i pojazdów
+PO42DO;A
+PO43;Do obowiązkowego wyposażenia roweru należy:
+PO43O1;lusterko wsteczne
+PO43O2;co najmniej jeden skutecznie działający hamulec
+PO43O3;światło barwy żółtej samochodowej w pedałach
+PO43DO;B
+PO44;Jak powinien zachować się rowerzysta podczas wyprzedzania go przez motorowerzystę?
+PO44O1;zwiększyć prędkość
+PO44O2;zmniejszyć prędkość
+PO44O3;nie zwiększać prędkości
+PO44DO;C
+PO45;Jak powinien zachować się kierujący rowerem, korzystający z drogi dla rowerów i pieszych?
+PO45O1;rowerzysta ma pierwszeństwo przed pieszymi
+PO45O2;rowerzysta jest obowiązany zachować szczególną ostrożność wobec pieszego idącego taką drogą i ustępować mu pierwszeństwa
+PO45O3;nie wyprzedzać pieszych na takiej drodze
+PO45DO;B
+PO46;Kierującemu rowerem w strefie zamieszkania zabrania się przekraczania prędkości:
+PO46O1;25 km/h
+PO46O2;30 km/h
+PO46O3;20 km/h
+PO46DO;C
+PO47;Co to jest rower?
+PO47O1;każdy pojazd napędzany siłą osoby siedzącej na nim
+PO47O2;pojazd o szerokości nieprzekraczającej 0,9 m poruszany siłą mięśni osoby jadącej tym pojazdem
+PO47O3;pojazd jednośladowy lub wielośladowy zaopatrzony w silnik spalinowy o pojemności skokowej nie przekraczającej 50 cm³, którego konstrukcja ogranicza prędkość jazdy do 45 km/h
+PO47DO;B
+PO48;Który pieszy nie ustępuje pierwszeństwa rowerowi na drodze dla rowerów?
+PO48O1;niepełnosprawny
+PO48O2;idący lewą stroną drogi
+PO48O3;idący prawą stroną drogi
+PO48DO;A
+PO49;Kierującemu rowerem zabrania się:
+PO49O1;jazdy z jedną ręką na kierownicy
+PO49O2;wyprzedzania rowerzysty na przejeździe kolejowym
+PO49O3;wyprzedzania rowerzysty na rondzie
+PO49DO;B
+PO50;W jakich miejscach zabronione jest wyprzedzanie pojazdu silnikowego?
+PO50O1;na skrzyżowaniach o ruchu kierowanym
+PO50O2;na skrzyżowaniach o ruchu okrężnym
+PO50O3;na skrzyżowaniach równorzędnych
+PO50DO;C
+PO51;Zabrania się cofania:
+PO51O1;na moście
+PO51O2;na drodze jednokierunkowej
+PO51O3;w obszarze zabudowanym
+PO51DO;A
+PO52;Liczba pieszych idących po jezdni w kolumnie obok siebie nie może przekraczać:
+PO52O1;czterech również wtedy, gdy są to piesi do lat dziesięciu
+PO52O2;czterech, a jeśli są to piesi do lat dziesięciu – dwóch
+PO52O3;sześciu, a jeśli są to piesi do lat dziesięciu – czterech
+PO52DO;B
+PO53;Kierującemu rowerem zabrania się wyprzedzania:
+PO53O1;z lewej strony uczestnika ruchu, który sygnalizuje zamiar skrętu w lewo
+PO53O2;w tunelach, na mostach i wiaduktach
+PO53O3;na przejściach dla pieszych gdy ruch jest kierowany
+PO53DO;A
+PO54;Kierujący rowerem, zbliżając się do skrzyżowania dróg równorzędnych, ma obowiązek zachować szczególną ostrożność i ustąpić pierwszeństwa:
+PO54O1;nadjeżdżającym z lewej strony
+PO54O2;wszystkim pojazdom
+PO54O3;pojazdom nadjeżdżającym z prawej strony, a pojazdom szynowym i uprzywilejowanym będącym w akcji niezależnie od tego, z której strony nadjeżdżają
+PO54DO;C
+PO55;Kierujący rowerem korzystając z drogi dla rowerów i pieszych:
+PO55O1;ma pierwszeństwo przed pieszym
+PO55O2;nie może przekraczać prędkości pieszego (około 5 km/h)
+PO55O3;jest obowiązany zachować szczególną ostrożność i ustępować miejsca pieszym
+PO55DO;C
+PO56;Długość kolumny pieszych nie może przekraczać:
+PO56O1;30 m
+PO56O2;50 m
+PO56O3;100 m
+PO56DO;B
+PO57;Pieszy jest obowiązany korzystać:
+PO57O1;tylko z chodnika
+PO57O2;tylko z drogi dla pieszych
+PO57O3;z chodnika lub drogi dla pieszych, a w razie ich braku - z pobocza
+PO57DO;C
+PO58;Jeżeli pieszy pełnosprawny korzysta z drogi dla rowerów, to:
+PO58O1;jest obowiązany ustąpić pierwszeństwa rowerowi
+PO58O2;ma pierwszeństwo przed kierującymi rowerami
+PO58O3;musi zawsze zejść z tej drogi, gdy nadjeżdża rowerzysta
+PO58DO;A
+PO59;Pieszemu zabrania się:
+PO59O1;przechodzenia przez jezdnię w innych miejscach niż wyznaczone
+PO59O2;wchodzenia na tory, gdy jeszcze trwa podnoszenie zapór
+PO59O3;chodzenia po torowiskach
+PO59DO;C
+PO60;Niewidomy podczas samodzielnego poruszania się po drodze jest obowiązany:
+PO60O1;mieć przy sobie odpowiednie dokumenty
+PO60O2;mieć na prawym rękawie odpowiednie oznakowanie
+PO60O3;nieść białą laskę w sposób widoczny dla innych uczestników ruchu
+PO60DO;C
+PO61;Rower może być wyposażony w uruchamiany naciskiem na pedały pomocniczy napęd elektryczny zasilany prądem:
+PO61O1;o napięciu nie wyższym niż 24 V o znamionowej mocy ciągłej nie większej niż 500 W
+PO61O2;o napięciu nie wyższym niż 48 V o znamionowej mocy ciągłej nie większej niż 250 W
+PO61O3;o napięciu nie wyższym niż 230 V o znamionowej mocy ciągłej nie większej niż 500 W
+PO61DO;B
+PO62;Jak powinien zachować się uczestnik ruchu, gdy nadjeżdża pojazd uprzywilejowany?
+PO62O1;nie zwiększać prędkości
+PO62O2;koniecznie zatrzymać się
+PO62O3;obowiązkowo ułatwić przejazd, a w szczególności niezwłocznie usunąć się z jego drogi i w razie potrzeby zatrzymać się
+PO62DO;C
+PO63;Kiedy dozwolone jest korzystanie przez pieszych z drogi dla rowerów?
+PO63O1;tylko w razie braku chodnika lub pobocza albo niemożliwości korzystania z nich
+PO63O2;nigdy
+PO63O3;tylko przy małym ruchu rowerów
+PO63DO;A
+PO64;Na autostradzie zabrania się:
+PO64O1;jazdy rowerem
+PO64O2;wyprzedzania
+PO64O3;jazdy motocyklem
+PO64DO;A
+PO65;Włączanie się do ruchu następuje przy wjeżdżaniu:
+PO65O1;na drogę z pola lub na drogę twardą z drogi gruntowej
+PO65O2;z pola na drogę gruntową
+PO65O3;z drogi podporządkowanej na drogę z pierwszeństwem
+PO65DO;A
+PO66;Kierujący rowerem jest obowiązany przed skręceniem zbliżyć się do prawej krawędzi jezdni:
+PO66O1;zawsze
+PO66O2;gdy ma zamiar skręcić w lewo
+PO66O3;jeżeli zamierza skręcić w prawo
+PO66DO;C
+PO67;Kierującemu rowerem zabrania się:
+PO67O1;jazdy za drugim rowerzystą
+PO67O2;czepiania się pojazdów
+PO67O3;jazdy, gdy rowerzysta trzyma kierownicę tylko jedną ręką
+PO67DO;B
+PO68;W rowerze z pomocniczym napędem elektrycznym moc wyjściowa zmniejsza się stopniowo i spada do zera po przekroczeniu prędkości:
+PO68O1;20 km/h
+PO68O2;30 km/h
+PO68O3;25 km/h
+PO68DO;C
+PO69;Dziecko do lat 10 może jechać rowerem pod opieką osoby dorosłej:
+PO69O1;po chodniku
+PO69O2;po prawej stronie jezdni
+PO69O3;po lewej stronie jezdni tylko w strefie zamieszkania
+PO69DO;A
+PO70;Dopuszcza się w rowerach, wózkach rowerowych i przyczepach rowerowych:
+PO70O1;odblaskowy pasek w kształcie nieprzerwanego pierścienia umieszczony po lewej stronie opony
+PO70O2;odblaskowy pasek w kształcie nieprzerwanego pierścienia umieszczony po obu stronach opony
+PO70O3;odblaskowy pasek w kształcie przerywanego pierścienia umieszczony po obu stronach opony
+PO70DO;B
+PO71;Widząc autobus wyjeżdżający z zajezdni na drogę kierujący rowerem:
+PO71O1;powinien ustąpić pierwszeństwa autobusowi bez względu na to, z której strony wyjeżdża
+PO71O2;powinien ustąpić pierwszeństwa autobusowi, jeżeli wjeżdża z prawej strony
+PO71O3;może pojechać przed nim, gdyż autobus włącza się do ruchu
+PO71DO;C
+PO72;Jeżeli na jezdni, w związku z prowadzonymi robotami drogowymi, umieszczone są znaki poziome barwy białej i żółtej, oznakowanie barwą:
+PO72O1;białą ma zastosowanie w pierwszej kolejności przed oznakowaniem barwą żółtą
+PO72O2;żółtą obowiązuje przed oznakowaniem barwą białą
+PO72O3;żółtą służy tylko pojazdom obsługującym roboty drogowe i nie ma zastosowania wobec innych pojazdów
+PO72DO;B
+PO73;Którędy powinien chodzić pieszy w strefie zamieszkania?
+PO73O1;tylko po chodnikach
+PO73O2;tylko po chodnikach lub wyznaczonych drogach dla pieszych
+PO73O3;pieszy korzysta z całej szerokości drogi i ma pierwszeństwo przed pojazdem
+PO73DO;C
+PO74;Na drodze dla rowerów nie zabrania się zatrzymania:
+PO74O1;roweru
+PO74O2;wózka rowerowego
+PO74O3;motoroweru
+PO74DO;A
+PO75;Pojazd wykonujący na drodze prace porządkowe lub remontowe powinien wysyłać:
+PO75O1;niebieskie sygnały błyskowe
+PO75O2;czerwone sygnały błyskowe
+PO75O3;żółte sygnały błyskowe
+PO75DO;C
+PO76;Pieszemu zabrania się:
+PO76O1;zwalniania kroku lub zatrzymania się bez uzasadnionej potrzeby podczas przechodzenia przez jezdnię lub torowisko
+PO76O2;przechodzenia przez jezdnię w innych miejscach niż na wyznaczonych przejściach
+PO76O3;wchodzenia na tory, gdy zakończono podnoszenie zapór
+PO76DO;A
+PO77;Co to jest kolumna pieszych?
+PO77O1;grupa osób poruszająca się po jezdni
+PO77O2;grupa ponad 20 dzieci
+PO77O3;zorganizowana grupa pieszych prowadzona przez kierownika lub dowódcę
+PO77DO;C
+PO78;Kiedy dwóch pieszych może iść obok siebie po jezdni?
+PO78O1;nigdy, ponieważ muszą iść jeden za drugim
+PO78O2;na drogach o małym ruchu
+PO78O3;na drogach o małym ruchu w warunkach dobrej widoczności
+PO78DO;C
+PO79;Jeżeli w kolumnie idzie obok siebie 5 osób, to jest to kolumna:
+PO79O1;harcerska
+PO79O2;policyjna lub wojskowa
+PO79O3;dzieci do lat 10
+PO79DO;B
+PO80;Pieszy poruszający się po drodze po zmierzchu poza obszarem zabudowanym jest obowiązany używać elementów odblaskowych w sposób widoczny dla innych uczestników ruchu, gdy idzie:
+PO80O1;po chodniku
+PO80O2;po lewej stronie jezdni
+PO80O3;po drodze przeznaczonej wyłącznie dla pieszych
+PO80DO;B
+PO81;Wózek rowerowy może mieć szerokość:
+PO81O1;85 cm
+PO81O2;90 cm
+PO81O3;1 m
+PO81DO;C
+PO82;Kiedy można wyprzedzać pojazd uprzywilejowany?
+PO82O1;zawsze, gdy jedzie z mniejszą prędkością od naszego pojazdu
+PO82O2;tylko wtedy, gdy kierujący pojazdem uprzywilejowanym da nam odpowiedni sygnał
+PO82O3;poza obszarem zabudowanym
+PO82DO;C
+PO83;Rowerzysta może korzystać z chodnika:
+PO83O1;pod warunkiem, że jedzie prawa stroną chodnika i nie utrudnia ruchu pieszym
+PO83O2;gdy brak jest drogi dla rowerów a ulicą poruszają się samochody ciężarowe
+PO83O3;gdy między innymi brak jest drogi dla rowerów i widzi znak ograniczający prędkość do 70 km/h
+PO83DO;C
+PO84;Jeżeli przystanek tramwajowy znajduje się na wysepce położonej na środku jezdni i połączonej z przejściem dla pieszych, to przejście pieszych z chodnika do tego przystanku lub z powrotem jest dozwolone:
+PO84O1;w dowolnym miejscu, gdy do przystanku zbliża się tramwaj
+PO84O2;tylko po przejściu dla pieszych
+PO84O3;zawsze w dowolnym miejscu, gdyż nadjeżdżające pojazdy powinny zatrzymać się i umożliwić pieszym przejście przez jezdnię
+PO84DO;B
+PO85;Jeżeli pasy ruchu są na jezdni wyznaczone, to kierujący pojazdem:
+PO85O1;nie może zajmować więcej niż jednego pasa
+PO85O2;nie może jechać po lewym pasie
+PO85O3;może korzystać tylko z prawego pasa
+PO85DO;A
+PO86;Włączanie się do ruchu następuje przy wjeżdżaniu:
+PO86O1;pojazdem szynowym z drogi podporządkowanej na drogę z pierwszeństwem
+PO86O2;z drogi jednokierunkowej na dwukierunkową
+PO86O3;pojazdem szynowym - na drogę z zajezdni lub na jezdnię z pętli
+PO86DO;C
+PO87;Dopuszcza się umieszczenie świateł odblaskowych barwy żółtej samochodowej:
+PO87O1;z przodu wózka rowerowego
+PO87O2;z tyłu motoroweru
+PO87O3;na pedałach roweru
+PO87DO;C
+PO88;Zabrania się wyprzedzania pojazdu silnikowego jadącego po jezdni:
+PO88O1;na skrzyżowaniach o ruchu okrężnym
+PO88O2;przy dojeżdżaniu do wierzchołka wzniesienia
+PO88O3;na skrzyżowaniach o ruchu kierowanym
+PO88DO;B
+PO89;Kierującemu rowerem zabrania się:
+PO89O1;wyprzedzania na ostrych zakrętach na jezdniach o ruchu jednokierunkowym
+PO89O2;cofania na jezdniach o ruchu jednokierunkowym
+PO89O3;wyprzedzania pojazdu na przejściach dla pieszych i bezpośrednio przed nimi, z wyjątkiem przejścia, na którym ruch jest kierowany
+PO89DO;C
+PO90;Rowerzysta jest obowiązany:
+PO90O1;włączyć światło przed wjechaniem do tunelu
+PO90O2;mieć przy sobie kartę rowerową niezależnie od jego wieku
+PO90O3;mieć lusterko wsteczne z lewej strony kierownicy
+PO90DO;A
+PO91;Przechodzenie przez jezdnię w miejscu o ograniczonej widoczności drogi:
+PO91O1;jest dozwolone tylko na drogach o małym natężeniu ruchu
+PO91O2;jest zawsze zabronione
+PO91O3;jest dozwolone tylko na drogach jednokierunkowych
+PO91DO;B
+PO92;Światło pozycyjne roweru powinno być widoczne w nocy przy dobrej przejrzystości powietrza z odległości co najmniej:
+PO92O1;150 m
+PO92O2;100 m
+PO92O3;200 m
+PO92D0;A
+PO93;Wyprzedzając innego rowerzystę należy zachować odstęp:
+PO93O1;50 cm, pod warunkiem, że będzie bezpieczny
+PO93O2;zawsze 2 m
+PO93O3;bezpieczny jednak nie mniejszy niż 1 m
+PO93DO;C
+PO94;Dziecko w wieku 8 lat jadące rowerem jest:
+PO94O1;pieszym
+PO94O2;kierowcą
+PO94O3;rowerzystą
+PO94DO;A
+PO95;W rowerze światła z przodu są barwy:
+PO95O1;czerwonej
+PO95O2;żółtej
+PO95O3;białej lub żółtej selektywnej
+PO95DO;C
+PO96;Kiedy dwóch pieszych może iść obok siebie po jezdni?
+PO96O1;nigdy, ponieważ muszą iść jeden za drugim
+PO96O2;na drogach o małym ruchu
+PO96O3;na drogach o małym ruchu w warunkach dobrej widoczności
+PO96DO;C
+PO97;Pieszemu zabrania się:
+PO97O1;przechodzenia przez jezdnię w miejscu, w którym urządzenie zabezpieczające lub przeszkoda oddzielają drogę dla pieszych albo chodnik od jezdni, bez względu na to, po której stronie jezdni one się znajdują
+PO97O2;wchodzenia na tory, gdy zapory są podniesione
+PO97O3;wchodzenia na drogę oznaczoną znakiem „zakaz ruchu w obu kierunkach”
+PO97DO;A
+PO98;Dziecko w wieku 11 lat idące drogą dla rowerów po zmierzchu poza terenem zabudowanym:
+PO98O1;musi iść z opiekunem
+PO98O2;powinno mieć latarkę elektryczną
+PO98O3;musi posiadać elementy odblaskowe widoczne dla innych uczestników ruchu
+PO98DO;C
+PO99;W czasie mgły po jezdni mogą poruszać się kolumny:
+PO99O1;harcerskie
+PO99O2;zabrania się ruchu wszelkich kolumn w czasie mgły
+PO9903;wojskowe i policyjne
+PO99DO;C
+PO100;Pieszy poruszający się po drodze po zmierzchu poza obszarem zabudowanym nie jest obowiązany używać elementów odblaskowych w sposób widoczny dla innych uczestników ruchu, gdy idzie:
+PO100O1;po chodniku
+PO100O2;po lewej stronie jezdni
+PO100O3;po drodze przeznaczonej dla pieszych i rowerów
+PO100DO;A
+PO101;Pas ruchu to:
+PO101O1;połowa każdej jezdni
+PO101O2;każdy z podłużnych pasów jezdni wystarczający do ruchu jednego rzędu pojazdów wielośladowych, oznaczony lub nieoznaczony znakami drogowymi
+PO101O3;część drogi przeznaczona do ruchu pojazdów
+PO101DO;B
+PO102;Długość kolumny pieszych nie może przekraczać:
+PO102O1;30 m
+PO102O2;50 m
+PO102O3;100 m
+PO102DO;B
+PO103;Jeżeli pieszy pełnosprawny korzysta z drogi dla rowerów, to:
+PO103O1;jest obowiązany ustąpić pierwszeństwa rowerowi
+PO103O2;ma pierwszeństwo przed kierującymi rowerami
+PO103O3;musi zawsze zejść z tej drogi, gdy nadjeżdża rowerzysta niezależnie od szerokości drogi
+PO103DO;A
+PO104;Kierującemu rowerem zabrania się:
+PO104O1;jazdy za pojazdem zaprzęgowym
+PO104O2;jazdy bez trzymania co najmniej jednej ręki na kierownicy oraz nóg na pedałach
+PO104O3;wyprzedzania na skrzyżowaniach o ruchu okrężnym
+PO104DO;B
+PO105;Rowerzyście zabrania się:
+PO105O1;jazdy wzdłuż po przejściu dla pieszych
+PO105O2;przejeżdżania przez chodnik
+PO105O3;jazdy z jedna ręką na kierownicy
+PO105DO;A
+PO106;Zabrania się wyprzedzania:
+PO106O1;na zakręcie oznaczonym znakami ostrzegawczymi
+PO106O2;na zakrętach jezdni o ruchu jednokierunkowym
+PO106O3;na skrzyżowaniach, na których ruch jest kierowany
+PO106DO;A
+PO107;Korzystanie z drogi dla pieszych przez kierującego rowerem jest:
+PO107O1;zabronione
+PO107O2;dozwolone bez ograniczeń
+PO107O3;dozwolone wyjątkowo, gdy warunki pogodowe zagrażają bezpieczeństwu rowerzysty na jezdni (śnieg, silny wiatr, ulewa, gołoledź, gęsta mgła)
+PO107DO;C
+PO108;Niewidomy podczas samodzielnego poruszania się po drodze jest obowiązany:
+PO108O1;mieć przy sobie odpowiednie dokumenty
+PO108O2;mieć na prawym rękawie odpowiednie oznakowanie
+PO108O3;nieść białą laskę w sposób widoczny dla innych uczestników ruchu
+PO108DO;C
+PO109;Zabrania się zatrzymania pojazdu:
+PO109O1;w odległości 15 m od skrzyżowania
+PO109O2;w tunelu, na moście lub na wiadukcie
+PO109O3;przy lewej krawędzi jezdni na drodze jednokierunkowej na obszarze zabudowanym
+PO109DO;B
+PO110;Zabrania się postoju:
+PO110O1;na poboczu obok linii przerywanej wyznaczającej krawędź jezdni
+PO110O2;przed znakiem “zakaz postoju”
+PO110O3;w strefie zamieszkania w innym miejscu niż wyznaczone w tym celu
+PO110DO;C
+PO111;Jeżeli pieszy musi poruszać się po jezdni, to:
+PO111O1;może iść środkiem jezdni, pod warunkiem, że będzie ustępował pierwszeństwa nadjeżdżającym pojazdom
+PO111O2;jest zobowiązany zajmować miejsce jak najbliżej jej krawędzi
+PO111O3;powinien iść w odległości nie większej niż 1,5 m od jej krawędzi
+PO111DO;B
+PO112;Wyjeżdżając z drogi wewnętrznej na drogę publiczną, rowerzysta powinien ustępować pierwszeństwa:
+PO112O1;tylko pojazdom nadjeżdżającym z prawej strony
+PO112O2;tylko pojazdom nadjeżdżającym z lewej strony
+PO112O3;wszystkim pojazdom i pieszym idącym drogą publiczną
+PO112DO;C
+PO113;Omijanie pojazdu, który jechał w tym samym kierunku i zatrzymał się przed przejściem dla pieszych w celu ustąpienia pierwszeństwa pieszym, jest:
+PO113O1;dozwolone, jeżeli zachowamy szczególną ostrożność
+PO113O2;zabronione
+PO113O3;dozwolone, ale tylko na drogach jednokierunkowych
+PO113DO;B
+PO114;Co to jest przejście dla pieszych?
+PO114O1;część jezdni, po której mogą przejść piesi
+PO114O2;powierzchnia jezdni lub torowiska przeznaczona do przechodzenia przez pieszych, oznaczona odpowiednimi znakami drogowymi
+PO114O3;część drogi w pobliżu skrzyżowania pomalowana białymi liniami
+PO114DO;B
+PO115;Liczba pieszych idących jezdnią w kolumnie wojskowej obok siebie nie może przekraczać (pod warunkiem, że kolumna nie zajmuje więcej niż połowy szerokości jezdni):
+PO115O1;czterech
+PO115O2;sześciu
+PO115O3;ośmiu
+PO115DO;B
+PO116;Pieszy przechodząc przez jezdnię lub torowisko jest obowiązany:
+PO116O1;zachować szczególną ostrożność
+PO116O2;ma pierwszeństwo przed kierującymi pojazdami
+PO116O3;musi przepuścić pojazdy ze swojej prawej strony
+PO116DO;A
+PO117;Pieszemu zabrania się:
+PO117O1;wchodzenia na torowisko, gdy zapory lub półzapory są opuszczane lub opuszczanie ich rozpoczęto
+PO117O2;korzystania z drogi dla rowerów w każdym przypadku
+PO117O3;przechodzenia przez jezdnię w sąsiedztwie skrzyżowania, jeżeli nie ma wyznaczonego przejścia dla pieszych
+PO117DO;A
+PO118;Pieszy widząc jadący z przeciwka pojazd uprzywilejowany powinien:
+PO118O1;zatrzymać się na jezdni, jeżeli nie ma chodnika
+PO118O2;niezwłocznie usunąć się z jego drogi
+PO118O3;iść jak najbliżej lewej krawędzi jezdni i obserwować jadący pojazd
+PO118DO;B
+PO119;Wózek rowerowy nie jest przeznaczony do przewozu:
+PO119O1;osób
+PO119O2;rzeczy
+PO119O3;zwierząt domowych
+PO119DO;C
+PO120;Rowerzysta jest obowiązany korzystać:
+PO120O1;z chodnika
+PO120O2;z drogi dla pieszych
+PO120O3;z pobocza, pod warunkiem, że nie utrudni ruchu pieszych
+PO120DO;C
+PO121;Pełnoletniemu rowerzyście zabrania się:
+PO121O1;przewożenia pięcioletniego dziecka w specjalnym koszyku
+PO121O2;jazdy bez karty rowerowej
+PO121O3;jazdy rowerem bez hamulca
+PO121DO;C
+PO122;Zabrania się zawracania:
+PO122O1;na skrzyżowaniach
+PO122O2;w tunelu, na moście, wiadukcie lub drodze jednokierunkowej
+PO122O3;tylko na drogach jednokierunkowych
+PO122DO;B
+PO123;Kierującemu rowerem zabrania się:
+PO123O1;wyprzedzania na skrzyżowaniu o ruchu okrężnym
+PO123O2;wyprzedzania na przejściach, na których ruch jest kierowany
+PO123O3;omijania pojazdu, który jechał w tym samym kierunku, lecz zatrzymał się w celu ustąpienia pierwszeństwa pieszemu
+PO123DO;C
+PO124;Siedmiolatek jadący na rowerze może jechać:
+PO124O1;samodzielnie po chodniku
+PO124O2;samodzielnie po lewej stronie jezdni
+PO124O3;po chodniku pod opieką osoby dorosłej
+PO124DO;C
+PO125;Kierującemu rowerem zabrania się:
+PO125O1;czepiania się podczas jazdy innego roweru
+PO125O2;wyprzedzania pieszego na drodze bez chodnika
+PO125O3;wyprzedzania pieszego na drodze bez pobocza
+PO125DO;A
+PO126;Zabrania się zatrzymania pojazdu:
+PO126O1;na przejeździe kolejowym, na przejeździe tramwajowym, na skrzyżowaniu oraz w odległości mniejszej niż 10 m od przejazdu lub skrzyżowania
+PO126O2;przy lewej krawędzi na drodze jednokierunkowej
+PO126O3;na poboczu obok linii przerywanej wyznaczającej krawędź jezdni
+PO126DO;A
+PO127;Zabrania się postoju:
+PO127O1;przed  znakiem “zakaz zatrzymywania się”
+PO127O2;za zatoką przy przystanku autobusowym
+PO127O3;w miejscu utrudniającym wjazd  lub wyjazd, a w szczególności do i z bramy, garażu, parkingu i wnęki postojowej
+PO127DO;C
+PO128;Rowerzysta musi używać świateł, w które wyposażony jest rower:
+PO128O1;przez całą dobę
+PO128O2;od zmierzchu do świtu
+PO128O3;od świtu do zmierzchu
+PO128DO;B
+PO129;Rowerzysta ma zakaz:
+PO129O1;jazdy po chodniku w czasie złej widoczności spowodowanej mgłą lub ulewnym deszczem
+PO129O2;korzystania z jezdni, jeśli droga dla rowerów lub pas ruchu dla rowerów są wyznaczone dla kierunku, w którym się porusza lub zamierza skręcić
+PO129O3;zatrzymywania się na drodze jednokierunkowej
+PO129DO;B
+PO130;W czasie wyprzedzania przez inny pojazd, rowerzysta jest obowiązany:
+PO130O1;zjechać jak najbardziej w prawo w celu ułatwienia wyprzedzania
+PO130O2;zwiększyć prędkość jazdy
+PO130O3;zatrzymać się, aby ułatwić wyprzedzanie
+PO130DO;A
+PO131;Rowerzysta, który wjechał do śluzy dla rowerów, po zmianie świateł na zielone powinien:
+PO131O1;opuścić śluzę, a następnie kontynuować jazdę w zamierzonym kierunku, zajmując miejsce na jezdni zgodnie z przepisami prawa o ruchu drogowym
+PO131O2;poczekać, aż wyprzedzą go stojące za nim pojazdy i wolno ruszyć do przodu
+PO131O3;opuścić śluzę, a następnie poruszać się tylko w tym kierunku, w którym prowadzi pas ruchu dla rowerów
+PO131DO;A
+PO132;Liczba wózków rowerowych jadących w zorganizowanej kolumnie nie może przekraczać:
+PO132O1;15
+PO132O2;10
+PO132O3;5
+PO132DO;A
+PO133;Pieszy idący po jezdni jest obowiązany:
+PO133O1;zachować co najmniej 1 metr odstępu od wyprzedzających go pojazdów
+PO133O2;ustępować pierwszeństwa nadjeżdżającym rowerzystom
+PO133O3;ustępować pierwszeństwa pieszym idącym z przeciwnego kierunku
+PO133DO;B
+PO134;Idący w kolumnie pieszych o długości ponad 20 metrów w warunkach ograniczonej widoczności są obowiązani:
+PO134O1;po lewej stronie z przodu i z tyłu używać elementów odblaskowych odpowiadających właściwym warunkom technicznym
+PO134O2;po lewej stronie w pierwszej czwórce nieść dodatkowe latarki ze światłem czerwonym
+PO134O3;po lewej stronie w ostatniej czwórce nieść dodatkowe latarki ze światłem białym
+PO134DO;A
+PO135;Na obszarze zabudowanym, na drodze dwujezdniowej lub po której kursują tramwaje po torowisku wyodrębnionym z jezdni, pieszy przechodząc przez jezdnię lub torowisko jest obowiązany korzystać:
+PO135O1;tylko z chodnika
+PO135O2;tylko z przejścia dla pieszych
+PO135O3;z całej szerokości jezdni, ustępując pierwszeństwa pojazdom
+PO135DO;B
+PO136;Jeżeli wysepka dla pasażerów na przystanku komunikacji publicznej łączy się z przejściem dla pieszych, przechodzenie do przystanku i z przystanku jest dozwolone:
+PO136O1;tylko po tym przejściu
+PO136O2;w dowolny bezpieczny sposób
+PO136O3;tylko po przejściach nadziemnych dla pieszych
+PO136DO;A
+PO137;Jeżeli przejście dla pieszych wyznaczone jest na drodze o dwóch jezdniach to przejście:
+PO137O1;na każdej jezdni uważa się za przejście odrębne
+PO137O2;uważa się za jedno
+PO137O3;uważa się za przejścia odrębne, gdy torowiska oddzielono od jezdni łańcuchami
+PO137DO;A
+PO138;Pieszemu zabrania się:
+PO138O1;przechodzenia przez jezdnię w miejscu o ograniczonej widoczności drogi
+PO138O2;wchodzenia na tory, gdy rozpoczęto podnoszenie zapór
+PO138O3;chodzenia w czasie mgły bez świateł odblaskowych
+PO138DO;A
+PO139;Ile najwięcej rowerów jednośladowych może jechać w zorganizowanej kolumnie?
+PO139O1;5
+PO139O2;10
+PO139O3;15
+PO139DO;C
+PO140;Rower i wózek rowerowy może być poruszany:
+PO140O1;pomocniczym silnikiem spalinowym
+PO140O2;pomocniczym napędem elektrycznym zasilanym prądem
+PO140O3;tylko siłą mięśni osoby jadącej tym pojazdem
+PO140DO;B
+PO141;Rowerzyście zabrania się:
+PO141O1;jazdy wzdłuż po przejściu dla pieszych
+PO141O2;jazdy obok drugiego rowerzysty na drodze dla rowerów
+PO141O3;zatrzymania na poboczu obok linii przerywanej wyznaczającej krawędź jezdni
+PO141DO;A
+PO142;Dopuszczalna prędkość jazdy rowerem w strefie zamieszkania wynosi:
+PO142O1;15 km/h
+PO142O2;20 km/h
+PO142O3;25 km/h
+PO142DO;B
+PO143;Kierujący pojazdem może zmienić kierunek jazdy lub zajmowany pas ruchu:
+PO143O1;tylko z zachowaniem szczególnej ostrożności
+PO143O2;tylko pod warunkiem, że nie spowoduje to zajechania drogi innym kierującym
+PO143O3;tylko z zachowaniem szczególnej ostrożności oraz pod warunkiem, że nie spowoduje to zajechania drogi innym kierującym
+PO143DO;C
+PO144;Kierującemu rowerem zabrania się wjeżdżania na skrzyżowanie:
+PO144O1;gdy kierujący ruchem stoi bokiem do kierującego rowerem
+PO144O2;jeżeli nadawany jest sygnał świetlny żółty migający
+PO144O3;jeżeli na skrzyżowaniu lub za nim nie ma miejsca do kontynuowania jazdy
+PO144DO;C
+PO145;Rowerzysta w pierwszej kolejności powinien jechać:
+PO145O1;po prawej stronie jezdni
+PO145O2;po chodniku
+PO145O3;po poboczu
+PO145DO;C
+PO146;Zabrania się zatrzymania roweru:
+PO146O1;na jezdni wzdłuż linii ciągłej oraz w pobliżu jej punktów krańcowych, jeżeli  zmusiłoby to innych kierujących pojazdami wielośladowymi do najeżdżania  na tę linię
+PO146O2;na poboczu obok linii przerywanej wyznaczającej krawędź jezdni
+PO146O3;przed znakiem: zakaz zatrzymywania się
+PO146DO;A
+PO147;W okresie od zmierzchu do świtu kierujący rowerem jest obowiązany używać podczas jazdy świateł:
+PO147O1;pozycyjnych
+PO147O2;mijania
+PO147O3;drogowych
+PO147DO;A
+PO148;Rower powinien być wyposażony:
+PO148O1;w dwa niezależne, skutecznie działające hamulce
+PO148O2;w co najmniej jeden skutecznie działający hamulec
+PO148O3;w światło mijania
+PO148DO;B
+PO149;Szerokość roweru nie może przekraczać:
+PO149O1;150 cm
+PO149O2;100 cm
+PO149O3;90 cm
+PO149DO;C
+PO150;W strefie ruchu prędkość jest ograniczona:
+PO150O1;do 50 km/h w godz. 5:00 – 23:00
+PO150O2;do 20 km/h
+PO150O3;do 15 km/h
+PO150DO;A
+PO151;Rower może być wyposażony w uruchamiany naciskiem na pedały pomocniczy napęd elektryczny o znamionowej mocy ciągłej nieprzekraczającej 250 W i zasilany prądem o napięciu nie wyższym niż:
+PO151O1;48 V
+PO151O2;12 V
+PO151O3;24 V
+PO151DO;A
+PO152;Jadący rowerem obowiązany jest do ustąpienia pierwszeństwa pieszym:
+PO152O1;na jezdni w strefie ruchu
+PO152O2;na drodze dla pieszych
+PO152O3;na drodze dla rowerów
+PO152DO;B
+PO153;Podczas wyprzedzania innego rowerzysty należy zachować odstęp:
+PO153O1;minimum 0,5 metra
+PO153O2;bezpieczny i nie mniejszy niż 1 metr
+PO153O3;bezpieczny, ale przepisy nie określają minimalnej odległości
+PO153DO;B
+PO154;Pieszemu zabrania się:
+PO154O1;przechodzenia przez jezdnię w innych miejscach niż wyznaczone w tym celu
+PO154O2;zwalniania kroku lub zatrzymywania się bez uzasadnionej potrzeby podczas przechodzenia przez jezdnię lub torowisko
+PO154O3;w strefie zamieszkania chodzenia po jezdni, jeżeli jadą po niej pojazdy samochodowe
+PO154DO;B
+PO155;Osoba niepełnosprawna idąca drogą dla rowerów:
+PO155O1;jest obowiązana ustąpić pierwszeństwa rowerowi
+PO155O2;nie jest obowiązana ustąpić pierwszeństwa rowerowi
+PO155O3;osoba niepełnosprawna nie może korzystać z drogi dla rowerów
+PO155DO;B
+PO156;Poza przejściami dla pieszych przechodzenie przez jezdnię jest dozwolone tylko pod warunkiem:
+PO156O1;spowodowania zagrożenia bezpieczeństwa ruchu
+PO156O2;pieszy jest obowiązany ustąpić pierwszeństwa pojazdom i do przeciwległej krawędzi jezdni powinien iść drogą najkrótszą (prostopadle do osi jezdni)
+PO156O3;utrudnienia ruchu pojazdów
+PO156DO;B
+PO157;Kiedy piesi mogą przekraczać jezdnię poza przejściami dla pieszych?
+PO157O1;nigdy
+PO157O2;gdy odległość od przejścia jest większa niż 100 m
+PO157O3;tylko poza obszarem zabudowanym
+PO157DO;B
+PO158;Kolumna pieszych powyżej 10 lat może poruszać się:
+PO158O1;po lewej stronie jezdni
+PO158O2;tylko po chodniku
+PO158O3;po prawej stronie jezdni
+PO158DO;C
+PO159;Co to jest ruch kierowany?
+PO159O1;ruch nakierowany odpowiednimi strzałkami umieszczonymi na jezdni
+PO159O2;ruch otwierany i zamykany za pomocą sygnalizacji świetlnej albo przez uprawnioną osobę
+PO159O3;ruch według ustawionych przed skrzyżowaniem znaków
+PO159DO;B
+PO160;W czasie mgły rowerzysta:
+PO160O1;nie może jechać po jezdni
+PO160O2;może jechać po poboczu bez włączonych świateł
+PO160O3;musi włączyć światła pozycyjne i jechać jak najbliżej krawędzi jezdni
+PO160DO;C
+PO161;Obowiązek poruszania się po poboczu, chyba że nie nadaje się ono do jazdy lub ruch pojazdu utrudniałby ruch pieszych dotyczy kierującego:
+PO161O1;tylko rowerem
+PO161O2;wózkiem rowerowym
+PO161O3;tylko motorowerem
+PO161DO;B
+PO162;Za włączającego się do ruchu uważamy rowerzystę:
+PO162O1;wyjeżdżającego ze strefy zamieszkania
+PO162O2;wjeżdżającego do strefy zamieszkania
+PO162O3;wjeżdżającego na skrzyżowanie po zmianie sygnału świetlnego na zielony
+PO162DO;A
+PO163;W strefie zamieszkania dopuszczalna prędkość pojazdów wynosi:
+PO163O1;20 km/h
+PO163O2;45 km/h
+PO163O3;60 km/h
+PO163DO;A
+PO164;Wyprzedzanie rowerzysty, który sygnalizuje zamiar skrętu w lewo, może odbywać się:
+PO164O1;z dowolnej strony
+PO164O2;tylko z jego prawej strony
+PO164O3;tylko z jego lewej strony
+PO164DO;B
+PO165;Kierującemu rowerem zabrania się:
+PO165O1;wyprzedzania kolumny pieszych
+PO165O2;jazdy tuż za kolumną pieszych
+PO165O3;rozdzielania kolumny pieszych
+PO165DO;C
+PO166;Kierujący rowerem powinien użyć sygnału dźwiękowych w razie:
+PO166O1;zbliżania się do grupy uczniów
+PO166O2;rozpoczęcia wyprzedzania
+PO166O3;gdy zachodzi konieczność ostrzeżenia o niebezpieczeństwie
+PO166DO;C
+PO167;Zabrania się zatrzymania roweru:
+PO167O1;w odległości 15 m od przejazdu kolejowego
+PO167O2;na jezdni obok linii przerywanej wyznaczającej krawędź jezdni
+PO167O3;tuż za zatoką przy przystanku komunikacji publicznej
+PO167DO;B
+PO168;W okresie od świtu do zmierzchu kierujący rowerem podczas jazdy poza terenem zabudowanym w warunkach dobrej widoczności powietrza:
+PO168O1;musi mieć włączone światła pozycyjne
+PO168O2;nie musi mieć włączonego światła
+PO168O3;musi mieć włączone światła mijania
+PO168DO;B
+PO169;Obowiązkowym wyposażeniem roweru jest światło:
+PO169O1;odblaskowe barwy białej o kształcie innym niż kwadrat umieszczone z przodu roweru
+PO169O2;odblaskowe żółte umieszczone w pedałach roweru
+PO169O3;odblaskowe barwy czerwonej o kształcie innym niż trójkąt umieszczone z tyłu roweru
+PO169DO;C
+PO170;Długość zespołu pojazdów złożonego z wózka rowerowego i przyczepy nie może przekraczać:
+PO170O1;3 m
+PO170O2;3,75 m
+PO170O3;4 m
+PO170DO;C
+PO171;Kartę rowerową wydaje uczniowi szkoły podstawowej:
+PO171O1;dyrektor szkoły
+PO171O2;policjant ruchu drogowego
+PO171O3;naczelnik wydziału komunikacji na wniosek dyrektora szkoły
+PO171DO;A
+PO172;Liczba wózków rowerowych jadących w zorganizowanej kolumnie nie może przekraczać:
+PO172O1;5
+PO172O2;10
+PO172O3;15
+PO172DO;C
+PO173;Jadąc w kolumnie rowerzystów, należy pamiętać, że odległość od poprzedzającego roweru:
+PO173O1;wynosi minimum 3 metry, lecz nie powinna być krótsza niż droga hamowania
+PO173O2;nie jest określona
+PO173O3;musi wynosić co najmniej 5 metrów
+PO173DO;B
+PO174;Nie wymaga się odrębnego uprawnienia do:
+PO174O1;prowadzenia po jezdni zorganizowanej kolumny pieszych przez osobę, która ukończyła 18 lat
+PO174O2;jazdy motorowerem przez osobę, która ukończyła 14 lat
+PO174O3;jazdy rowerem przez osobę, która ukończyła 11 lat
+PO174DO;A
+PO175;Jaka powinna być odległość między kolumnami pieszych?
+PO175O1;50 m
+PO175O2;co najmniej 100 m
+PO175O3;co najmniej 200 m
+PO175DO;B
+PO176;Mama czteroletniego Bartka w drodze do przedszkola mówi: „już za rok twoja starsza siostra będzie mogła odprowadzać ciebie sama do przedszkola”. Ile lat ma siostra Bartka?
+PO176O1;9
+PO176O2;10
+PO176O3;17
+PO176DO;A
+PO177;Czy kolumna dziewięcioletnich pieszych może być prowadzona po jezdni?
+PO177O1;może prawą stroną jezdni pod opieką wychowawcy
+PO177O2;nie
+PO177O3;może lewą stroną jezdni w warunkach dobrej widoczności pod nadzorem osoby pełnoletniej
+PO177DO;C
+PO178;Dla naszego kierunku spaceru jest chodnik tylko po prawej stronie drogi. Po lewej nie ma pobocza nadającego się do chodzenia. Którędy należy iść?
+PO178O1;tylko po chodniku
+PO178O2;po lewej stronie jezdni
+PO178O3;po chodniku albo po lewej stronie jezdni
+PO178DO;A
+PO179;Osoba prowadząca pojazd napędzany silnikiem jest obowiązana poruszać się:
+PO179O1;po prawej stronie drogi w razie braku pobocza
+PO179O2;zawsze po prawej stronie drogi
+PO179O3;po poboczu, chyba że nie nadaje się ono do jazdy lub ruch pojazdu utrudniałby ruch pieszych
+PO179DO;C
+PO180;Którędy powinien chodzić pieszy w strefie zamieszkania?
+PO180O1;tylko po chodnikach
+PO180O2;tylko po chodnikach lub wyznaczonych drogach dla pieszych
+PO180O3;pieszy korzysta z całej szerokości drogi i ma pierwszeństwo przed rowerzystą
+PO180DO;C
+PO181;Rowerzyście zabrania się:
+PO181O1;jazdy obok drugiego rowerzysty na boisku szkolnym
+PO181O2;wjeżdżania na tory, gdy zapory są podnoszone
+PO181O3;jazdy w dzień bez włączonych świateł przy dobrej przejrzystości powietrza
+PO181DO;B
+PO182;Na autostradzie i drodze ekspresowej zabrania się:
+PO182O1;omijania pojazdów unieruchomionych z przyczyn technicznych
+PO182O2;jazdy rowerem
+PO182O3;przekraczania prędkości 90 km/h przez samochody osobowe bez przyczep
+PO182DO;B
+PO183;Kierujący rowerem może wyprzedzać powoli jadące pojazdy z ich prawej strony, jeżeli tym pojazdem nie jest:
+PO183O1;samochód osobowy
+PO183O2;motorower
+PO183O3;rower
+PO183DO;C
+PO184;Zabrania się zawracania:
+PO184O1;na skrzyżowaniach równorzędnych
+PO184O2;na moście
+PO184O3;na skrzyżowaniach o ruchu kierowanym
+PO184DO;C
+PO185;Kierującemu rowerem zabrania się:
+PO185O1;wyprzedzania z prawej strony, gdy pojazd wyprzedzany skręca w lewo
+PO185O2;wyprzedzania na przejściach dla pieszych na skrzyżowaniach o ruchu kierowanym
+PO185O3;jazdy wzdłuż po chodniku lub przejściu dla pieszych
+PO185DO;C
+PO186;Kierujący rowerem jest obowiązany:
+PO186O1;zachować bezpieczny odstęp od poprzedzającego go rowerzysty
+PO186O2;trzymać zawsze obie ręce na kierownicy
+PO186O3;jechać nie dalej jak 1 m od krawędzi jezdni
+PO186DO;B
+PO187;Dziecko w wieku 11 lat idące po jezdni po zmierzchu poza terenem zabudowanym:
+PO187O1;musi iść z opiekunem
+PO187O2;powinno mieć latarkę elektryczną
+PO187O3;musi posiadać elementy odblaskowe widoczne dla innych uczestników ruchu
+PO187DO;C
+PO188;Zabrania się postoju roweru:
+PO188O1;w miejscach utrudniającym dostęp do innego prawidłowo zaparkowanego pojazdu lub wyjazd tego pojazdu
+PO188O2;na chodniku,  gdy pozostaje 2 m szerokości tego chodnika
+PO188O3;przed słupkiem wskaźnikowym z dwiema kreskami przed przejazdem kolejowym
+PO188DO;A
+PO189;Szerokość roweru może mieć:
+PO189O1;1,5 m
+PO189O2;1 m
+PO189O3;0,9 m
+PO189DO;C
+PO190;W strefie zamieszkania prędkość jest ograniczona do:
+PO190O1;20 km/h
+PO190O2;15 km/h
+PO190O3;30 km/h
+PO190DO;A
+PO191;Rower może być wyposażony w uruchamiany naciskiem na pedały pomocniczy napęd elektryczny o znamionowej mocy ciągłej nie większej niż 250 W i zasilany prądem o napięciu nie wyższym niż:
+PO191O1;12 V
+PO191O2;24 V
+PO191O3;48 V
+PO191DO;C
+PO192;Holowanie roweru jest:
+PO192O1;dopuszczalne, ale tylko przez kierującego pojazdem niemechanicznym, a odległość między pojazdami wynosi nie więcej niż 3 m na połączeniu giętkim
+PO192O2;zabronione
+PO192O3;dopuszczalne wyłącznie na połączeniu giętkim, a długość linki wynosi od 4 do 6 m
+PO192DO;B
+PO193;Kierować po jezdni wózkiem inwalidzkim, poruszanego siłą mięśni kierującego, może osoba, która ukończyła co najmniej:
+PO193O1;15 lat
+PO193O2;13 lat
+PO193O3;18 lat
+PO193DO;B
+PO194;Ewa odprowadza od roku Adama do przedszkola. Ile co najmniej lat ukończyła Ewa?
+PO194O1;10
+PO194O2;11
+PO194O3;12
+PO194DO;B
+PO195;Uczniowie z klasy szóstej mogą iść w kolumnie pod warunkiem, że kolumna idzie:
+PO195O1;po prawej stronie jezdni i liczba idących obok siebie nie przekracza czterech (zajmują mniej niż połowę jezdni)
+PO195O2;parami po lewej stronie jezdni
+PO195O3;szóstkami po prawej stronie jezdni i nie zajmuje więcej niż połowę jezdni
+PO195DO;A
+PO196;Jeżeli pieszy zmuszony jest korzystać z pobocza lub jezdni, to:
+PO196O1;powinien iść prawą stroną drogi, gdyż obowiązuje ruch prawostronny
+PO196O2;powinien iść lewą stroną drogi
+PO196O3;powinien iść dowolną stroną drogi pod warunkiem ustąpienia pierwszeństwa nadjeżdżającemu pojazdowi
+PO196DO;B
+PO197;Kolumna młodzieży szkolnej w  wieku 11 – 15 lat:
+PO197O1;może poruszać się tylko prawą stroną jezdni pod nadzorem osoby pełnoletniej
+PO197O2;może poruszać się chodnikiem, jeżeli idzie co najwyżej czwórkami
+PO197O3;może, pod nadzorem osoby pełnoletniej, poruszać się lewą stroną jezdni i ustępować pierwszeństwa nadjeżdżającemu pojazdowi
+PO197DO;A
+PO198;Pieszy ma pierwszeństwo przed rowerzystą:
+PO198O1;na drodze bez przejazdu (tzw. „ślepej ulicy”)
+PO198O2;podczas przechodzenia przez jezdnię między skrzyżowaniami najkrótszą drogą i prostopadłą do krawędzi jezdni
+PO198O3;w strefie zamieszkania
+PO198DO;C
+PO199;W strefie zamieszkania w godzinach 5:00 do 23:00 dopuszczalna prędkość roweru wynosi:
+PO199O1;10 km/h
+PO199O2;20 km/h
+PO199O3;50 km/h
+PO199DO;B
+PO200;Dziecko w wieku 15 lat, poruszające się po jezdni po zmierzchu poza obszarem zabudowanym, jest obowiązane:
+PO200O1;nieść latarkę ze światłem białym
+PO200O2;używać elementów odblaskowych w sposób widoczny dla innych uczestników ruchu
+PO200O3;iść po lewej stronie drogi i nieść latarkę ze światłem czerwonym
+PO200DO;B
+PO201;Za włączającego się do ruchu uważamy rowerzystę wjeżdżającego:
+PO201O1;z jezdni na pobocze
+PO201O2;na drogę gruntową z drogi twardej
+PO201O3;na jezdnię z drogi dla rowerów, z wyjątkiem wjazdu na przejazd dla rowerzystów
+PO201DO;C
+PO202;Odległość między kolumnami rowerów jednośladowych nie może być mniejsza niż:
+PO202O1;100 m
+PO202O2;200 m
+PO202O3;500 m
+PO202DO;B
+PO203;Kierujący rowerem w wieku 17 lat w czasie jazdy musi mieć przy sobie:
+PO203O1;tymczasowy dowód osobisty
+PO203O2;kartę rowerową lub prawo jazdy
+PO203O3;nie musi mieć żadnych dokumentów
+PO203DO;B
+PO204;Liczba wózków rowerowych jadących w zorganizowanej kolumnie nie może przekraczać:
+PO204O1;5
+PO204O2;10
+PO204O3;15
+PO204DO;C
+PO205;Kierującemu rowerem zabrania się:
+PO205O1;ciągnąć kolegi na sankach zaczepionych sznurkiem do roweru
+PO205O2;jechać w kolumnie w odległości 4 m za poprzedzającym go rowerem
+PO205O3;jazdy w kolumnie liczącej mniej niż 10 rowerów jednośladowych
+PO205DO;A
+PO206;Zabrania się zatrzymania roweru:
+PO206O1;na jezdni obok linii przerywanej wyznaczającej krawędź jezdni
+PO206O2;przed znakiem „zakaz zatrzymywania się”
+PO206O3;w odległości 20 m od przejścia dla pieszych
+PO206DO;A
+PO207;Kierujący rowerem jest obowiązany używać podczas jazdy w nocy  świateł:
+PO207O1;mijania
+PO207O2;do jazdy dziennej
+PO207O3;pozycyjnych
+PO207DO;C
+PO208;W razie przechodzenia przez jezdnię osoby upośledzonej używającej specjalnego oznaczenia, kierujący rowerem jest obowiązany:
+PO208O1;bezpiecznie ominąć tę osobę
+PO208O2;ustąpić jej pierwszeństwa tylko na przejściu dla pieszych
+PO208O3;zatrzymać pojazd w celu umożliwienia jej przejścia
+PO208DO;C
+PO209;Korzystanie z chodnika lub drogi dla pieszych przez kierującego rowerem jednośladowym jest:
+PO209O1;kategorycznie zabronione
+PO209O2;dozwolone w każdym przypadku, pod warunkiem zachowania szczególnej ostrożności, powolnej jazdy i ustępowania miejsca pieszym
+PO209O3;dozwolone, gdy szerokość chodnika wzdłuż drogi, po której ruch pojazdów jest dozwolony z prędkością większa niż 50 km na godzinę, wynosi co najmniej 2 metry i brakuje wydzielonej drogi dla rowerów
+PO209DO;C
+PO210;W czasie poruszania się kolumny pieszych w warunkach niedostatecznej widoczności:
+PO210O1;pierwszy z idących z lewej strony obowiązany jest nieść latarkę ze światłem białym skierowanym do przodu
+PO210O2;pierwszy z idących z prawej strony obowiązany jest nieść latarkę ze światłem białym skierowanym do przodu
+PO210O3;ostatni z idących w kolumnie powinien nieść latarkę ze światłem białym
+PO210DO;A
+PO211;Rowerzysta wyprzedzany przez inny pojazd jest obowiązany:
+PO211O1;zawsze zatrzymać się, aby ułatwić wyprzedzanie
+PO211O2;zjechać jak najbliżej prawej krawędzi jezdni i - w razie potrzeby - zatrzymać się dla ułatwienia wyprzedzania
+PO211O3;przyspieszyć
+PO211DO;B
+PO212;Kierującemu rowerem zabrania się:
+PO212O1;wyprzedzania na drodze jednokierunkowej
+PO212O2;przejeżdżania przez chodnik
+PO212O3;przewożenia innej osoby, jeżeli nie ukończył 17 lat
+PO212DO;C
+PO213;Jeżeli pieszy musi poruszać się po jezdni, to:
+PO213O1;może iść środkiem jezdni, ustępując pierwszeństwa pojazdom
+PO213O2;jest obowiązany zajmować miejsce jak najbliżej jej lewej krawędzi
+PO213O3;powinien iść w odległości nie większej niż 1 m od jej krawędzi
+PO213DO;B
+PO214;Kilku pieszych idących po jezdni:
+PO214O1;zawsze musi iść „parami’
+PO214O2;powinno poruszać się jedno za drugim, ale na drogach o małym ruchu i w warunkach dobrej widoczności dwóch pieszych może iść obok siebie
+PO214O3;może iść w dowolny sposób
+PO214DO;B
+PO215;Poza przejściami dla pieszych:
+PO215O1;pieszy może przechodzić przez jezdnię w każdym miejscu, jeżeli zachowa szczególną ostrożność i będzie ustępował pierwszeństwa pojazdowi
+PO215O2;pieszy może przechodzić przez jezdnię, jeżeli odległość od przejścia przekracza 100 m
+PO215O3;pieszemu nie wolno przechodzić przez jezdnię poza przejściami
+PO215DO;B
+PO216;Przechodzenie przez jezdnię w miejscu o ograniczonej widoczności drogi:
+PO216O1;jest zawsze zabronione
+PO216O2;jest dozwolone tylko na drogach o małym natężeniu ruchu
+PO216O3;jest dozwolone tylko na drogach jednokierunkowych
+PO216DO;A
+PO217;Pieszy, który zamierza przejść przez drogę dwujezdniową na obszarze zabudowanym:
+PO217O1;zobowiązany jest korzystać tylko z przejść dla pieszych
+PO217O2;może przekroczyć drogę w odległości ponad 100 m od przejścia dla pieszych
+PO217O3;może przekroczyć drogę w dowolnym miejscu
+PO217DO;A
+PO218;Kto to jest uczestnik ruchu?
+PO218O1;pieszy, kierujący, a także inne osoby przebywające w pojeździe lub na pojeździe znajdującym się na drodze
+PO218O2;osoba wykonująca w kamizelce odblaskowej prace porządkowe na drodze
+PO218O3;każda osoba znajdująca się na drodze
+PO218DO;A
+PO219;Rowerzyście zabrania się:
+PO219O1;wjeżdżania na tory, gdy rozpoczęto opuszczanie zapór
+PO219O2;przejeżdżania poprzecznie przez przejście dla pieszych
+PO219O3;przejeżdżania poprzecznie przez chodnik
+PO219DO;A
+PO220;Za włączającego się do ruchu uważamy rowerzystę wjeżdżającego:
+PO220O1;z drogi podporządkowanej na drogę z pierwszeństwem
+PO220O2;rozpoczynającego wjazd na skrzyżowanie po zapaleniu się zielonego światła
+PO220O3;na pobocze z drogi dla rowerów z wyjątkiem wjazdu na przejazd dla rowerzystów lub na pas dla rowerów
+PO220DO;C
+PO221;Rowerzysta może korzystać z chodnika:
+PO221O1;pod warunkiem, że jedzie prawą stroną chodnika i nie utrudnia ruchu pieszym
+PO221O2;gdy brak jest ścieżki dla rowerów, a drogą poruszają się samochody ciężarowe
+PO221O3;gdy szerokość chodnika wzdłuż drogi, po której ruch pojazdów dozwolony jest z prędkością większą niż 50 km/h, wynosi co najmniej 2 m i brak jest wydzielonej drogi dla rowerów
+PO221DO;C
+PO222;Zabrania się zawracania rowerem:
+PO222O1;na drodze jednokierunkowej
+PO222O2;na skrzyżowaniach
+PO222O3;na jezdniach, na których środkiem poprowadzono linię przerywaną
+PO222DO;A
+PO223;Podczas wymijania kierujący rowerem jest obowiązany:
+PO223O1;nie zmieniać zajmowanego pasa ruchu
+PO223O2;zawsze zmniejszyć prędkość
+PO223O3;zachować bezpieczny odstęp od wymijanego pojazdu lub uczestnika ruchu, a w razie potrzeby zjechać w prawo i zmniejszyć prędkość lub zatrzymać się
+PO223DO;C
+PO224;Przed wyprzedzeniem kierujący rowerem jest obowiązany:
+PO224O1;tylko zasygnalizować zamiar zmiany pasa ruchu
+PO224O2;ostrzec dzwonkiem kierującego pojazdem wyprzedzanym
+PO224O3;upewnić się w szczególności, czy ma odpowiednią widoczność i dostateczne miejsce do wyprzedzania bez utrudnienia komukolwiek ruchu
+PO224DO;C
+PO225;Jazda po jezdni obok innego uczestnika ruchu, jeżeli nie utrudnia to poruszania się innym uczestnikom ruchu albo w inny sposób nie zagraża bezpieczeństwu ruchu drogowego jest dozwolona, jeżeli:
+PO225O1;rowerzysta jedzie obok rowerzysty
+PO225O2;rowerzysta jedzie obok motocyklisty
+PO225O3;motorowerzysta jedzie obok rowerzysty
+PO225DO;A
+PO226;Do obowiązkowego wyposażenia roweru należy:
+PO226O1;lusterko boczne
+PO226O2;światła barwy żółtej samochodowej na pedałach
+PO226O3;dzwonek lub inny sygnał ostrzegawczy o nieprzeraźliwym dźwięku
+PO226DO;C
+PO227;Nie wymaga się uprawnienia do kierowania rowerem od osoby, która ukończyła:
+PO227O1;18 lat
+PO227O2;15 lat
+PO227O3;13 lat
+PO227DO;A
+PO228;Rower powinien być obowiązkowo wyposażony w:
+PO228O1;co najmniej jeden skutecznie działający hamulec
+PO228O2;boczne światło odblaskowe barwy białej lub pomarańczowej
+PO228O3;dwa skutecznie działające hamulce
+PO228DO;A
+PO229;Rowerzysta ma pierwszeństwo przed pieszym pełnosprawnym:
+PO229O1;na drodze dla rowerów
+PO229O2;na drodze dla rowerów i pieszych
+PO229O3;zawsze na jezdni
+PO229DO;A
+PO230;Kolumna pieszych w wieku do 10 lat poruszająca się po poboczu drogi może iść:
+PO230O1;tylko lewą stroną drogi
+PO230O2;tylko prawą stroną drogi
+PO230O3;po dowolnej stronie drogi
+PO230DO;A
+PO231;Jeżeli z powodu braku pobocza piesi korzystają z jezdni, to powinni iść:
+PO231O1;jeden za drugim, lewą stroną drogi i ustępować pierwszeństwa nadjeżdżającemu pojazdowi
+PO231O2;w grupie nie większej niż 5 osób, prawą stroną drogi, i ustępować pierwszeństwa nadjeżdżającemu pojazdowi
+PO231O3;dowolną stroną drogi, a w warunkach niedostatecznej widoczności obowiązani są ustępować pierwszeństwa nadjeżdżającemu pojazdowi
+PO231DO;A
+PO232;Pieszy ma pierwszeństwo przed jadącym prosto rowerzystą, jeżeli:
+PO232O1;z braku chodnika lub pobocza korzysta ze ścieżki dla rowerów
+PO232O2;korzysta z drogi dla rowerów
+PO232O3;przechodzi przez jezdnię na skrzyżowaniu dróg, na którym nie ma oznaczonego przejścia dla pieszych
+PO232DO;C
+PO233;Czy wszystkie kolumny muszą się poruszać po prawej stronie jezdni?
+PO233O1;tak
+PO233O2;nie (kolumny dzieci do lat 10 poruszają się po lewej stronie jezdni)
+PO233O3;przepisy o ruchu drogowym nie precyzują tego problemu
+PO233DO;B
+PO234;Kiedy można przechodzić przez jezdnię w odległości mniejszej niż 100 metrów od wyznaczonego przejścia?
+PO234O1;nigdy
+PO234O2;jeżeli skrzyżowanie jest w odległości mniejszej niż 100 metrów od wyznaczonego przejścia, przechodzenie jest dozwolone również na tym skrzyżowaniu
+PO234O3;tylko w strefie zamieszkania
+PO234DO;B
+PO235;Dwunastoletni rowerzysta podczas jazdy jest:
+PO235O1;pieszym
+PO235O2;kierującym
+PO235O3;kierowcą
+PO235DO;B
+PO236;Pieszy korzystając z przejść dla pieszych:
+PO236O1;musi ustąpić pierwszeństwa pojazdom
+PO236O2;ma pierwszeństwo przed kierującym rowerem
+PO236O3;musi przepuścić pojazdy ze swojej prawej strony
+PO236DO;B
+PO237;Za włączającego się do ruchu uważamy rowerzystę wjeżdżającego:
+PO237O1;na drogę polną z drogi twardej
+PO237O2;na jezdnię z pobocza lub innej części drogi, z pasa ruchu dla pojazdów powolnych
+PO237O3;z jezdni na pobocze
+PO237DO;B
+PO238;Nie zabrania się zatrzymania roweru:
+PO238O1;tylko na drodze dla rowerów
+PO238O2;na pasie ruchu dla rowerów
+PO238O3;tylko w śluzie rowerowej
+PO238DO;B
+PO239;Zabrania się wyprzedzania pojazdów uprzywilejowanych:
+PO239O1;na obszarze zabudowanym
+PO239O2;poza obszarem zabudowanym
+PO239O3;wszędzie
+PO239DO;A
+PO240;Odległości między zorganizowanymi kolumnami nie mogą być mniejsze niż:
+PO240O1;100 m – pojazdy samochodowe, 200 m - rowerzyści, 500 m – piesi
+PO240O2;100 m – rowerzyści, 200 m - pojazdy samochodowe, 500 m – piesi
+PO240O3;100 m – piesi, 200 m - rowerzyści, 500 m – pojazdy samochodowe
+PO240DO;C
+PO241;Kierującemu rowerem zabrania się:
+PO241O1;jazdy w zorganizowanej kolumnie liczącej 10 rowerów jednośladowych
+PO241O2;jazdy za rowerzystą w odległości nie zapewniającej bezpieczne hamowanie, gdy jadący z Przodu rowerzysta zahamuje gwałtownie
+PO241O3;jazdy z jedną ręką na kierownicy
+PO241DO;B
+PO242;Zabrania się zatrzymania roweru:
+PO242O1;na poboczu obok linii przerywanej wyznaczającej krawędź jezdni
+PO242O2;przed znakiem „zakaz zatrzymywania się”
+PO242O3;na jezdni przy jej lewej krawędzi, z wyjątkiem zatrzymania lub postoju pojazdu na obszarze zabudowanym na drodze jednokierunkowej lub na jezdni dwukierunkowej o Małym ruchu
+PO242DO;C
+PO243;Rower powinien być wyposażony:
+PO243O1;z tyłu - w co najmniej jedno światło pozycyjne barwy czerwonej (może być migające) oraz w co najmniej jedno światło odblaskowe barwy czerwonej o kształcie innym niż trójkąt
+PO243O2;w lusterko wsteczne
+PO243O3;w światła barwy żółtej samochodowej na pedałach
+PO243DO;a
+PO244;Kierować wózkiem inwalidzkim poruszanym silnikiem pomocniczym można pod warunkiem konstrukcyjnego ograniczenia maksymalnej prędkości do:
+PO244O1;10 km/h
+PO244O2;25 km/h
+PO244O3;prędkości pieszego (około 5 km/h)
+PO244DO;C
+PO245;Rowerzysta, który wykonuje skręt lub zmienia kierunek ruchu:
+PO245O1;nie musi sygnalizować manewru, jeśli skręca w prawo
+PO245O2;skręcając w lewo, po upewnieniu się, że ma wolną drogę, może wykonać manewr bez sygnalizowania
+PO245O3;zawsze obowiązany jest podać sygnał przez wyciągnięcie ręki w odpowiednim kierunku
+PO245DO;C
+PO246;Przy jakiej dozwolonej prędkości kierujący rowerem jednośladowym, przy spełnieniu dodatkowych warunków, może korzystać z chodnika położonego wzdłuż tej drogi?
+PO246O1;30 km/h
+PO246O2;40 km/h
+PO246O3;60 km/h
+PO246DO;C
+PO247;Zbliżając się do skrzyżowania równorzędnego rowerzysta ma obowiązek:
+PO247O1;zachować szczególną ostrożność i ustąpić pierwszeństwa pojazdom nadjeżdżającym z prawej strony
+PO247O2;ustąpić pierwszeństwa pojazdom silnikowym, niezależnie od tego, z której strony nadjeżdżają
+PO247O3;zwiększyć prędkość, aby jak najszybciej pokonać skrzyżowanie
+PO247DO;A
+PO248;Kierujący rowerem, może:
+PO248O1;używać sygnału dźwiękowego celem ostrzeżenia innych uczestników ruchu drogowego przed niebezpieczeństwem
+PO248O2;jechać bez wymaganego wyposażenia roweru, jeżeli porusza się wyłącznie po poboczu
+PO248O3;jechać po jezdni obok wolno jadącego czterokołowca
+PO248DO;A
+PO249;Przekraczanie jezdni przez pieszego poza wyznaczonym przejściem jest zawsze zabronione na drodze:
+PO249O1;dwujezdniowej znajdującej się na obszarze zabudowanym
+PO249O2;wzdłuż, której znajduje się droga dla rowerów
+PO249O3;bez poboczy
+PO249DO;A
+PO250;Pieszemu zabrania się:
+PO250O1;poruszania się po drodze, na której obowiązuje zakaz ruchu w obu kierunkach
+PO250O2;przebiegania przez jezdnię w strefie ruchu
+PO250O3;korzystania z drogi dla rowerów, gdy nie ma możliwości korzystania z chodnika lub pobocza
+PO250DO;B
+PO251;Pieszy idący po lewej stronie jezdni:
+PO251O1;ma pierwszeństwo przed pojazdem
+PO251O2;ustępuje pierwszeństwa tylko autobusowi
+PO251O3;musi ustępować miejsca pojazdowi nadjeżdżającemu z przeciwnego kierunku
+PO251DO;C
+PO252;Pieszy idący po drodze dla rowerów:
+PO252O1;musi ustąpić miejsca nadjeżdżającym rowerom (nie dotyczy to osób niepełnosprawnych)
+PO252O2;ma pierwszeństwo przed rowerem
+PO252O3;zawsze musi ustąpić miejsca nadjeżdżającemu rowerowi
+PO252DO;A
+PO253;Michał i Ewa mają dzisiaj urodziny. Michał za rok będzie mógł  samodzielnie chodzić po drogach. Ewa od roku zgodnie z przepisami „Prawa o ruchu drogowym” mogła prowadzać go do przedszkola. Ile mają razem lat dzisiaj?
+PO253O1;16
+PO253O2;17
+PO253O3;18
+PO253DO;B
+PO254;Siedmioletnie dzieci idą w kolumnie, w której odległości między parami wynoszą 1 m. Jaka może być największa liczba dzieci w takiej kolumnie?
+PO254O1;50
+PO254O2;100
+PO254O3;102
+PO254DO;C
+PO255;Kto to jest kierujący?
+PO255O1;osoba uprawniona do kierowania pojazdem silnikowym
+PO255O2;osoba, która kieruje pojazdem lub zespołem pojazdów, a także osoba, która prowadzi kolumnę pieszych, jedzie wierzchem albo pędzi zwierzęta pojedynczo lub w stadzie
+PO255O3;osoba kierująca motocyklem
+PO255DO;B
+PO256;Długość wózka rowerowego i przyczepy nie może przekraczać:
+PO256O1;3 m
+PO256O2;3,5 m
+PO256O3;4 m
+PO256DO;C
+PO257;Za włączającego się do ruchu uważamy rowerzystę wjeżdżającego :
+PO257O1;z pobocza na drogę dla rowerów
+PO257O2;na drogę z  obiektu przydrożnego lub dojazdu do takiego obiektu
+PO257O3;z jezdni na drogę dla rowerów
+PO257DO;B
+PO258;Dopuszcza się przewóz dzieci w przyczepie przystosowanej konstrukcyjnie do przewozu osób ciągniętej przez:
+PO258O1;motorower
+PO258O2;motocykl
+PO258O3;wózek rowerowy
+PO258DO;C
+PO259;Dopuszcza się wyprzedzanie z prawej strony na odcinku drogi z wyznaczonymi pasami ruchu:
+PO259O1;na jezdniach jednokierunkowych
+PO259O2;wszędzie
+PO259O3;tylko na jezdniach o czterech pasach ruchu w jednym kierunku
+PO259DO;A
+PO260;Nie wymaga się uprawnienia od osoby, która ukończyła 18 lat do kierowania:
+PO260O1;samochodem osobowym o masie całkowitej do 550 kg
+PO260O2;motocyklem
+PO260O3;wózkiem rowerowym
+PO260DO;C
+PO261;Dopuszcza się umieszczenie świateł odblaskowych barwy białej dodatkowo:
+PO261O1;z tyłu wózka rowerowego
+PO261O2;z przodu roweru i wózka rowerowego
+PO261O3;z przodu i z tyłu motoroweru
+PO261DO;B
+PO262;Zabrania się zatrzymania roweru:
+PO262O1;na poboczu obok linii przerywanej wyznaczającej krawędź jezdni
+PO262O2;przed znakiem „zakaz zatrzymywania się”
+PO262O3;w odległości mniejszej niż 15 m od słupka lub tablicy oznaczającej  przystanek komunikacji publicznej, a na przystanku z zatoką - na całej jej długości
+PO262DO;C
+PO263;Światło odblaskowe w rowerze nie może mieć kształtu:
+PO263O1;koła
+PO263O2;trójkąta
+PO263O3;kwadratu
+PO263DO;B
+PO264;Rowerzysta jadący we mgle:
+PO264O1;może wyprzedzić wolno jadący pojazd
+PO264O2;musi zejść z roweru i prowadzić go, jeżeli nie ma pobocza
+PO264O3;jest obowiązany korzystać z pobocza drogi, a jeżeli nie jest to możliwe, jechać jak najbliżej krawędzi jezdni i nie wyprzedzać innego pojazdu
+PO264DO;C
+PO265;Rowerzysta, dojeżdżając do przystanku tramwajowego bez wysepki,  na którym stoi tramwaj, powinien:
+PO265O1;zmniejszyć prędkość i ostrożnie przejechać obok tramwaju, uważając na wsiadających i wysiadających pasażerów
+PO265O2;zatrzymać rower na czas postoju tramwaju co najmniej 10 m od znaku wyznaczającego przystanek
+PO265O3;zatrzymać rower w takim miejscu i na taki czas, aby zapewnić pieszym swobodne dojście do tramwaju i na chodnik
+PO265DO;C
+PO266;Kierujący rowerem na przejeździe dla rowerzystów:
+PO266O1;ma pierwszeństwo przed pojazdami
+PO266O2;jest włączającym się do ruchu
+PO266O3;ustępuje pierwszeństwa pojazdom jadącym jezdnią
+PO266DO;A
+PO267;Zabrania się zatrzymania roweru, jeżeli nie wynika to z warunków ruchu drogowego:
+PO267O1;na drodze jednokierunkowej na obszarze zabudowanym
+PO267O2;w odległości mniejszej niż 10 m od przejazdu lub skrzyżowania
+PO267O3;w odległości mniejszej niż 2 m od znaku „STOP”
+PO267DO;B
+PO268;Pieszy opiekujący się dzieckiem poniżej 7. roku życia:
+PO268O1;ma obowiązek poruszania się lewą stroną jezdni
+PO268O2;może poruszać się prawą stroną jezdni
+PO268O3;zawsze może poruszać się drogą rowerową
+PO268DO;A
+PO269;Przechodzenie przez drogę o dwóch jezdniach jest:
+PO269O1;dopuszczalne poza obszarem zabudowanym, jeżeli odległość od przejścia przekracza 50 m i pod warunkiem ustępowania pierwszeństwa pojazdowi
+PO269O2;dozwolone na obszarze zabudowanym tylko na przejściach dla pieszych
+PO269O3;dozwolone zawsze, jeżeli odległość od przejścia przekracza 100 m
+PO269DO;B
+PO270;Pieszemu zabrania się wchodzenia na tory na przejeździe kolejowym, jeżeli:
+PO270O1;podnoszenie zapór lub półzapór nie zostało zakończone
+PO270O2;za przejazdem nie ma warunków na kontynuowania ruchu
+PO270O3;opuszczanie zapór lub półzapór zostało rozpoczęto
+PO270DO;C
+PO271;Pieszy może korzystać z drogi przeznaczonej tylko dla rowerów:
+PO271O1;jedynie wtedy, gdy po tej drodze nie poruszają się rowerzyści
+PO271O2;zawsze, gdyż łatwo może ustąpić miejsca kierującym rowerami
+PO271O3;jedynie w razie braku pobocza lub pobocza albo niemożliwości korzystania z nich: pieszy pełnosprawny ustępuje pierwszeństwa rowerzyście
+PO271DO;C
+PO272;Liczba pieszych idących obok siebie po jezdni w kolumnie nie może przekraczać:
+PO272O1;czterech, a dwóch jeśli są to piesi do lat 10
+PO272O2;czterech również wtedy, gdy są to piesi do lat 10
+PO272O3;sześciu, a czterech jeśli są to piesi do lat 10
+PO272DO;A
+PO273;Kolumna pieszych w wieku do lat 10 korzystając z jezdni obowiązana jest między innymi:
+PO273O1;poruszać się prawą stroną jezdni
+PO273O2;iść lewa stroną jezdni
+PO273O3;iść trójkami
+PO273DO;B
+PO274;Podniesienie ręki do góry przez osobę kierującą ruchem jest odpowiednikiem sygnału:
+PO274O1;czerwonego i żółtego - dla kierującego pojazdem, dla którego ruch był zamknięty
+PO274O2;żółtego - dla kierującego pojazdem, dla którego ruch był zamknięty
+PO274O3;żółtego - dla wszystkich kierujących
+PO274DO;A
+PO275;Liczba wózków  rowerowych w zorganizowanej kolumnie nie może przekraczać:
+PO275O1;5
+PO275O2;10
+PO275O3;15
+PO275DO;C
+PO276;8. Przewozić wózkiem rowerowym inną osobę może osoba, która ukończyła:
+PO276O1;15 lat
+PO276O2;16 lat
+PO276O3;17 lat
+PO276DO;C
+PO277;Wyprzedzanie z prawej strony na jezdni dwukierunkowej, jeśli poza obszarem zabudowanym są trzy pasy ruchu przeznaczone do jazdy w tym samym kierunku jest dozwolone:
+PO277O1;zawsze
+PO277O2;tylko na drogach o dopuszczalnej prędkości ponad  90 km/h
+PO277O3;z wyjątkiem jezdni na zakręcie oznaczonym znakami ostrzegawczymi
+PO277DO;C
+PO278;Kierującemu rowerem zabrania się jazdy wzdłuż po chodniku lub przejściu dla pieszych z wyjątkiem:
+PO278O1;jeżeli na jezdni dozwolona jest prędkość ponad 50 km/h
+PO278O2;dziecka siedmioletniego kierującego rowerem pod opieką osoby dorosłej
+PO278O3;dziecka do lat 10 kierującego rowerem
+PO278DO;B
+PO279;Kierujący pojazdem, który skręca w drogę poprzeczną, jest obowiązany zachować szczególną ostrożność i ustąpić pierwszeństwa rowerzyście jadącemu:
+PO279O1;na wprost po jezdni
+PO279O2;w prawo
+PO279O3;w lewo
+PO279DO;A
+PO280;Kierującemu pojazdem wyprzedzanym zabrania się w czasie wyprzedzania i bezpośrednio po nim zwiększania prędkości, z wyjątkiem gdy:
+PO280O1;pojazd jest wyprzedzany z prawej strony przez rower
+PO280O2;rowerzystę wyprzedza samochód osobowy
+PO280O3;pojazd jest wyprzedzany z lewej strony przez rower
+PO280DO;A
+PO281;Kierować po jezdni wózkiem inwalidzkim poruszanym siłą mięśni kierującego może osoba, która ma ukończone co najmniej:
+PO281O1;12 lat
+PO281O2;13 lat
+PO281O3;15 lat
+PO281DO;B
+PO282;Dziecko w wieku 16 lat idące po jezdni po zmierzchu poza obszarem zabudowanym jest obowiązane:
+PO282O1;iść z latarką ze światłem białym i czerwonym
+PO282O2;iść pod opieką osoby dorosłej
+PO282O3;używać elementów odblaskowych w sposób widoczny dla innych uczestników ruchu
+PO282DO;C
+PO283;Dziecko do lat 7 może korzystać z drogi tylko pod opieką osoby, która osiągnęła wiek co najmniej 10 lat z wyjątkiem:
+PO283O1;strefy zamieszkania
+PO283O2;nie ma wyjątków
+PO283O3;drogi przeznaczonej dla pieszych i  rowerów
+PO283DO;A
+PO284;Za pieszego w ruchu drogowym uznaje się osobę:
+PO284O1;wykonującą w kamizelce odblaskowej prace porządkowe na drodze
+PO284O2;w wieku powyżej 10. roku życia jadącą na rowerze
+PO284O3;pchającą wózek inwalidzki
+PO284DO;C
+PO285;Z drogi dla rowerów obowiązany jest korzystać:
+PO285O1;motorowerzysta przewożący dziecko do lat 7
+PO285O2;uczestnik ruchu poruszający się na wózku inwalidzkim
+PO285O3;rowerzysta na rowerze jednośladowym
+PO285DO;C
+PO286;Kierującemu rowerem zabrania się zawracania:
+PO286O1;na drodze dwujezdniowej
+PO286O2;w tunelu
+PO286O3;na odcinku jezdni wzdłuż linii przystankowej
+PO286DO;B
+PO287;W czasie mgły kierujący rowerem:
+PO287O1;nie może korzystać z drogi
+PO287O2;ma zakaz wyprzedzania innego pojazdu
+PO287O3;powinien umieścić dodatkowe elementy odblaskowe z tyłu roweru
+PO287DO;B
+PO288;Zabrania się wchodzenia na jezdnię:
+PO288O1;bezpośrednio przed jadący pojazd, w tym również na przejściu dla pieszych
+PO288O2;przy zielonym świetle dla pieszych
+PO288O3;w odległości 110 m od przejścia dla pieszych
+PO288DO;A
+PO289;Zabrania się:
+PO289O1;przechodzenia przez jezdnię w innych miejscach niż wyznaczone do tego
+PO289O2;przechodzenia przez jezdnię w odległości większej niż 100 m od przejścia dla pieszych
+PO289O3;przebiegania przez jezdnię na drodze wewnętrznej
+PO289DO;C
+PO290;Idący w kolumnie pieszych o długości ponad 20 metrów w warunkach ograniczonej widoczności  są obowiązani:
+PO290O1;po lewej stronie z przodu i z tyłu używać latarek ze światłem białym
+PO290O2;idący po lewej stronie nieść dodatkowe latarki ze światłem białym, rozmieszczone w ten sposób, aby odległość między nimi nie przekraczała 10 m
+PO290O3;po lewej stronie z przodu i z tyłu używać latarek ze światłem czerwonym
+PO290DO;B
+PO291;Poza przejściami dla pieszych przechodzenie przez jezdnię jest dozwolone tylko pod warunkiem, że:
+PO291O1;nie spowoduje zagrożenia bezpieczeństwa ruchu oraz utrudnienia ruchu pojazdów
+PO291O2;przechodzenie odbywa się w odległości 50 m od przejścia dla pieszych
+PO291O3;pieszy przebieganie przez jezdnię
+PO291DO;A
+PO292;Zabrania się wchodzenia na jezdnię:
+PO292O1;w obszarze zabudowanym
+PO292O2;spoza pojazdu lub innej przeszkody ograniczającej widoczność drogi
+PO292O3;w strefie zamieszkania
+PO292DO;B
+PO293;Podczas wyprzedzania odstęp nie może być mniejszy niż 1 m przy wyprzedzaniu:
+PO293O1;wózka rowerowego
+PO293O2;pojazdu wolnobieżnego
+PO293O3;motocykla z bocznym wózkiem
+PO293DO;A
+PO294;Na obszarze zabudowanym, na drodze o dwóch jezdniach lub po których kursują tramwaje po torowisku wyodrębnionym z jezdni, pieszy przechodząc przez jezdnię lub torowisko jest obowiązany korzystać:
+PO294O1;tylko z przejść podziemnych
+PO294O2;tylko z przejścia dla pieszych
+PO294O3;z całej szerokości jezdni, ustępując pierwszeństwa pojazdom
+PO294DO;B
+PO295;Kierujący rowerem, włączając się do ruchu jest obowiązany:
+PO295O1;zachować tylko szczególną ostrożność
+PO295O2;zachować szczególną ostrożność i ustąpić pierwszeństwa innemu pojazdowi lub pieszemu
+PO295O3;ustąpić pierwszeństwa tylko pojazdowi z prawej strony
+PO295DO;B
+PO296;Dopuszczalna prędkość roweru z przyczepką w strefie zamieszkania wynosi:
+PO296O1;20 km/h
+PO296O2;10 km/h
+PO296O3;30 km/h
+PO296DO;A
+PO297;Dopuszcza się wyprzedzanie na skrzyżowaniu pojazdu sygnalizującego  zamiar skręcenia, pod warunkiem, że:
+PO297O1;nie odbywa się to na skrzyżowaniu równorzędnym
+PO297O2;odbywa się to tylko na skrzyżowaniu o ruchu okrężnym
+PO297O3;kierujący nie wjeżdża na część jezdni przeznaczoną do ruchu w kierunku przeciwnym
+PO297DO;C
+PO298;Zabrania się jazdy rowerem:
+PO298O1;po jezdni obok pieszego
+PO298O2;po drodze dla rowerów i pieszych obok pieszego
+PO298O3;po drodze dla rowerów obok rowerzysty
+PO298DO;A
+PO299;Kierujący rowerem  przy wjeżdżaniu na drogę twardą  w miejscu, gdzie nie ma dostatecznej widoczności drogi, jest obowiązany:
+PO299O1;wjeżdżając na drogę obserwować tylko lewą stronę drogi
+PO299O2;jeżeli chce skręcić w lewo, najpierw skręcić w prawo i później po 200 metrach zawrócić
+PO299O3;zejść z roweru i jako pieszy przeprowadzić rower do takiego miejsca na drodze, w którym może bezpiecznie kontynuować jazdę
+PO299DO;C
+PO300;Zabrania się zatrzymania roweru:
+PO300O1;na poboczu obok linii przerywanej wyznaczającej krawędź jezdni
+PO300O2;przed znakiem „zakaz zatrzymywania się”
+PO300O3;w odległości mniejszej niż 15 m od punktów krańcowych wysepki, jeżeli jezdnia z prawej jej strony ma tylko jeden pas ruchu
+PO300DO;C
+PO301;Rower powinien być wyposażony obowiązkowo:
+PO301O1;w co najmniej jeden skutecznie działający hamulec
+PO301O2;w kierunkowskazy
+PO301O3;w światła barwy żółtej samochodowej na pedałach
+PO301DO;A
+PO302;Jadąc w zorganizowanej kolumnie rowerów jednośladowych rowerzysta:
+PO302O1;musi przestrzegać przepisów ruchu drogowego
+PO302O2;nie musi przestrzegać przepisów ruchu drogowego, ponieważ za to jest odpowiedzialny prowadzący kolumnę
+PO302O3;musi mieć kask ochronny
+PO302DO;A
+PO303;Przechodząc przez przejście dla pieszych w miejscu, w którym ruch pojazdów jest rozdzielony wysepką, pieszy:
+PO303O1;może wejść na przejście i przejść na drugą stronę drogi dopiero, jeżeli uzna, że sytuacja na drodze umożliwia pokonanie obu części przejścia bez zatrzymania
+PO303O2;przejście za wysepką powinien traktować jako odrębne i postępować tak, jakby wchodził na nie z chodnika
+PO303O3;nie musi zatrzymywać się na wysepce, gdyż po wejściu na przejście przed wysepką ma pierwszeństwo przed pojazdami
+PO303DO;B
+PO304;Rowerzysta może przejechać przez skrzyżowanie z sygnalizacją świetlną, na którym policjant kieruje ruchem, jeżeli:
+PO304O1;policjant da sygnał przejazdu dla jego kierunku ruchu
+PO304O2;zapali się zielony sygnał dla jego kierunku ruchu
+PO304O3;znajduje się na drodze oznaczonej jako droga z pierwszeństwem przejazdu
+PO304DO;A
+PO305;Rowerzysta korzystający z drogi, na której znajdują się dwa pasy ruchu w jednym kierunku i wzdłuż której nie ma pobocza ani drogi dla rowerów, jest obowiązany:
+PO305O1;korzystać z pasa ruchu rzadziej uczęszczanego przez ciężarówki
+PO305O2;korzystać z pasa ruchu, na którym jest mniej pojazdów
+PO305O3;jechać jezdnią możliwie blisko jej prawej krawędzi
+PO305DO;C
+PO306;Rowerzysta wjeżdżający na pobocze z parkingu ustępuje pierwszeństwa:
+PO306O1;wszystkim pieszym i kierującym poruszającym się poboczem
+PO306O2;tylko motorowerom
+PO306O3;tylko osobom pieszym i rowerzystom
+PO306DO;A
+PO307;Korzystanie przez pieszego z drogi dla rowerów:
+PO307O1;jest zawsze zabronione
+PO307O2;jest dozwolone w razie braku chodnika lub pobocza albo niemożności korzystania z nich i pod warunkiem ustępowania miejsca rowerom
+PO307O3;jest dozwolone tylko na obszarze niezabudowanym przy drogach dwujezdniowych w razie braku chodnika lub pobocza
+PO307DO;B
+PO308;Poza przejściami dla pieszych:
+PO308O1;pieszy może przechodzić przez jezdnię w każdym miejscu, jeżeli zachowa szczególną ostrożność i będzie ustępował pierwszeństwa pojazdom
+PO308O2;pieszemu nie wolno przechodzić przez jezdnię
+PO308O3;pieszy może przejść przez jezdnię, jeżeli odległość od przejścia przekracza 100 m
+PO308DO;C
+PO309;W odległości mniejszej niż 100 m od wyznaczonego przejścia na drodze ekspresowej:
+PO309O1;pieszy może przejść przez jezdnię w dowolnym miejscu, jeżeli nie nadjeżdża żaden pojazd
+PO309O2;pieszy nie może poruszać się po tej drodze
+PO309O3;pieszemu zabrania się przechodzenia przez jezdnię poza przejściami dla pieszych
+PO309DO;B
+PO310;Jeżeli urządzenia zabezpieczające (barierki, łańcuchy itp.) oddzielają chodnik od jezdni, przechodzenie przez jezdnię w tym miejscu:
+PO310O1;jest zawsze zabronione
+PO310O2;jest zabronione tylko wówczas, gdy urządzenia te są po obu stronach jezdni
+PO310O3;jest dozwolone, jeżeli urządzenie to znajduje się po przeciwnej stronie jezdni
+PO310DO;A
+PO311;Pieszemu na wyznaczonym przejściu:
+PO311O1;wolno wejść na jezdnię nawet bezpośrednio przed jadący pojazd, albowiem zawsze ma pierwszeństwo
+PO311O2;wolno wejść na jezdnię bezpośrednio przed jadący pojazd, jeżeli porusza się on z małą prędkością
+PO311O3;zawsze zabrania się wejścia na jezdnię bezpośrednio przed jadący pojazd
+PO311DO;C
+PO312;Dziecko do lat 10 jadące rowerem:
+PO312O1;jest uważane za pieszego
+PO312O2;może poruszać się po drogach publicznych bez opieki osoby dorosłej
+PO312O3;może poruszać się po drogach publicznych pod opieką osoby szesnastoletniej
+PO312DO;A
+PO313;Co to jest postój pojazdu?
+PO313O1;każde zatrzymanie pojazdu i wyłączenie silnika
+PO313O2;unieruchomienie pojazdu nie wynikające z warunków lub przepisów ruchu drogowego trwające dłużej niż jedną minutę
+PO313O3;każde zatrzymanie pojazdu na dłużej niż jedna minuta
+PO313DO;B
+PO314;Jeżeli wysepka dla pasażerów na przystanku komunikacji publicznej łączy się z przejściem dla pieszych, przechodzenie do przystanku i z przystanku jest dozwolone:
+PO314O1;tylko po tym przejściu
+PO314O2;w dowolny bezpieczny sposób
+PO314O3;tylko po przejściach nadziemnych dla pieszych
+PO314DO;A
+PO315;Włączenie się do ruchu następuje:
+PO315O1;przy rozpoczynaniu jazdy po postoju lub zatrzymaniu się nie wynikającym z warunków lub przepisów ruchu drogowego
+PO315O2;przy rozpoczęciu jazdy po zakończeniu podnoszenia zapór przed przejazdem kolejowym
+PO315O3;przy ruszaniu w momencie zapalenia się zielonego światła dla naszego kierunku
+PO315DO;A
+PO316;Korzystanie z drogi dla pieszych przez kierującego rowerem jest dozwolona wyjątkowo, gdy:
+PO316O1;nie ma obok drogi dla rowerów
+PO316O2;po jezdni jeżdżą samochody ciężarowe z prędkością przekraczającą 50 km/h
+PO316O3;opiekuje się on osobą w wieku lat 10 kierującą rowerem
+PO316DO;C
+PO317;Kierujący rowerem jest obowiązany:
+PO317O1;zawczasu i wyraźnie sygnalizować zamiar zmiany kierunku jazdy lub pasa ruchu i zaprzestać sygnalizowania niezwłocznie po wykonaniu manewru
+PO317O2;sygnalizować tylko zamiar skręcania w lewo
+PO317O3;sygnalizować zamiar skręcania tuż przed skrzyżowaniem
+PO317DO;A
+PO318;W razie ciągnięcia przyczepki przez rower, wysokość ładunku nie może przekroczyć :
+PO318O1;1 m
+PO318O2;2 m
+PO318O3;4 m
+PO318DO;C
+PO319;Podczas wyprzedzania odstęp nie może być mniejszy niż 1 m przy wyprzedzaniu:
+PO319O1;wózka rowerowego
+PO319O2;pojazdu wolnobieżnego
+PO319O3;motocykla z bocznym wózkiem
+PO319DO;A
+PO320;Zabrania się postoju roweru:
+PO320O1;za przejazdem kolejowym na odcinku od torów do słupka z trzema kreskami
+PO320O2;przed przejazdem kolejowym na odcinku od torów do słupka z dwiema kreskami
+PO320O3;przed i za przejazdem kolejowym po obu stronach drogi, na odcinku od przejazdu kolejowego do słupka wskaźnikowego z jedną kreską
+PO320DO;C
+PO321;Rower powinien być wyposażony obowiązkowo w:
+PO321O1;lusterko wsteczne umieszczone po lewej stronie pojazdu
+PO321O2;dzwonek lub inny sygnał o nieprzeraźliwym dźwięku
+PO321O3;światełka odblaskowe na szprychach obu kół
+PO321DO;B
+PO322;Jeżeli na krawędzi jezdni jest linia przerywana, zatrzymanie roweru wzdłuż tej linii jest:
+PO322O1;dozwolone tylko na poboczu
+PO322O2;zabronione zarówno na jezdni jak i na poboczu
+PO322O3;dozwolone tylko na jezdni
+PO322DO;A
+PO323;Rowerzysta, którzy porusza się drogą w czasie mgły, jest obowiązany:
+PO323O1;gdy nie ma pobocza prowadzić na piechotę rower jak najbliżej krawędzi jezdni
+PO323O2;włączyć światła, w które rower jest wyposażony
+PO323O3;wyposażyć rower w dodatkowe światło przeciwmgłowe
+PO323DO;B
+PO324;Zbliżając się do przejazdu kolejowego oraz przejeżdżając przez przejazd rowerzysta jest obowiązany:
+PO324O1;jechać z taką prędkością, aby mógł się zatrzymać w bezpiecznym miejscu, gdy nadjeżdża pojazd szynowy
+PO324O2;włączyć światła, w które wyposażony jest rower
+PO324O3;zsiąść z roweru i przeprowadzić go przez tory
+PO324DO;A
+PO325;Rowerzyście zabrania się wyprzedzania traktora jadącego po jezdni:
+PO325O1;na drodze, wzdłuż której nie ma pobocza
+PO325O2;jeżeli traktor ciągnie przyczepę
+PO325O3;przy dojeżdżaniu do wierzchołka wzniesienia
+PO325DO;C
+PO326;Kierujący rowerem w strefie zamieszkania jest obowiązany:
+PO326O1;utrzymywać odstęp od poprzedzającego pojazdu niezbędny do uniknięcia zderzenia w razie hamowania lub zatrzymania się tego pojazdu
+PO326O2;parkować rower tylko wzdłuż chodnika, a jeśli nie ma chodnika to wzdłuż ściany budynku
+PO326O3;jechać powoli z prędkością nie większą niż prędkość pieszego
+PO326DO;A
+PO327;Rowerzyście, który jest wyprzedzany przez samochód osobowy zabrania się:
+PO327O1;trzymania kierownicy tylko jedną ręką
+PO327O2;zwiększania prędkości w czasie wyprzedzania
+PO327O3;zwalniania w czasie wyprzedzania
+PO327DO;B
+PO328;Chodnik to:
+PO328O1;część jezdni, z której piesi mogą korzystać w wyjątkowych sytuacjach
+PO328O2;część drogi przeznaczona do ruchu pieszych
+PO328O3;wydzielony pas drogi przeznaczony dla postoju pojazdów
+PO328DO;B
+PO329;Przechodzenie przez jezdnię w miejscu o ograniczonej widoczności drogi:
+PO329O1;jest dozwolone na drogach poza obszarem zabudowanym
+PO329O2;jest dozwolone pod warunkiem zachowania szczególnej ostrożności
+PO329O3;jest zawsze zabronione
+PO329DO;C
+PO330;Pieszy przechodząc przez drogę dwujezdniową na obszarze zabudowanym:
+PO330O1;może korzystać tylko z wyznaczonych przejść dla pieszych
+PO330O2;może przejść w dowolnym miejscu, jeżeli do przejścia jest więcej niż 100 m
+PO330O3;może przejść w dowolnym miejscu, pod warunkiem zachowania środków bezpieczeństwa
+PO330DO;A
+PO331;Pieszemu:
+PO331O1;wolno wejść na torowisko po ominięciu opuszczonych zapór (półzapór), jeżeli upewni się, że nie nadjeżdża pojazd szynowy
+PO331O2;zabrania się wchodzenia na torowisko, gdy zapory (półzapory) są opuszczone lub rozpoczęto ich opuszczanie
+PO331O3;zabrania się wchodzenia na torowisko podczas podnoszenia zapór (półzapór)
+PO331DO;B
+PO332;Pieszy może poruszać się po drodze dla rowerów:
+PO332O1;tylko wtedy, gdy nie ma chodnika lub pobocza
+PO332O2;gdy na chodniku jest bardzo duży ruch pieszych
+PO332O3;zawsze
+PO332DO;A
+PO333;Co to jest zatrzymanie pojazdu ?
+PO333O1;unieruchomienie pojazdu nie wynikające z warunków lub przepisów ruchu drogowego, trwające nie dłużej niż jedną minutę oraz każde unieruchomienie pojazdu wynikające z tych warunków lub przepisów
+PO333O2;zatrzymanie pojazdu i wyłączenie silnika na co najmniej jedną minutę
+PO333O3;unieruchomienie pojazdu na co najmniej 5 minut i opuszczenie pojazdu przez kierującego
+PO333DO;A
+PO334;Jeżeli przejście dla pieszych wyznaczone jest na drodze o dwóch jezdniach to przejście:
+PO334O1;uważa się za przejścia odrębne, tylko wtedy, gdy torowiska oddzielono od jezdni łańcuchami
+PO334O2;uważa się za jedno
+PO334O3;na każdej jezdni uważa się za przejście odrębne
+PO334DO;C
+PO335;Rowerzysta jest obowiązany:
+PO335O1;jechać nie dalej niż 10 cm od prawej krawędzi jezdni
+PO335O2;jechać z prędkością nie utrudniającą jazdy innym kierującym
+PO335O3;hamować w sposób powodujący zagrożenie bezpieczeństwa ruchu lub jego utrudnienie
+PO335DO;B
+PO336;Dopuszczalna prędkość roweru, którym przewozi się dziecko w wieku do 7 lat wynosi:
+PO336O1;20 km/h
+PO336O2;40 km/h
+PO336O3;nie jest określona w przepisach ruchu drogowego
+PO336DO;C
+PO337;Pojazd szynowy może być wyprzedzany:
+PO337O1;tylko z prawej strony bez żadnych wyjątków
+PO337O2;z dowolnej strony na jezdni dwukierunkowej
+PO337O3;tylko z prawej strony, chyba że położenie torów uniemożliwia takie wyprzedzanie lub wyprzedzanie odbywa się na jezdni jednokierunkowej
+PO337DO;C
+PO338;Kierujący rowerem, zbliżając się do przejścia dla pieszych, jest obowiązany:
+PO338O1;zachować szczególną ostrożność
+PO338O2;ustąpić pierwszeństwa tylko pieszemu niepełnosprawnemu znajdującemu się na przejściu
+PO338O3;ustąpić pierwszeństwa tylko pieszemu nadchodzącemu na przejściu z prawej strony
+PO338DO;A
+PO339;Odległość między kolumnami rowerów jednośladowych nie może być mniejsza niż:
+PO339O1;100 m
+PO339O2;200 m
+PO339O3;500 m
+PO339DO;B
+PO340;Rowerzysta zatrzymując rower na jezdni, jest obowiązany ustawić go:
+PO340O1;jak najbliżej prawej krawędzi oraz równolegle do niej
+PO340O2;w dowolnej odległości od krawędzi jezdni ale równolegle do niej
+PO340O3;jak najbliżej krawędzi jezdni pod dowolnym kątem
+PO340DO;A
+PO341;Rower powinien być wyposażony obowiązkowo:
+PO341O1;w lusterko wsteczne umieszczone po lewej stronie pojazdu
+PO341O2;w dwa skutecznie działające hamulce
+PO341O3;z tyłu w co najmniej jedno światło pozycyjne barwy czerwonej, które może być migające
+PO341DO;C
+PO342;Dorosłemu rowerzyście zabrania się:
+PO342O1;jazdy po jezdni drogi jednokierunkowej
+PO342O2;przewożenia na rowerze pięcioletniego dziecka w specjalnym siodełku
+PO342O3;czepiania się podczas jazdy za siodełko drugiego roweru
+PO342DO;C
+PO343;Na drodze o małym ruchu w warunkach dobrej widoczności dwóch pieszych:
+PO343O1;może iść obok siebie
+PO343O2;jest obowiązanych iść jeden za drugim
+PO343O3;nie może iść obok siebie
+PO343DO;A
+PO344;Jeżeli krawędź jezdni oznaczona jest linią przerywaną, to:
+PO344O1;dopuszcza się postój pojazdu na poboczu
+PO344O2;zabrania się zatrzymania pojazdu na jezdni i poboczu
+PO344O3;dopuszcza się zatrzymanie pojazdu na jezdni
+PO344DO;A
+PO345;Wyprzedzany rowerzysta:
+PO345O1;bezpośrednio po wyprzedzeniu - może zwiększyć prędkość
+PO345O2;w czasie wyprzedzania i bezpośrednio po nim - nie powinien zwiększać prędkości
+PO345O3;w czasie wyprzedzania nie może zmniejszać prędkości
+PO345DO;B
+PO346;Sygnał żółty migający:
+PO346O1;nie dotyczy kierujących pojazdami
+PO346O2;nie zobowiązuje kierującego pojazdem do zwrócenia większej uwagi
+PO346O3;ostrzega o miejscu niebezpiecznym
+PO346DO;C
+PO347;Jeżeli wysepka dla pasażerów na przystanku autobusowym lub tramwajowym łączy się z przejściem dla pieszych:
+PO347O1;przechodzenie do i z przystanku jest dozwolone tylko po tym przejściu
+PO347O2;pieszy, mimo to może przejść do i z przystanku w dowolnym miejscu pod warunkiem zachowania szczególnej ostrożności i ustępowania pierwszeństwa pojazdom
+PO347O3;pieszy może przejść do i z przystanku poza przejściem, jeżeli wysepka nie ma barierek zabezpieczających
+PO347DO;A
+PO348;Pieszy poruszający się poboczem lub jezdnią:
+PO348O1;może iść dowolna stroną drogi
+PO348O2;powinien iść prawą stroną drogi
+PO348O3;jest obowiązany iść lewą stroną drogi
+PO348DO;C
+PO349;Jeżeli pieszy jest zmuszony do poruszania się po jezdni, to:
+PO349O1;ma pierwszeństwo przed nadjeżdżającymi pojazdami
+PO349O2;musi ustępować pierwszeństwa nadjeżdżającym pojazdom
+PO349O3;nie musi ustępować pierwszeństwa nadjeżdżającym pojazdom, jeżeli używa elementów odblaskowych
+PO349DO;B
+PO350;Jeżeli pieszy musi poruszać się po jezdni, to:
+PO350O1;powinien iść w odległości nie większej niż 2 m od jej krawędzi
+PO350O2;może iść środkiem jezdni pod warunkiem zachowania szczególnej ostrożności
+PO350O3;jest zobowiązany zajmować miejsce jak najbliżej jej krawędzi
+PO350DO;C
+PO351;Pieszy:
+PO351O1;w strefie zamieszkania, może korzystać z całej szerokości drogi i ma pierwszeństwo przed pojazdami
+PO351O2;w wieku tylko do 12 lat poza terenem zabudowania po zmierzchu, zobowiązany jest nosić elementy odblaskowe w sposób widoczny dla innych uczestników ruchu
+PO351O3;idący po poboczu lub jezdni jest zobowiązany korzystać tylko z prawej strony jezdni
+PO351DO;A
+PO352;Co obowiązuje rowerzystę w strefie zamieszkania?
+PO352O1;jazda z prędkością do 20 km/h i parkowanie roweru tylko w wyznaczonych do tego miejscach
+PO352O2;jazda z prędkością pieszego (około 5 km/h)
+PO352O3;ustępowanie pierwszeństwa pieszym tylko na przejściach dla pieszych
+PO352DO;A
+PO353;Rower powinien być wyposażony w:
+PO353O1;co najmniej dwa skutecznie działające hamulce (ręczny i nożny)
+PO353O2;z przodu – w jedno światło mijania barwy białej lub żółtej selektywnej
+PO353O3;z tyłu – w co najmniej jedno światło pozycyjne barwy czerwonej,  które może być migające
+PO353DO;C
+PO354;Kierujący rowerem jest obowiązany:
+PO354O1;jechać z prędkością zapewniającą panowanie nad pojazdem
+PO354O2;dostosować prędkość jazdy tylko do znaków drogowych
+PO354O3;mieć zawsze podczas jazdy włączone światła pozycyjne
+PO354DO;A
+PO355;Dopuszczalna długość zespołu roweru z przyczepką wynosi:
+PO355O1;2 m
+PO355O2;3 m
+PO355O3;4 m
+PO355DO;C
+PO356;Przy wyprzedzaniu pojazdu jednośladowego lub kolumny pieszych bezpieczny odstęp nie może być mniejszy niż:
+PO356O1;1 metr
+PO356O2;1,5 metra
+PO356O3;2 metry
+PO356DO;A
+PO357;Kierujący rowerem, zbliżając się do skrzyżowania równorzędnego, jest obowiązany:
+PO357O1;zachować szczególną ostrożność i ustąpić pierwszeństwa tramwajowi nadjeżdżającemu z lewej strony
+PO357O2;ustąpić pierwszeństwa pojazdowi nadjeżdżającemu z lewej strony
+PO357O3;zatrzymać się
+PO357DO;A
+PO358;Kierujący w wieku 17 lat w czasie jazdy rowerem musi mieć przy sobie:
+PO358O1;tymczasowy dowód osobisty
+PO358O2;kartę rowerową lub prawo jazdy
+PO358O3;nie musi mieć żadnych dokumentów
+PO358DO;B
+PO359;Zabrania się jazdy rowerem:
+PO359O1;bez trzymania obu rąk na kierownicy
+PO359O2;bez trzymania nóg na pedałach
+PO359O3;trzymając jedną ręką kierownicę podczas sygnalizowania skrętu w lewo
+PO359DO;B
+PO360;Rower nie musi być wyposażony w:
+PO360O1;dwa hamulce
+PO360O2;dzwonek lub inny sygnał ostrzegawczy o nieprzeraźliwym dźwięku
+PO360O3;światło odblaskowe z tyłu barwy czerwonej o kształcie innym niż trójkąt
+PO360DO;A
+PO361;Na rowerze bez żadnych dokumentów mogą jeździć:
+PO361O1;dzieci do lat 10 i osoby, które ukończyły 18 lat
+PO361O2;tylko dzieci do lat 10
+PO361O3;osoby, które ukończyły 17 lat
+PO361DO;A
+PO362;Warunkiem przewożenia na rowerze dziecka w wieku do 7 lat jest umieszczenie go:
+PO362O1;na ramie roweru
+PO362O2;w dodatkowym siodełku zapewniającym bezpieczną jazdę
+PO362O3;na bagażniku umieszczonym z tyłu roweru
+PO362DO;B
+PO363;Kartę rowerową wydaje osobie, która wykazała się niezbędnymi kwalifikacjami i osiągnęła wymagany wiek 10 lat:
+PO363O1;policjant ruchu drogowego
+PO363O2;nauczyciel techniki
+PO363O3;dyrektor szkoły – uczniowi szkoły podstawowej
+PO363DO;C
+PO364;Kierującemu rowerem zabrania się wyprzedzania innego rowerzysty jadącego po jezdni:
+PO364O1;przy dojeżdżaniu do wierzchołka wzniesienia
+PO364O2;bezpośrednio przed przejściem dla pieszych, z wyjątkiem przejścia, na którym ruch jest kierowany
+PO364O3;na zakręcie oznaczonym znakami ostrzegawczymi
+PO364DO;B
+PO365;Szczególną ostrożność należy zachować podczas:
+PO365O1;wymijania
+PO365O2;wyprzedzania
+PO365O3;omijania
+PO365DO;B
+PO366;Pieszy może poruszać się drogą dla rowerów:
+PO366O1;tylko gdy drogą nie jadą rowerzyści
+PO366O2;tylko w razie braku chodnika lub pobocza albo gdy nie można z nich korzystać
+PO366O3;zawsze, niezależnie od warunków
+PO366DO;B
+PO367;Pieszy korzystający z drogi dla rowerów:
+PO367O1;zawsze ma pierwszeństwo przed nadjeżdżającym rowerzystą
+PO367O2;ma obowiązek ustępowania pierwszeństwa tylko rowerzystom jadącym w kolumnie
+PO367O3;ma obowiązek ustępowania pierwszeństwa rowerzyście z wyjątkiem osoby niepełnosprawnej
+PO367DO;C
+PO368;Pieszy idący drogą w strefie zamieszkania:
+PO368O1;może poruszać się po całej szerokości drogi
+PO368O2;może poruszać się tylko lewą stroną drogi
+PO368O3;nie może korzystać z jezdni
+PO368DO;A
+PO369;Pieszemu:
+PO369O1;zabrania się przebiegania przez jezdnię na drodze jednokierunkowej
+PO369O2;zabrania się zatrzymania na wysepce rozdzielającej przejście
+PO369O3;zawsze zabrania się przechodzenia przez jezdnię poza przejściami dla pieszych
+PO369DO;A
+PO370;Przechodzenie przez jezdnię poza przejściem dla pieszych jest dozwolone między innymi pod warunkiem:
+PO370O1;przechodzenia przez jezdnie po skosie
+PO370O2;ustępowania pierwszeństwa przejeżdżającym pojazdom
+PO370O3;odległość od przejścia wynosi 50 metrów
+PO370DO;B
+PO371;Kierowca może kierować:
+PO371O1;dowolnym pojazdem
+PO371O2;każdym pojazdem zaopatrzonym w silnik
+PO371O3;pojazdem silnikowym lub motorowerem
+PO371DO;C
+PO372;Rowerzysta włącza się do ruchu, jeżeli wjeżdża:
+PO372O1;z drogi podporządkowanej na drogę z pierwszeństwem
+PO372O2;na jezdnię z drogi dla rowerów z wyjątkiem wjazdu na przejazd dla rowerzystów lub pas ruchu dla rowerów
+PO372O3;z drogi twardej na drogę gruntową
+PO372DO;B
+PO373;Kierujący rowerem, który skręca w drogę poprzeczną, jest obowiązany:
+PO373O1;ustąpić pierwszeństwa pieszemu przechodzącemu na skrzyżowaniu przez jezdnię drogi, na którą wjeżdża
+PO373O2;ustąpić pierwszeństwa tylko pieszym znajdującym się na przejściu dla pieszych
+PO373O3;zmniejszyć prędkość i uważać, aby nie potrącić pieszych
+PO373DO;A
+PO374;Dopuszczalna prędkość tandemu (roweru dwuosobowego) w strefie zamieszkania wynosi:
+PO374O1;30 km/h
+PO374O2;20 km/h
+PO374O3;nie jest określona w prawie o  ruchu drogowym
+PO374DO;B
+PO375;Dokumentem stwierdzającym uprawnienia do kierowania wózkiem rowerowym przez osobę, która nie ukończyła 18 lat jest:
+PO375O1;karta rowerowa dla osoby w wieku 16 lat
+PO375O2;prawo jazdy kategorii AM dla osoby w wieku 15 lat
+PO375O3;prawo jazdy dla osoby w wieku 17 lat
+PO375DO;C
+PO376;Kierujący rowerem, zbliżając się do skrzyżowania równorzędnego, jest obowiązany:
+PO376O1;tylko zachować ostrożność
+PO376O2;jeżeli skręca w lewo ustąpić pierwszeństwa pojazdowi jadącemu z kierunku przeciwnego na wprost lub skręcającemu w prawo
+PO376O3;zatrzymać się
+PO376DO;B
+PO377;Rowerzyście zabrania się:
+PO377O1;zatrzymania na pasie między jezdniami
+PO377O2;zatrzymania się na poboczu obok linii przerywanej wyznaczającej krawędź jezdni
+PO377O3;jazdy po drodze dla pieszych i rowerów
+PO377DO;A
+PO378;Osoba niepełnosprawna idąca drogą dla rowerów:
+PO378O1;jest obowiązana ustąpić pierwszeństwa rowerowi
+PO378O2;nie jest obowiązana ustąpić pierwszeństwa rowerowi
+PO378O3;osoba niepełnosprawna nie może korzystać z drogi dla rowerów
+PO378DO;B
+PO379;Rower z tyłu musi mieć światła:
+PO379O1;odblaskowe barwy czerwonej w kształcie trójkąta
+PO379O2;pozycyjne barwy białej lub żółtej selektywnej
+PO379O3;pozycyjne barwy czerwonej (może być migające) i odblaskowe barwy czerwonej w kształcie innym niż trójkąt
+PO379DO;C
+PO380;Dopuszcza się umieszczenie świateł odblaskowych barwy żółtej samochodowej w rowerze:
+PO380O1;na bocznych płaszczyznach kół pojazdów (po jednym z każdej strony każdego koła)
+PO380O2;na tylnym błotniku
+PO380O3;z przodu pod światłem pozycyjnym
+PO380DO;A
+PO381;Wózek rowerowy nie jest przeznaczony do przewozu:
+PO381O1;osób
+PO381O2;zwierząt domowych
+PO381O3;rzeczy
+PO381DO;B
+PO382;Odległość między kolumnami wózków rowerowych nie może być mniejsza niż:
+PO382O1;100 m
+PO382O2;200 m
+PO382O3;500 m
+PO382DO;B
+PO383;W słoneczny, letni i bezwietrzny dzień dwunastoletni rowerzysta nie może jechać:
+PO383O1;po chodniku i drodze dla pieszych
+PO383O2;tylko po chodnikach o szerokości mniejszej od 2 m
+PO383O3;poboczu, jeżeli nie utrudni ruchu pieszych
+PO383DO;A
+PO384;Rower powinien być obowiązkowo wyposażony w dwa przednie i dwa tylne światła kierunkowskazu barwy żółtej samochodowej:
+PO384O1;jeżeli konstrukcja roweru uniemożliwia kierującemu sygnalizowanie przez wyciągnięcie ręki zamiaru zmiany kierunku jazdy lub pasa ruchu
+PO384O2;w przypadku każdego roweru wielośladowego
+PO384O3;jeżeli jego szerokość przekracza 90 cm
+PO384DO;A
+PO385;Spoza pojazdu lub innej przeszkody ograniczonej widoczności drogi:
+PO385O1;pieszemu zawsze zabrania się wejścia na jezdnię
+PO385O2;pieszy może wejść na jezdnię, jeżeli nie słyszy nadjeżdżających pojazdów
+PO385O3;może wejść na jezdnię, jeżeli inny pieszy stojący po przeciwnej stronie drogi, daje mu znak do przejścia
+PO385DO;A
+PO386;Prowadząc obok siebie rower musisz stosować się do przepisów o ruchu:
+PO386O1;pieszych
+PO386O2;samochodów
+PO386O3;rowerów
+PO386DO;A
+PO387;Kilku pieszych idących po jezdni:
+PO387O1;powinno poruszać się jeden za drugim, ale na drogach o małym ruchu i w warunkach dobrej widoczności dwóch pieszych może iść obok siebie
+PO387O2;zawsze musi iść „parami”
+PO387O3;może iść w sposób dowolny (jeden za drugim lub obok siebie) niezależnie od warunków drogowych
+PO387DO;A
+PO388;Gdy na przejściu dla pieszych wyświetlany jest sygnał zielony, to pieszy:
+PO388O1;może po takim przejściu przebiegać
+PO388O2;może nie zwracać uwagi na pojazdy, gdyż mają one czerwone światło
+PO388O3;zawsze musi się upewnić czy nie nadjeżdża pojazd
+PO388DO;C
+PO389;Za pieszego uważa się:
+PO389O1;osobę jadącą po chodniku na deskorolce
+PO389O2;osobę w wieku 12 lat kierującą rowerem pod opieką osoby dorosłej
+PO389O3;policjanta kierującego ruchem na skrzyżowaniu
+PO389DO;A

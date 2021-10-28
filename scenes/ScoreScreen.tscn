@@ -7,11 +7,11 @@
 [ext_resource path="res://Main.theme" type="Theme" id=5]
 
 [sub_resource type="DynamicFont" id=1]
-size = 50
+size = 40
 font_data = ExtResource( 3 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 40
+size = 25
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -19,11 +19,11 @@ size = 30
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 50
+size = 30
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=5]
-size = 30
+size = 20
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=6]
@@ -40,10 +40,14 @@ __meta__ = {
 }
 
 [node name="Margin" type="MarginContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = 20.0
-margin_bottom = -20.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -600.0
+margin_top = -350.0
+margin_right = 600.0
+margin_bottom = 350.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 __meta__ = {
@@ -51,8 +55,8 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Margin"]
-margin_right = 1920.0
-margin_bottom = 1040.0
+margin_right = 1200.0
+margin_bottom = 700.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
@@ -61,20 +65,20 @@ __meta__ = {
 }
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Margin/HBoxContainer"]
-margin_right = 1920.0
-margin_bottom = 1040.0
+margin_right = 1200.0
+margin_bottom = 700.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 50
+custom_constants/separation = 10
 
 [node name="Questions" type="VBoxContainer" parent="Margin/HBoxContainer/VBoxContainer"]
-margin_right = 1920.0
-margin_bottom = 479.0
+margin_right = 1200.0
+margin_bottom = 368.0
 custom_constants/separation = 10
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Questions"]
-margin_right = 1920.0
-margin_bottom = 59.0
+margin_right = 1200.0
+margin_bottom = 48.0
 size_flags_horizontal = 3
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 1 )
@@ -83,9 +87,9 @@ text = "Pytanie nr ..."
 align = 1
 
 [node name="Label2" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Questions"]
-margin_top = 69.0
-margin_right = 1920.0
-margin_bottom = 169.0
+margin_top = 58.0
+margin_right = 1200.0
+margin_bottom = 158.0
 rect_min_size = Vector2( 0, 100 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -96,27 +100,28 @@ autowrap = true
 clip_text = true
 
 [node name="TextureRect" type="TextureRect" parent="Margin/HBoxContainer/VBoxContainer/Questions"]
-margin_top = 179.0
-margin_right = 1920.0
-margin_bottom = 479.0
-rect_min_size = Vector2( 300, 300 )
+margin_top = 168.0
+margin_right = 1200.0
+margin_bottom = 368.0
+rect_min_size = Vector2( 200, 200 )
 size_flags_horizontal = 3
 texture = ExtResource( 4 )
-stretch_mode = 4
+expand = true
+stretch_mode = 6
 
 [node name="Timer" type="Timer" parent="Margin/HBoxContainer/VBoxContainer/Questions"]
 
 [node name="Answers" type="GridContainer" parent="Margin/HBoxContainer/VBoxContainer"]
-margin_top = 529.0
-margin_right = 1920.0
-margin_bottom = 1040.0
+margin_top = 378.0
+margin_right = 1200.0
+margin_bottom = 700.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/vseparation = 25
+custom_constants/vseparation = 10
 custom_constants/hseparation = 25
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-margin_right = 1920.0
+margin_right = 1200.0
 margin_bottom = 36.0
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -125,9 +130,9 @@ align = 1
 valign = 1
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-margin_top = 61.0
-margin_right = 1920.0
-margin_bottom = 116.0
+margin_top = 46.0
+margin_right = 1200.0
+margin_bottom = 92.0
 size_flags_horizontal = 7
 size_flags_vertical = 7
 __meta__ = {
@@ -135,9 +140,9 @@ __meta__ = {
 }
 
 [node name="Label2" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer2"]
-margin_top = 9.0
-margin_right = 958.0
-margin_bottom = 45.0
+margin_top = 5.0
+margin_right = 598.0
+margin_bottom = 41.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -146,10 +151,10 @@ align = 1
 valign = 1
 
 [node name="Label3" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer2"]
-margin_left = 962.0
-margin_top = 9.0
-margin_right = 1920.0
-margin_bottom = 45.0
+margin_left = 602.0
+margin_top = 5.0
+margin_right = 1200.0
+margin_bottom = 41.0
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
@@ -158,11 +163,12 @@ align = 1
 valign = 1
 
 [node name="AnswerButton" type="ColorRect" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-margin_top = 141.0
-margin_right = 1920.0
-margin_bottom = 216.0
-rect_min_size = Vector2( 200, 75 )
+margin_top = 102.0
+margin_right = 1200.0
+margin_bottom = 148.0
+rect_min_size = Vector2( 200, 40 )
 size_flags_horizontal = 3
+size_flags_vertical = 3
 theme = ExtResource( 5 )
 color = Color( 0.313726, 0.313726, 0.313726, 1 )
 
@@ -177,8 +183,8 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton/HBoxContainer"]
-margin_right = 45.0
-margin_bottom = 75.0
+margin_right = 27.0
+margin_bottom = 46.0
 size_flags_vertical = 7
 custom_fonts/font = SubResource( 4 )
 text = "A)"
@@ -186,9 +192,9 @@ align = 1
 valign = 1
 
 [node name="Label2" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton/HBoxContainer"]
-margin_left = 95.0
-margin_right = 1820.0
-margin_bottom = 75.0
+margin_left = 77.0
+margin_right = 1100.0
+margin_bottom = 46.0
 size_flags_horizontal = 3
 size_flags_vertical = 7
 custom_fonts/font = SubResource( 5 )
@@ -199,11 +205,12 @@ autowrap = true
 clip_text = true
 
 [node name="AnswerButton2" type="ColorRect" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-margin_top = 241.0
-margin_right = 1920.0
-margin_bottom = 316.0
-rect_min_size = Vector2( 200, 75 )
+margin_top = 158.0
+margin_right = 1200.0
+margin_bottom = 204.0
+rect_min_size = Vector2( 200, 40 )
 size_flags_horizontal = 3
+size_flags_vertical = 3
 theme = ExtResource( 5 )
 color = Color( 0.313726, 0.313726, 0.313726, 1 )
 
@@ -218,8 +225,8 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton2/HBoxContainer"]
-margin_right = 46.0
-margin_bottom = 75.0
+margin_right = 28.0
+margin_bottom = 46.0
 size_flags_vertical = 7
 custom_fonts/font = SubResource( 4 )
 text = "B)"
@@ -227,9 +234,9 @@ align = 1
 valign = 1
 
 [node name="Label2" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton2/HBoxContainer"]
-margin_left = 96.0
-margin_right = 1820.0
-margin_bottom = 75.0
+margin_left = 78.0
+margin_right = 1100.0
+margin_bottom = 46.0
 size_flags_horizontal = 3
 size_flags_vertical = 7
 custom_fonts/font = SubResource( 5 )
@@ -240,11 +247,12 @@ autowrap = true
 clip_text = true
 
 [node name="AnswerButton3" type="ColorRect" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-margin_top = 341.0
-margin_right = 1920.0
-margin_bottom = 416.0
-rect_min_size = Vector2( 200, 75 )
+margin_top = 214.0
+margin_right = 1200.0
+margin_bottom = 260.0
+rect_min_size = Vector2( 200, 40 )
 size_flags_horizontal = 3
+size_flags_vertical = 3
 theme = ExtResource( 5 )
 color = Color( 0.313726, 0.313726, 0.313726, 1 )
 
@@ -259,8 +267,8 @@ __meta__ = {
 }
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton3/HBoxContainer"]
-margin_right = 45.0
-margin_bottom = 75.0
+margin_right = 27.0
+margin_bottom = 46.0
 size_flags_vertical = 7
 custom_fonts/font = SubResource( 4 )
 text = "C)"
@@ -268,9 +276,9 @@ align = 1
 valign = 1
 
 [node name="Label2" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton3/HBoxContainer"]
-margin_left = 95.0
-margin_right = 1820.0
-margin_bottom = 75.0
+margin_left = 77.0
+margin_right = 1100.0
+margin_bottom = 46.0
 size_flags_horizontal = 3
 size_flags_vertical = 7
 custom_fonts/font = SubResource( 5 )
@@ -281,15 +289,15 @@ autowrap = true
 clip_text = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-margin_top = 441.0
-margin_right = 1920.0
-margin_bottom = 511.0
+margin_top = 270.0
+margin_right = 1200.0
+margin_bottom = 320.0
 
 [node name="PrevButton" type="Button" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer"]
-margin_left = 168.0
-margin_right = 468.0
-margin_bottom = 70.0
-rect_min_size = Vector2( 300, 70 )
+margin_left = 48.0
+margin_right = 348.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 50 )
 size_flags_horizontal = 6
 size_flags_vertical = 5
 
@@ -307,10 +315,10 @@ __meta__ = {
 }
 
 [node name="QuitButton" type="Button" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer"]
-margin_left = 809.0
-margin_right = 1109.0
-margin_bottom = 70.0
-rect_min_size = Vector2( 300, 70 )
+margin_left = 449.0
+margin_right = 749.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 50 )
 size_flags_horizontal = 6
 size_flags_vertical = 5
 
@@ -328,10 +336,10 @@ __meta__ = {
 }
 
 [node name="NextButton" type="Button" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer"]
-margin_left = 1451.0
-margin_right = 1751.0
-margin_bottom = 70.0
-rect_min_size = Vector2( 300, 70 )
+margin_left = 851.0
+margin_right = 1151.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 300, 50 )
 size_flags_horizontal = 6
 size_flags_vertical = 5
 
