@@ -1,21 +1,30 @@
 extends Control
 
-var questionsCount = 1
+var czyZaliczone = "NIE"
 var pzQuestionIndex = -1
+var questionsCount = 1
 var poQuestionIndex = 0
 var pkQuestionIndex = -1
 var pzList = []
 var poList = []
 var pkList = []
+var wynik = 0.0
+var iloscPkt 
+var pytaniaCzas = 30
+var krzyzowkiCzas = 60
+var ogolneIlosc = 10
+var znakiIlosc  = 10
+var krzyzowkiIlosc = 10
+var pytaniaIlosc
+var poAnswers = []
+var pzAnswers = []
+var pkAnswers = []
 var answer1
 var answer2
 var answer3
 var noneAnswer
 var qCat = ""
 var answer = ""
-var pzAnswers = []
-var poAnswers = []
-var pkAnswers = []
 var nextButton
 var pytanieNumer
 var pytanieTresc
@@ -28,6 +37,7 @@ var odpBTresc
 var odpCTresc
 var timer
 var pozostalyCzas
+var doFileExists
 
 func _ready():
 	
@@ -49,27 +59,16 @@ func _ready():
 	answer3 = false
 	noneAnswer = false
 		
-	randomize()
-	
-	GV.db.open_db()
-	GV.db.query("SELECT ID FROM uczenInfo WHERE imie = '" + str(GV.imieText) + "' AND nazwisko = '" + str(GV.nazwiskoText) + "' AND klasa = '" + str(GV.klasaText) + "';")
-	for i in range(0, GV.db.query_result.size()):
-		GV.uczenID = str(GV.db.query_result[i]["ID"])
-		print(GV.uczenID)
-	if (GV.uczenID == null):
-		GV.uczenID = str(GV.imieText).left(3) + str(GV.nazwiskoText).left(3) + str(randi() % 89 + 10)
-	print(GV.uczenID)
-	
 	nextButton.disabled = true
 	
 	_randomizePOquestions()
 	_randomizePZquestions()
 	_randomizePKquestions()
-
+	
+	pytaniaIlosc = float(ogolneIlosc + znakiIlosc + krzyzowkiIlosc)
 	pytanieNumer.text = "Pytanie nr " + str(questionsCount)
 	pytanieTresc.text = tr("PO"+str(poList[poQuestionIndex]))
-	var file2Check = File.new()
-	var doFileExists = file2Check.file_exists("res://graphics/OGOLNE/PO"+str(poList[poQuestionIndex])+".jpg")
+	doFileExists = FileAccess.file_exists("res://graphics/OGOLNE/PO"+str(poList[poQuestionIndex])+".jpg")
 	if (doFileExists == true):
 		pytanieObraz.texture = load("res://graphics/OGOLNE/PO"+str(poList[poQuestionIndex])+".jpg")
 		odpATresc.text = tr("PO"+str(poList[poQuestionIndex])+"O1")
@@ -81,10 +80,10 @@ func _ready():
 		odpBTresc.text = tr("PO"+str(poList[poQuestionIndex])+"O2")
 		odpCTresc.text = tr("PO"+str(poList[poQuestionIndex])+"O3")
 	
-	timer.set_wait_time(GV.pytaniaCzas)
+	timer.set_wait_time(pytaniaCzas)
 	timer.start()
 	
-func _process(delta):
+func _process(_delta):
 	var timeOut = int(timer.get_time_left())
 	pozostalyCzas.text = str(timeOut)
 	if (timeOut <= 10):
@@ -92,14 +91,9 @@ func _process(delta):
 			var CorrectSound = preload("res://sounds/tictac.wav")
 			$AudioStreamPlayer.stream = CorrectSound
 			$AudioStreamPlayer.play()
-		var dynamic_font2 = DynamicFont.new()
-		dynamic_font2.font_data = load("res://fonts/droid-sans/DroidSans-Bold.ttf")
-		dynamic_font2.size = 40
-		pozostalyCzas.set("custom_fonts/font", dynamic_font2)
-		pozostalyCzas.add_color_override("font_color", Color.red)
 	
 func _randomizePZquestions():
-	for i in range(1, (GV.znakiIlosc+1)):
+	for i in range(1, (znakiIlosc+1)):
 		var num = randi() % 108 + 1
 		while (num in pzList):
 			num = randi() % 108 + 1
@@ -108,9 +102,8 @@ func _randomizePZquestions():
 		GV.pzList = pzList
 	print(pzList)
 
-
 func _randomizePOquestions():
-	for i in range(1, (GV.ogolneIlosc+1)):
+	for i in range(1, (ogolneIlosc+1)):
 		var num = randi() % 389 + 1
 		while (num in poList):
 			num = randi() % 389 + 1
@@ -119,9 +112,8 @@ func _randomizePOquestions():
 		GV.poList = poList
 	print(poList)
 	
-	
 func _randomizePKquestions():
-	for i in range(1, (GV.krzyzowkiIlosc+1)):
+	for i in range(1, (krzyzowkiIlosc+1)):
 		var num = randi() % 203 + 1
 		while (num in pkList):
 			num = randi() % 203 + 1
@@ -130,123 +122,114 @@ func _randomizePKquestions():
 		GV.pkList = pkList
 	print(pkList)
 	
-func _on_NextButton_pressed():
-	
+func _on_NextButton_pressed():	
 	$AudioStreamPlayer.stop()
 	
-	var dynamic_font1 = DynamicFont.new()
-	dynamic_font1.font_data = load("res://fonts/droid-sans/DroidSans.ttf")
-	dynamic_font1.size = 30
-	pozostalyCzas.set("custom_fonts/font", dynamic_font1)
-	pozostalyCzas.add_color_override("font_color", Color.black)
-	
 	if (answer1 == true):
-		if (questionsCount <= GV.ogolneIlosc):
+		if (questionsCount <= ogolneIlosc):
 			qCat = "PO"+str(poList[poQuestionIndex])
 			var answerKey = "A"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
+				wynik += 1
 			poAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc) and questionsCount > GV.ogolneIlosc):
+		elif (questionsCount <= (ogolneIlosc + znakiIlosc) and questionsCount > ogolneIlosc):
 			qCat = "PZ"+str(pzList[pzQuestionIndex])
 			var answerKey = "A"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
+				wynik += 1
 			pzAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc + GV.krzyzowkiIlosc) and questionsCount > (GV.ogolneIlosc + GV.znakiIlosc)):
+		elif (questionsCount <= (ogolneIlosc + znakiIlosc + krzyzowkiIlosc) and questionsCount > (ogolneIlosc + znakiIlosc)):
 			qCat = "PK"+str(pkList[pkQuestionIndex])
 			var answerKey = "A"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
+				wynik += 1
 			pkAnswers.append(answerKey)
 			print(answer)
 	elif (answer2 == true):
-		if (questionsCount <= GV.ogolneIlosc):
+		if (questionsCount <= ogolneIlosc):
 			qCat = "PO"+str(poList[poQuestionIndex])
 			var answerKey = "B"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
+				wynik += 1
 			poAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc) and questionsCount > GV.ogolneIlosc):
+		elif (questionsCount <= (ogolneIlosc + znakiIlosc) and questionsCount > ogolneIlosc):
 			qCat = "PZ"+str(pzList[pzQuestionIndex])
 			var answerKey = "B"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
+				wynik += 1
 			pzAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc + GV.krzyzowkiIlosc) and questionsCount > (GV.ogolneIlosc + GV.znakiIlosc)):
+		elif (questionsCount <= (ogolneIlosc + znakiIlosc + krzyzowkiIlosc) and questionsCount > (ogolneIlosc + znakiIlosc)):
 			qCat = "PK"+str(pkList[pkQuestionIndex])
 			var answerKey = "B"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
+				wynik += 1
 			pkAnswers.append(answerKey)
 			print(answer)
 	elif (answer3 == true):
-		if (questionsCount <= GV.ogolneIlosc):
+		if (questionsCount <= ogolneIlosc):
 			qCat = "PO"+str(poList[poQuestionIndex])
 			var answerKey = "C"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
+				wynik += 1
 			poAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc) and questionsCount > GV.ogolneIlosc):
+		elif (questionsCount <= (ogolneIlosc + znakiIlosc) and questionsCount > ogolneIlosc):
 			qCat = "PZ"+str(pzList[pzQuestionIndex])
 			var answerKey = "C"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
+				wynik += 1
 			pzAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc + GV.krzyzowkiIlosc) and questionsCount > (GV.ogolneIlosc + GV.znakiIlosc)):
+		elif (questionsCount <= (ogolneIlosc + znakiIlosc + krzyzowkiIlosc) and questionsCount > (ogolneIlosc + znakiIlosc)):
 			qCat = "PK"+str(pkList[pkQuestionIndex])
 			var answerKey = "C"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			if (answerKey == tr(qCat+"DO")):
-				GV.wynik = GV.wynik + 1
+				wynik += 1
 			pkAnswers.append(answerKey)
 			print(answer)
 	elif (noneAnswer == true):
-		if (questionsCount <= GV.ogolneIlosc):
+		if (questionsCount <= ogolneIlosc):
 			qCat = "PO"+str(poList[poQuestionIndex])
 			var answerKey = "BRAK"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			pzAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc) and questionsCount > GV.ogolneIlosc):
+		elif (questionsCount <= (ogolneIlosc + znakiIlosc) and questionsCount > ogolneIlosc):
 			qCat = "PZ"+str(pzList[pzQuestionIndex])
 			var answerKey = "BRAK"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			poAnswers.append(answerKey)
 			print(answer)
-		elif (questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc + GV.krzyzowkiIlosc) and questionsCount > (GV.ogolneIlosc + GV.znakiIlosc)):
+		elif (questionsCount <= (ogolneIlosc + znakiIlosc + krzyzowkiIlosc) and questionsCount > (ogolneIlosc + znakiIlosc)):
 			qCat = "PK"+str(pkList[pkQuestionIndex])
 			var answerKey = "BRAK"
 			answer = str(questionsCount)+" "+qCat+" "+answerKey
 			pkAnswers.append(answerKey)
 			print(answer)
-		
 	_reset_Buttons()
 
-	questionsCount = questionsCount + 1
+	questionsCount += 1
 	
-	if (questionsCount <= GV.ogolneIlosc):
-		timer.set_wait_time(GV.pytaniaCzas)
+	if (questionsCount <= ogolneIlosc):
+		timer.set_wait_time(pytaniaCzas)
 		timer.start()
 		poQuestionIndex = poQuestionIndex + 1
 		pytanieNumer.text = "Pytanie nr " + str(questionsCount)
 		pytanieTresc.text = tr("PO"+str(poList[poQuestionIndex]))
-		var file2Check = File.new()
-		var doFileExists = file2Check.file_exists("res://graphics/OGOLNE/PO"+str(poList[poQuestionIndex])+".jpg")
+		doFileExists = FileAccess.file_exists("res://graphics/OGOLNE/PO"+str(poList[poQuestionIndex])+".jpg")
 		if (doFileExists == true):
 			pytanieObraz.texture = load("res://graphics/OGOLNE/PO"+str(poList[poQuestionIndex])+".jpg")
 			odpATresc.text = tr("PO"+str(poList[poQuestionIndex])+"O1")
@@ -258,8 +241,8 @@ func _on_NextButton_pressed():
 			odpBTresc.text = tr("PO"+str(poList[poQuestionIndex])+"O2")
 			odpCTresc.text = tr("PO"+str(poList[poQuestionIndex])+"O3")
 		return
-	elif (questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc)):	
-		timer.set_wait_time(GV.pytaniaCzas)
+	elif (questionsCount <= (ogolneIlosc + znakiIlosc)):	
+		timer.set_wait_time(pytaniaCzas)
 		timer.start()
 		pzQuestionIndex = pzQuestionIndex + 1
 		pytanieNumer.text = "Pytanie nr " + str(questionsCount)
@@ -269,8 +252,8 @@ func _on_NextButton_pressed():
 		odpBTresc.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O2")
 		odpCTresc.text = tr("PZ"+str(pzList[pzQuestionIndex])+"O3")
 		return
-	elif (questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc + GV.krzyzowkiIlosc)):
-		timer.set_wait_time(GV.krzyzowkiCzas)
+	elif (questionsCount <= (ogolneIlosc + znakiIlosc + krzyzowkiIlosc)):
+		timer.set_wait_time(krzyzowkiCzas)
 		timer.start()
 		pkQuestionIndex = pkQuestionIndex + 1
 		pytanieNumer.text = "Pytanie nr " + str(questionsCount)
@@ -281,14 +264,19 @@ func _on_NextButton_pressed():
 		odpCTresc.text = tr("PK"+str(pkList[pkQuestionIndex])+"O3")
 		return
 	else:
-		if (GV.wynik >= (0.75 * GV.pytaniaIlosc)):
-			GV.czyZaliczone = "TAK"
-		GV.poAnswers = poAnswers
-		GV.pzAnswers = pzAnswers
-		GV.pkAnswers = pkAnswers
-		_commitUczenInfo()
-		_commitUczenPytania()
-		get_tree().change_scene_to(load("res://scenes/EndScene.tscn"))
+		if (wynik >= (0.75 * pytaniaIlosc)):
+			czyZaliczone = "TAK"
+	GV.poAnswers = poAnswers
+	GV.pzAnswers = pzAnswers
+	GV.pkAnswers = pkAnswers
+	print(poAnswers)
+	print(pzAnswers)
+	print(pkAnswers)
+	iloscPkt = ogolneIlosc + znakiIlosc + krzyzowkiIlosc
+	GV.iloscPkt = iloscPkt
+	GV.wynik = wynik
+	GV.czyZaliczone = czyZaliczone
+	get_tree().change_scene_to_packed(load("res://scenes/EndScene.tscn"))
 	
 func _on_AnswerButton_pressed():
 	answer1 = true
@@ -330,18 +318,3 @@ func _reset_Buttons():
 	answer2 = false
 	answer3 = false
 	noneAnswer = false
-	
-func _commitUczenInfo():
-	GV.db.open_db()
-	var tableName = "uczenInfo"
-	var aktualnyWynik = str(GV.wynik) + "/25"
-	GV.db.query("INSERT INTO " + tableName + " (ID, imie, nazwisko, klasa, rok_szkolny, data, godzina, wynik, czy_zaliczone) VALUES ('" + str(GV.uczenID) + "','" + str(GV.imieText)
-	+ "','" + str(GV.nazwiskoText) + "','" + str(GV.klasaText) + "','" + str(GV.rok_szkolny) + "','" + str(GV.currentDate) + "','" + str(GV.godzina) + "','" 
-	+ str(aktualnyWynik) + "','" + str(GV.czyZaliczone) + "')")
-	
-func _commitUczenPytania():
-	GV.db.open_db()
-	var tableName = "uczenPytania"
-	GV.db.query("INSERT INTO " + tableName + " (uczenID, data, pytania_znaki, pytania_ogolne, pytania_krzyzowki, znaki_odp, ogolne_odp, krzyzowki_odp) VALUES ('" + str(GV.uczenID) + "','" + str(GV.currentDate) + "','" + str(pzList) + "','" + str(poList) + "','" + str(pkList) + "','" + str(pzAnswers) + "','" + str(poAnswers) + "','" + str(pkAnswers) + "')")
-
-	

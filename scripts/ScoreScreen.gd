@@ -23,12 +23,10 @@ var poprawnaOdp
 var czyPoprawna
 var qCat
 var dynamic_font
+var doFileExists
 
 func _ready():
 
-	dynamic_font =  DynamicFont.new()
-	dynamic_font.font_data = load("res://fonts/droid-sans/DroidSans-Bold.ttf")
-	dynamic_font.size = 30
 	nextButton = get_node("Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer/NextButton")
 	prevButton = get_node("Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer/PrevButton")
 	pytanieNumer = get_node("Margin/HBoxContainer/VBoxContainer/Questions/Label")
@@ -44,15 +42,14 @@ func _ready():
 	twojaOdp = get_node("Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer2/Label2")
 	poprawnaOdp = get_node("Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer2/Label3")
 	
-	odpAButton.color = Color.webgray
-	odpBButton.color = Color.webgray
-	odpCButton.color = Color.webgray
+	odpAButton.color = Color.WEB_GRAY
+	odpBButton.color = Color.WEB_GRAY
+	odpCButton.color = Color.WEB_GRAY
 	prevButton.disabled = true
 	
 	pytanieNumer.text = "Pytanie nr " + str(questionsCount)
 	pytanieTresc.text = tr("PO"+str(GV.poList[poQuestionIndex]))
-	var file2Check = File.new()
-	var doFileExists = file2Check.file_exists("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
+	doFileExists = FileAccess.file_exists("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
 	if (doFileExists == true):
 		pytanieObraz.texture = load("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
 		odpATresc.text = tr("PO"+str(GV.poList[poQuestionIndex])+"O1")
@@ -69,37 +66,37 @@ func _ready():
 	poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 	if (str(GV.poAnswers[poAnswersIndex]) == tr(qCat+"DO")):
 		czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-		czyPoprawna.set("custom_fonts/font", dynamic_font)
-		czyPoprawna.add_color_override("font_color", Color.green)
+		czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+		czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 	else:
 		czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-		czyPoprawna.set("custom_fonts/font", dynamic_font)
-		czyPoprawna.add_color_override("font_color", Color.red)
+		czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+		czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 	if (str(GV.poAnswers[poAnswersIndex]) == "A"):
-		odpAButton.color = Color.darkred
+		odpAButton.color = Color.DARK_RED
 	if (str(GV.poAnswers[poAnswersIndex]) == "B"):
-		odpBButton.color = Color.darkred
+		odpBButton.color = Color.DARK_RED
 	if (str(GV.poAnswers[poAnswersIndex]) == "C"):
-		odpCButton.color = Color.darkred
+		odpCButton.color = Color.DARK_RED
 	if (str(GV.poAnswers[poAnswersIndex]) == "BRAK"):
-		odpAButton.color = Color.darkred
-		odpBButton.color = Color.darkred
-		odpCButton.color = Color.darkred
+		odpAButton.color = Color.DARK_RED
+		odpBButton.color = Color.DARK_RED
+		odpCButton.color = Color.DARK_RED
 		
 	if(tr(qCat+"DO") == "A"):
-		odpAButton.color = Color.darkgreen
+		odpAButton.color = Color.DARK_GREEN
 	if(tr(qCat+"DO") == "B"):
-		odpBButton.color = Color.darkgreen
+		odpBButton.color = Color.DARK_GREEN
 	if(tr(qCat+"DO") == "C"):
-		odpCButton.color = Color.darkgreen
+		odpCButton.color = Color.DARK_GREEN
 
 func _on_NextButton_pressed():
 	
 	prevButton.disabled =false
-	odpAButton.color = Color.webgray
-	odpBButton.color = Color.webgray
-	odpCButton.color = Color.webgray
+	odpAButton.color = Color.WEB_GRAY
+	odpBButton.color = Color.WEB_GRAY
+	odpCButton.color = Color.WEB_GRAY
 		
 	if (questionsCount > 0 and questionsCount <= GV.pytaniaIlosc):
 		questionsCount = questionsCount + 1	
@@ -108,8 +105,7 @@ func _on_NextButton_pressed():
 			print(poQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
 			pytanieTresc.text = tr("PO"+str(GV.poList[poQuestionIndex]))
-			var file2Check = File.new()
-			var doFileExists = file2Check.file_exists("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
+			doFileExists = FileAccess.file_exists("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
 			if (doFileExists == true):
 				pytanieObraz.texture = load("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
 				odpATresc.text = tr("PO"+str(GV.poList[poQuestionIndex])+"O1")
@@ -129,30 +125,30 @@ func _on_NextButton_pressed():
 			poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 			if (str(GV.poAnswers[poAnswersIndex]) == tr(qCat+"DO")):
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.green)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 			else:
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.red)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 			if (str(GV.poAnswers[poAnswersIndex]) == "A"):
-				odpAButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
 			if (str(GV.poAnswers[poAnswersIndex]) == "B"):
-				odpBButton.color = Color.darkred
+				odpBButton.color = Color.DARK_RED
 			if (str(GV.poAnswers[poAnswersIndex]) == "C"):
-				odpCButton.color = Color.darkred
+				odpCButton.color = Color.DARK_RED
 			if (str(GV.poAnswers[poAnswersIndex]) == "BRAK"):
-				odpAButton.color = Color.darkred
-				odpBButton.color = Color.darkred
-				odpCButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
+				odpBButton.color = Color.DARK_RED
+				odpCButton.color = Color.DARK_RED
 		
 			if(tr(qCat+"DO") == "A"):
-				odpAButton.color = Color.darkgreen
+				odpAButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "B"):
-				odpBButton.color = Color.darkgreen
+				odpBButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "C"):
-				odpCButton.color = Color.darkgreen
+				odpCButton.color = Color.DARK_GREEN
 			return
 		elif (questionsCount == (GV.ogolneIlosc+1)):	
 			pzQuestionIndex = 0
@@ -171,30 +167,30 @@ func _on_NextButton_pressed():
 			poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 			if (str(GV.pzAnswers[pzAnswersIndex]) == tr(qCat+"DO")):
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.green)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 			else:
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.red)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "A"):
-				odpAButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "B"):
-				odpBButton.color = Color.darkred
+				odpBButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "C"):
-				odpCButton.color = Color.darkred
+				odpCButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "BRAK"):
-				odpAButton.color = Color.darkred
-				odpBButton.color = Color.darkred
-				odpCButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
+				odpBButton.color = Color.DARK_RED
+				odpCButton.color = Color.DARK_RED
 		
 			if(tr(qCat+"DO") == "A"):
-				odpAButton.color = Color.darkgreen
+				odpAButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "B"):
-				odpBButton.color = Color.darkgreen
+				odpBButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "C"):
-				odpCButton.color = Color.darkgreen
+				odpCButton.color = Color.DARK_GREEN
 			return
 		elif (questionsCount > (GV.ogolneIlosc+1) and questionsCount <= (GV.ogolneIlosc + GV.znakiIlosc)):	
 			pzQuestionIndex = pzQuestionIndex + 1
@@ -213,30 +209,30 @@ func _on_NextButton_pressed():
 			poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 			if (str(GV.pzAnswers[pzAnswersIndex]) == tr(qCat+"DO")):
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.green)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 			else:
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.red)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "A"):
-				odpAButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "B"):
-				odpBButton.color = Color.darkred
+				odpBButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "C"):
-				odpCButton.color = Color.darkred
+				odpCButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "BRAK"):
-				odpAButton.color = Color.darkred
-				odpBButton.color = Color.darkred
-				odpCButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
+				odpBButton.color = Color.DARK_RED
+				odpCButton.color = Color.DARK_RED
 		
 			if(tr(qCat+"DO") == "A"):
-				odpAButton.color = Color.darkgreen
+				odpAButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "B"):
-				odpBButton.color = Color.darkgreen
+				odpBButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "C"):
-				odpCButton.color = Color.darkgreen
+				odpCButton.color = Color.DARK_GREEN
 			return
 		elif (questionsCount == (GV.ogolneIlosc + GV.znakiIlosc +1)):
 			pkQuestionIndex = 0
@@ -255,30 +251,30 @@ func _on_NextButton_pressed():
 			poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 			if (str(GV.pkAnswers[pkAnswersIndex]) == tr(qCat+"DO")):
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.green)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 			else:
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.red)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "A"):
-				odpAButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "B"):
-				odpBButton.color = Color.darkred
+				odpBButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "C"):
-				odpCButton.color = Color.darkred
+				odpCButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "BRAK"):
-				odpAButton.color = Color.darkred
-				odpBButton.color = Color.darkred
-				odpCButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
+				odpBButton.color = Color.DARK_RED
+				odpCButton.color = Color.DARK_RED
 		
 			if(tr(qCat+"DO") == "A"):
-				odpAButton.color = Color.darkgreen
+				odpAButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "B"):
-				odpBButton.color = Color.darkgreen
+				odpBButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "C"):
-				odpCButton.color = Color.darkgreen
+				odpCButton.color = Color.DARK_GREEN
 			return
 		elif (questionsCount > (GV.ogolneIlosc + GV.znakiIlosc +1) and questionsCount <= GV.pytaniaIlosc):
 			pkQuestionIndex = pkQuestionIndex + 1
@@ -297,30 +293,30 @@ func _on_NextButton_pressed():
 			poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 			if (str(GV.pkAnswers[pkAnswersIndex]) == tr(qCat+"DO")):
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.green)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 			else:
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.red)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "A"):
-				odpAButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "B"):
-				odpBButton.color = Color.darkred
+				odpBButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "C"):
-				odpCButton.color = Color.darkred
+				odpCButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "BRAK"):
-				odpAButton.color = Color.darkred
-				odpBButton.color = Color.darkred
-				odpCButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
+				odpBButton.color = Color.DARK_RED
+				odpCButton.color = Color.DARK_RED
 		
 			if(tr(qCat+"DO") == "A"):
-				odpAButton.color = Color.darkgreen
+				odpAButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "B"):
-				odpBButton.color = Color.darkgreen
+				odpBButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "C"):
-				odpCButton.color = Color.darkgreen
+				odpCButton.color = Color.DARK_GREEN
 			if (questionsCount == GV.pytaniaIlosc):
 				nextButton.disabled = true
 			return
@@ -331,9 +327,9 @@ func _on_NextButton_pressed():
 
 func _on_PrevButton_pressed():
 	
-	odpAButton.color = Color.webgray
-	odpBButton.color = Color.webgray
-	odpCButton.color = Color.webgray
+	odpAButton.color = Color.WEB_GRAY
+	odpBButton.color = Color.WEB_GRAY
+	odpCButton.color = Color.WEB_GRAY
 	nextButton.disabled = false
 	
 	if (questionsCount >= 1 and questionsCount <= GV.pytaniaIlosc):
@@ -343,8 +339,7 @@ func _on_PrevButton_pressed():
 			print(poQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
 			pytanieTresc.text = tr("PO"+str(GV.poList[poQuestionIndex]))
-			var file2Check = File.new()
-			var doFileExists = file2Check.file_exists("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
+			doFileExists = FileAccess.file_exists("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
 			if (doFileExists == true):
 				pytanieObraz.texture = load("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
 				odpATresc.text = tr("PO"+str(GV.poList[poQuestionIndex])+"O1")
@@ -363,30 +358,30 @@ func _on_PrevButton_pressed():
 			poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 			if (str(GV.poAnswers[poAnswersIndex]) == tr(qCat+"DO")):
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.green)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 			else:
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.red)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 			if (str(GV.poAnswers[poAnswersIndex]) == "A"):
-				odpAButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
 			if (str(GV.poAnswers[poAnswersIndex]) == "B"):
-				odpBButton.color = Color.darkred
+				odpBButton.color = Color.DARK_RED
 			if (str(GV.poAnswers[poAnswersIndex]) == "C"):
-				odpCButton.color = Color.darkred
+				odpCButton.color = Color.DARK_RED
 			if (str(GV.poAnswers[poAnswersIndex]) == "BRAK"):
-				odpAButton.color = Color.darkred
-				odpBButton.color = Color.darkred
-				odpCButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
+				odpBButton.color = Color.DARK_RED
+				odpCButton.color = Color.DARK_RED
 		
 			if(tr(qCat+"DO") == "A"):
-				odpAButton.color = Color.darkgreen
+				odpAButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "B"):
-				odpBButton.color = Color.darkgreen
+				odpBButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "C"):
-				odpCButton.color = Color.darkgreen
+				odpCButton.color = Color.DARK_GREEN
 				
 			if (questionsCount == 1):
 				prevButton.disabled = true
@@ -395,8 +390,7 @@ func _on_PrevButton_pressed():
 			print(poQuestionIndex)
 			pytanieNumer.text = "Pytanie nr " + str(questionsCount)
 			pytanieTresc.text = tr("PO"+str(GV.poList[poQuestionIndex]))
-			var file2Check = File.new()
-			var doFileExists = file2Check.file_exists("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
+			doFileExists = FileAccess.file_exists("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
 			if (doFileExists == true):
 				pytanieObraz.texture = load("res://graphics/OGOLNE/PO"+str(GV.poList[poQuestionIndex])+".jpg")
 				odpATresc.text = tr("PO"+str(GV.poList[poQuestionIndex])+"O1")
@@ -413,30 +407,30 @@ func _on_PrevButton_pressed():
 			poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 			if (str(GV.poAnswers[poAnswersIndex]) == tr(qCat+"DO")):
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.green)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 			else:
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.red)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 			if (str(GV.poAnswers[poAnswersIndex]) == "A"):
-				odpAButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
 			if (str(GV.poAnswers[poAnswersIndex]) == "B"):
-				odpBButton.color = Color.darkred
+				odpBButton.color = Color.DARK_RED
 			if (str(GV.poAnswers[poAnswersIndex]) == "C"):
-				odpCButton.color = Color.darkred
+				odpCButton.color = Color.DARK_RED
 			if (str(GV.poAnswers[poAnswersIndex]) == "BRAK"):
-				odpAButton.color = Color.darkred
-				odpBButton.color = Color.darkred
-				odpCButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
+				odpBButton.color = Color.DARK_RED
+				odpCButton.color = Color.DARK_RED
 		
 			if(tr(qCat+"DO") == "A"):
-				odpAButton.color = Color.darkgreen
+				odpAButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "B"):
-				odpBButton.color = Color.darkgreen
+				odpBButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "C"):
-				odpCButton.color = Color.darkgreen
+				odpCButton.color = Color.DARK_GREEN
 			return
 			
 		elif (questionsCount > GV.ogolneIlosc and questionsCount < (GV.ogolneIlosc + GV.znakiIlosc)):	
@@ -456,30 +450,30 @@ func _on_PrevButton_pressed():
 			poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 			if (str(GV.pzAnswers[pzAnswersIndex]) == tr(qCat+"DO")):
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.green)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 			else:
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.red)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "A"):
-				odpAButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "B"):
-				odpBButton.color = Color.darkred
+				odpBButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "C"):
-				odpCButton.color = Color.darkred
+				odpCButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "BRAK"):
-				odpAButton.color = Color.darkred
-				odpBButton.color = Color.darkred
-				odpCButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
+				odpBButton.color = Color.DARK_RED
+				odpCButton.color = Color.DARK_RED
 		
 			if(tr(qCat+"DO") == "A"):
-				odpAButton.color = Color.darkgreen
+				odpAButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "B"):
-				odpBButton.color = Color.darkgreen
+				odpBButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "C"):
-				odpCButton.color = Color.darkgreen
+				odpCButton.color = Color.DARK_GREEN
 			return
 			
 		elif (questionsCount == (GV.ogolneIlosc + GV.znakiIlosc)):	
@@ -496,30 +490,30 @@ func _on_PrevButton_pressed():
 			poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 			if (str(GV.pzAnswers[pzAnswersIndex]) == tr(qCat+"DO")):
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.green)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 			else:
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.red)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "A"):
-				odpAButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "B"):
-				odpBButton.color = Color.darkred
+				odpBButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "C"):
-				odpCButton.color = Color.darkred
+				odpCButton.color = Color.DARK_RED
 			if (str(GV.pzAnswers[pzAnswersIndex]) == "BRAK"):
-				odpAButton.color = Color.darkred
-				odpBButton.color = Color.darkred
-				odpCButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
+				odpBButton.color = Color.DARK_RED
+				odpCButton.color = Color.DARK_RED
 		
 			if(tr(qCat+"DO") == "A"):
-				odpAButton.color = Color.darkgreen
+				odpAButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "B"):
-				odpBButton.color = Color.darkgreen
+				odpBButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "C"):
-				odpCButton.color = Color.darkgreen
+				odpCButton.color = Color.DARK_GREEN
 			return
 		elif (questionsCount > (GV.ogolneIlosc + GV.znakiIlosc) and questionsCount < GV.pytaniaIlosc):
 			pkQuestionIndex = pkQuestionIndex - 1
@@ -537,30 +531,30 @@ func _on_PrevButton_pressed():
 			poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 			if (str(GV.pkAnswers[pkAnswersIndex]) == tr(qCat+"DO")):
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.green)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 			else:
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.red)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "A"):
-				odpAButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "B"):
-				odpBButton.color = Color.darkred
+				odpBButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "C"):
-				odpCButton.color = Color.darkred
+				odpCButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "BRAK"):
-				odpAButton.color = Color.darkred
-				odpBButton.color = Color.darkred
-				odpCButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
+				odpBButton.color = Color.DARK_RED
+				odpCButton.color = Color.DARK_RED
 		
 			if(tr(qCat+"DO") == "A"):
-				odpAButton.color = Color.darkgreen
+				odpAButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "B"):
-				odpBButton.color = Color.darkgreen
+				odpBButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "C"):
-				odpCButton.color = Color.darkgreen			
+				odpCButton.color = Color.DARK_GREEN			
 			return
 		elif (questionsCount == GV.pytaniaIlosc):
 			print(pkQuestionIndex)
@@ -576,30 +570,30 @@ func _on_PrevButton_pressed():
 			poprawnaOdp.text = "Poprawna odpowiedź: " + str(tr(qCat+"DO"))
 			if (str(GV.pkAnswers[pkAnswersIndex]) == tr(qCat+"DO")):
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ PRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.green)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.GREEN)
 			else:
 				czyPoprawna.text = "ODPOWIEDZIAŁEŚ NIEPRAWIDŁOWO"
-				czyPoprawna.set("custom_fonts/font", dynamic_font)
-				czyPoprawna.add_color_override("font_color", Color.red)
+				czyPoprawna.set("theme_override_fonts/font", dynamic_font)
+				czyPoprawna.add_theme_color_override("font_color", Color.RED)
 		
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "A"):
-				odpAButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "B"):
-				odpBButton.color = Color.darkred
+				odpBButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "C"):
-				odpCButton.color = Color.darkred
+				odpCButton.color = Color.DARK_RED
 			if (str(GV.pkAnswers[pkAnswersIndex]) == "BRAK"):
-				odpAButton.color = Color.darkred
-				odpBButton.color = Color.darkred
-				odpCButton.color = Color.darkred
+				odpAButton.color = Color.DARK_RED
+				odpBButton.color = Color.DARK_RED
+				odpCButton.color = Color.DARK_RED
 		
 			if(tr(qCat+"DO") == "A"):
-				odpAButton.color = Color.darkgreen
+				odpAButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "B"):
-				odpBButton.color = Color.darkgreen
+				odpBButton.color = Color.DARK_GREEN
 			if(tr(qCat+"DO") == "C"):
-				odpCButton.color = Color.darkgreen			
+				odpCButton.color = Color.DARK_GREEN			
 			return
 		else:			
 			return

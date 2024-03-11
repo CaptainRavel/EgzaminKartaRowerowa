@@ -1,7 +1,7 @@
 extends Control
 
+
 func _ready():
-	
 	if (GV.czyZaliczone == "TAK"):
 		$MarginContainer/VBoxContainer/Label.text = "Udało Ci się zaliczyć test :)"
 	elif (GV.czyZaliczone == "NIE"):
@@ -15,4 +15,5 @@ func _on_Button_pressed():
 
 
 func _on_Button2_pressed():
-		get_tree().change_scene_to(load("res://scenes/ScoreScreen.tscn"))
+		get_tree().change_scene_to_packed(load("res://scenes/ScoreScreen.tscn"))
+
