@@ -17,3 +17,6 @@ func _on_Button_pressed():
 func _on_Button2_pressed():
 		get_tree().change_scene_to_packed(load("res://scenes/ScoreScreen.tscn"))
 
+
+func _on_button_3_pressed():
+	get_tree().change_scene_to_packed(load("res://scenes/QuestionScreen.tscn"))

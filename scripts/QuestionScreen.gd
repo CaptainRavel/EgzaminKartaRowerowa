@@ -318,3 +318,7 @@ func _reset_Buttons():
 	answer2 = false
 	answer3 = false
 	noneAnswer = false
+
+
+func _on_exit_button_pressed():
+	get_tree().quit()

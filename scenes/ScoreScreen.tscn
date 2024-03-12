@@ -1,45 +1,75 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=12 format=3 uid="uid://1u1akkgbkpi8"]
 
-[ext_resource path="res://fonts/droid-sans/DroidSans.ttf" type="FontFile" id=1]
-[ext_resource path="res://scripts/ScoreScreen.gd" type="Script" id=2]
-[ext_resource path="res://fonts/droid-sans/DroidSans-Bold.ttf" type="FontFile" id=3]
-[ext_resource path="res://graphics/ZNAKI/PZ1.jpg" type="Texture2D" id=4]
-[ext_resource path="res://Main.theme" type="Theme" id=5]
+[ext_resource type="FontFile" uid="uid://78i8i7i2md5e" path="res://fonts/droid-sans/DroidSans.ttf" id="1"]
+[ext_resource type="Script" path="res://scripts/ScoreScreen.gd" id="2"]
+[ext_resource type="FontFile" uid="uid://di5xep1kns22p" path="res://fonts/droid-sans/DroidSans-Bold.ttf" id="3"]
+[ext_resource type="Texture2D" uid="uid://cjy6kbftlog6l" path="res://graphics/ZNAKI/PZ1.jpg" id="4"]
+[ext_resource type="Theme" uid="uid://bfooh2sk4dse4" path="res://Main.theme" id="5"]
 
-[sub_resource type="FontFile" id=1]
-size = 40
-font_data = ExtResource( 3 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("3")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=2]
-size = 25
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=3]
-size = 30
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="3"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=4]
-size = 30
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="4"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=5]
-size = 20
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="5"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
-[sub_resource type="FontFile" id=6]
-size = 30
-font_data = ExtResource( 1 )
+[sub_resource type="FontFile" id="6"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
 
 [node name="ScoreScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-theme = ExtResource( 5 )
-script = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+theme = ExtResource("5")
+script = ExtResource("2")
 
 [node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -50,311 +80,220 @@ offset_right = 600.0
 offset_bottom = 350.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Margin"]
-offset_right = 1200.0
-offset_bottom = 700.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 alignment = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Margin/HBoxContainer"]
-offset_right = 1200.0
-offset_bottom = 700.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/separation = 10
 
 [node name="Questions" type="VBoxContainer" parent="Margin/HBoxContainer/VBoxContainer"]
-offset_right = 1200.0
-offset_bottom = 368.0
+layout_mode = 2
 theme_override_constants/separation = 10
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Questions"]
-offset_right = 1200.0
-offset_bottom = 48.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 1
-theme_override_fonts/font = SubResource( 1 )
-theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("1")
 text = "Pytanie nr ..."
-align = 1
 
 [node name="Label2" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Questions"]
-offset_top = 58.0
-offset_right = 1200.0
-offset_bottom = 158.0
-custom_minimum_size = Vector2( 0, 100 )
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_fonts/font = SubResource( 2 )
-theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("2")
 text = ".................................................................................."
-autowrap = true
 clip_text = true
 
 [node name="TextureRect" type="TextureRect" parent="Margin/HBoxContainer/VBoxContainer/Questions"]
-offset_top = 168.0
-offset_right = 1200.0
-offset_bottom = 368.0
-custom_minimum_size = Vector2( 200, 200 )
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource( 4 )
-expand = true
+texture = ExtResource("4")
+expand_mode = 1
 stretch_mode = 6
 
 [node name="Timer" type="Timer" parent="Margin/HBoxContainer/VBoxContainer/Questions"]
 
 [node name="Answers" type="GridContainer" parent="Margin/HBoxContainer/VBoxContainer"]
-offset_top = 378.0
-offset_right = 1200.0
-offset_bottom = 700.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_constants/v_separation = 10
 theme_override_constants/h_separation = 25
+theme_override_constants/v_separation = 10
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-offset_right = 1200.0
-offset_bottom = 36.0
-theme_override_fonts/font = SubResource( 3 )
-theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("3")
 text = "ODPOWIEDZIAŁEŚ POPRAWNIE/NIEPOPRAWNIE"
-align = 1
-valign = 1
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-offset_top = 46.0
-offset_right = 1200.0
-offset_bottom = 92.0
+layout_mode = 2
 size_flags_horizontal = 7
 size_flags_vertical = 7
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label2" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer2"]
-offset_top = 5.0
-offset_right = 598.0
-offset_bottom = 41.0
+layout_mode = 2
 size_flags_horizontal = 3
-theme_override_fonts/font = SubResource( 3 )
-theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("3")
 text = "TWOJA ODPOWIEDŹ: ..."
-align = 1
-valign = 1
 
 [node name="Label3" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer2"]
-offset_left = 602.0
-offset_top = 5.0
-offset_right = 1200.0
-offset_bottom = 41.0
+layout_mode = 2
 size_flags_horizontal = 3
-theme_override_fonts/font = SubResource( 3 )
-theme_override_colors/font_color = Color( 0, 0, 0, 1 )
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("3")
 text = "POPRAWNA ODPOWIEDŹ: ..."
-align = 1
-valign = 1
 
 [node name="AnswerButton" type="ColorRect" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-offset_top = 102.0
-offset_right = 1200.0
-offset_bottom = 148.0
-custom_minimum_size = Vector2( 200, 40 )
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource( 5 )
-color = Color( 0.313726, 0.313726, 0.313726, 1 )
+theme = ExtResource("5")
+color = Color(0.313726, 0.313726, 0.313726, 1)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 50.0
 offset_right = -50.0
 theme_override_constants/separation = 50
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton/HBoxContainer"]
-offset_right = 27.0
-offset_bottom = 46.0
+layout_mode = 2
 size_flags_vertical = 7
-theme_override_fonts/font = SubResource( 4 )
+theme_override_fonts/font = SubResource("4")
 text = "A)"
-align = 1
-valign = 1
 
 [node name="Label2" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton/HBoxContainer"]
-offset_left = 77.0
-offset_right = 1100.0
-offset_bottom = 46.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 7
-theme_override_fonts/font = SubResource( 5 )
+theme_override_fonts/font = SubResource("5")
 text = "................................................."
-align = 1
-valign = 1
-autowrap = true
 clip_text = true
 
 [node name="AnswerButton2" type="ColorRect" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-offset_top = 158.0
-offset_right = 1200.0
-offset_bottom = 204.0
-custom_minimum_size = Vector2( 200, 40 )
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource( 5 )
-color = Color( 0.313726, 0.313726, 0.313726, 1 )
+theme = ExtResource("5")
+color = Color(0.313726, 0.313726, 0.313726, 1)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton2"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 50.0
 offset_right = -50.0
 theme_override_constants/separation = 50
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton2/HBoxContainer"]
-offset_right = 28.0
-offset_bottom = 46.0
+layout_mode = 2
 size_flags_vertical = 7
-theme_override_fonts/font = SubResource( 4 )
+theme_override_fonts/font = SubResource("4")
 text = "B)"
-align = 1
-valign = 1
 
 [node name="Label2" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton2/HBoxContainer"]
-offset_left = 78.0
-offset_right = 1100.0
-offset_bottom = 46.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 7
-theme_override_fonts/font = SubResource( 5 )
+theme_override_fonts/font = SubResource("5")
 text = "................................................."
-align = 1
-valign = 1
-autowrap = true
 clip_text = true
 
 [node name="AnswerButton3" type="ColorRect" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-offset_top = 214.0
-offset_right = 1200.0
-offset_bottom = 260.0
-custom_minimum_size = Vector2( 200, 40 )
+custom_minimum_size = Vector2(200, 40)
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme = ExtResource( 5 )
-color = Color( 0.313726, 0.313726, 0.313726, 1 )
+theme = ExtResource("5")
+color = Color(0.313726, 0.313726, 0.313726, 1)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton3"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 50.0
 offset_right = -50.0
 theme_override_constants/separation = 50
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton3/HBoxContainer"]
-offset_right = 27.0
-offset_bottom = 46.0
+layout_mode = 2
 size_flags_vertical = 7
-theme_override_fonts/font = SubResource( 4 )
+theme_override_fonts/font = SubResource("4")
 text = "C)"
-align = 1
-valign = 1
 
 [node name="Label2" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/AnswerButton3/HBoxContainer"]
-offset_left = 77.0
-offset_right = 1100.0
-offset_bottom = 46.0
+layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 7
-theme_override_fonts/font = SubResource( 5 )
+theme_override_fonts/font = SubResource("5")
 text = "................................................."
-align = 1
-valign = 1
-autowrap = true
 clip_text = true
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Margin/HBoxContainer/VBoxContainer/Answers"]
-offset_top = 270.0
-offset_right = 1200.0
-offset_bottom = 320.0
+layout_mode = 2
 
 [node name="PrevButton" type="Button" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer"]
-offset_left = 48.0
-offset_right = 348.0
-offset_bottom = 50.0
-custom_minimum_size = Vector2( 300, 50 )
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 5
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer/PrevButton"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 4.75684
 offset_right = 4.75684
-theme_override_fonts/font = SubResource( 6 )
+theme_override_fonts/font = SubResource("6")
 text = "POPRZEDNIE"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="QuitButton" type="Button" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer"]
-offset_left = 449.0
-offset_right = 749.0
-offset_bottom = 50.0
-custom_minimum_size = Vector2( 300, 50 )
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 5
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer/QuitButton"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 4.75684
 offset_right = 4.75684
-theme_override_fonts/font = SubResource( 6 )
+theme_override_fonts/font = SubResource("6")
 text = "WYJDŹ"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="NextButton" type="Button" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer"]
-offset_left = 851.0
-offset_right = 1151.0
-offset_bottom = 50.0
-custom_minimum_size = Vector2( 300, 50 )
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 5
 
 [node name="Label" type="Label" parent="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer/NextButton"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 4.75684
 offset_right = 4.75684
-theme_override_fonts/font = SubResource( 6 )
+theme_override_fonts/font = SubResource("6")
 text = "NASTĘPNE"
-align = 1
-valign = 1
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [connection signal="pressed" from="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer/PrevButton" to="." method="_on_PrevButton_pressed"]
 [connection signal="pressed" from="Margin/HBoxContainer/VBoxContainer/Answers/HBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
